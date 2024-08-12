@@ -53,3 +53,30 @@
     font-style: normal;
     font-display: swap;
   }
+
+  .newsList .newsBox:hover{
+    box-shadow: 0px 0px 23px -1px rgba(0,0,0,0.65);
+    -webkit-box-shadow: 0px 0px 23px -1px rgba(0,0,0,0.65);
+    -moz-box-shadow: 0px 0px 23px -1px rgba(0,0,0,0.65);
+  }
+ .newsList .sidebar li.activeList span::before{
+  background-color: #F26737;
+  width: 87px;
+ }
+ .newsList .sidebar li.activeList span{
+background-color: #F26737;
+margin-right: 87px;
+ }
+ .newsList .sidebar li.activeList{
+border-bottom:1px solid #1E1E1E;  
+}
+ .newsList .sidebar li.activeList p{
+  font-family: IRANSansWeb500;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 25.04px;
+  text-align: right;
+  color: #1E1E1E;
+
+ }
+  
