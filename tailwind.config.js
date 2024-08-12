@@ -14,11 +14,27 @@ module.exports = {
       xl: '1440px',
     },
     colors: {
+<<<<<<< HEAD
  
+=======
+      'b1':'#1E293B',
+      'b3':'#E4E4E7',
+      'b4':'#FAFAFA',
+      'b6': '#2E3192F3',
+      'b8': '#F26737',
+      'b9': '#1E1E1E',
+      'b10': '#D9D9D9',
+      'b11': '#FBFBFF',
+      'b12': '#BCBDBD',
+      'b13': '#F9CF66',
+      'gray-500':'#64748B',
+>>>>>>> 021678dd7757372113d4886f2c3aa3edfba3db59
     },
     fontFamily: {
-      // sans: ['Graphik', 'sans-serif'],
-      // serif: ['Merriweather', 'serif'],
+      'IRANSansWeb300': ['IRANSansWeb300', 'IRANSansWeb300'],
+      'IRANSansWeb400': ['IRANSansWeb400', 'IRANSansWeb400'],
+      'IRANSansWeb500': ['IRANSansWeb500', 'IRANSansWeb500'],
+      'IRANSansWeb700': ['IRANSansWeb700', 'IRANSansWeb700'],
     },
     extend: {
       // spacing: {
