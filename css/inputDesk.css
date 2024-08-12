@@ -6,3 +6,77 @@
       direction: rtl;
     }
   }
+
+
+
+  @font-face {
+    font-family: "IRANSansWeb500";
+    src: url("../_fonts/IRANSansWeb_Medium.eot");
+    src: url("../_fonts/IRANSansWeb_Medium.eot?#iefix") format("embedded-opentype"),
+      url("../_fonts/IRANSansWeb_Medium.woff") format("woff"),
+      url("../_fonts/IRANSansWeb_Medium.woff2") format("woff2"),
+      url("../_fonts/IRANSansWeb_Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "IRANSansWeb400";
+    src: url("../_fonts/IRANSansWebRegular.eot");
+    src: url("../_fonts/IRANSansWebRegular.eot?#iefix") format("embedded-opentype"),
+      url("../_fonts/IRANSansWebRegular.woff") format("woff"),
+      url("../_fonts/IRANSansWebRegular.woff2") format("woff2"),
+      url("../_fonts/IRANSansWebRegular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "IRANSansWeb300";
+    src: url("../_fonts/IRANSansWeb(FaNum)_Light.eot");
+    src: url("../_fonts/IRANSansWeb(FaNum)_Light.eot?#iefix") format("embedded-opentype"),
+      url("../_fonts/IRANSansWeb(FaNum)_Light.woff") format("woff"),
+      url("../_fonts/IRANSansWeb(FaNum)_Light.woff2") format("woff2"),
+      url("../_fonts/IRANSansWeb(FaNum)_Light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "IRANSansWeb700";
+    src: url("../_fonts/IRANSansWeb(FaNum)_Bold.eot");
+    src: url("../_fonts/IRANSansWeb(FaNum)_Bold.eot?#iefix") format("embedded-opentype"),
+      url("../_fonts/IRANSansWeb(FaNum)_Bold.woff") format("woff"),
+      url("../_fonts/IRANSansWeb(FaNum)_Bold.woff2") format("woff2"),
+      url("../_fonts/IRANSansWeb(FaNum)_Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  .newsList .newsBox:hover{
+    box-shadow: 0px 0px 23px -1px rgba(0,0,0,0.65);
+    -webkit-box-shadow: 0px 0px 23px -1px rgba(0,0,0,0.65);
+    -moz-box-shadow: 0px 0px 23px -1px rgba(0,0,0,0.65);
+  }
+ .newsList .sidebar li.activeList span::before{
+  background-color: #F26737;
+  width: 87px;
+ }
+ .newsList .sidebar li.activeList span{
+background-color: #F26737;
+margin-right: 87px;
+ }
+ .newsList .sidebar li.activeList{
+border-bottom:1px solid #1E1E1E;  
+}
+ .newsList .sidebar li.activeList p{
+  font-family: IRANSansWeb500;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 25.04px;
+  text-align: right;
+  color: #1E1E1E;
+
+ }
+  

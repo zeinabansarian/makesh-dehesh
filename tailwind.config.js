@@ -14,9 +14,6 @@ module.exports = {
       xl: '1440px',
     },
     colors: {
-<<<<<<< HEAD
- 
-=======
       'b1':'#1E293B',
       'b3':'#E4E4E7',
       'b4':'#FAFAFA',
@@ -28,7 +25,6 @@ module.exports = {
       'b12': '#BCBDBD',
       'b13': '#F9CF66',
       'gray-500':'#64748B',
->>>>>>> 021678dd7757372113d4886f2c3aa3edfba3db59
     },
     fontFamily: {
       'IRANSansWeb300': ['IRANSansWeb300', 'IRANSansWeb300'],
