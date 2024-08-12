@@ -33,10 +33,10 @@ module.exports = {
       'IRANSansWeb700': ['IRANSansWeb700', 'IRANSansWeb700'],
     },
     extend: {
-      // spacing: {
-      //   '128': '32rem',
-      //   '144': '36rem',
-      // },
+      spacing: {
+        '1.5': '1.5em',
+        '2.5': '2.5em',
+      },
       // borderRadius: {
       //   '4xl': '2rem',
       // }
