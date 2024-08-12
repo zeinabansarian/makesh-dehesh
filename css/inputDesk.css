@@ -118,9 +118,9 @@ border-bottom:1px solid #1E1E1E;
   }
 }
 
-.catBox:nth-child(odd) .overInfo p{
+.catBox .overInfo p{
 color: #1E1E1E;
 }
-.catBox:nth-child(even) .overInfo p{
+/* .catBox:nth-child(even) .overInfo p{
 color: white;
-}
+} */
