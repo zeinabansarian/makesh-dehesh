@@ -14,17 +14,7 @@ module.exports = {
       xl: '1440px',
     },
     colors: {
-      'orange': '#F26737',
-      'blue': '#2E3192F3',
-      'yellow': '#F9CF66',
-      'black-1': '#1E1E1E',
-      'gray-light': '#D9D9D9',
-      'white-1': '#FBFBFF',
-      'gray-dark': '#BCBDBD',
-      'blue-gray':'#1E293B',
-      'gray-1':'#64748B',
-      'white-2':'#FAFAFA',
-      'gray-2':'#E4E4E7',
+ 
     },
     fontFamily: {
       // sans: ['Graphik', 'sans-serif'],
