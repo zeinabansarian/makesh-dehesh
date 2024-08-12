@@ -25,6 +25,8 @@ module.exports = {
       'b12': '#BCBDBD',
       'b13': '#F9CF66',
       'gray-500':'#64748B',
+      'f':'#ffff',
+
     },
     fontFamily: {
       'IRANSansWeb300': ['IRANSansWeb300', 'IRANSansWeb300'],
@@ -36,10 +38,34 @@ module.exports = {
       spacing: {
         '1.5': '1.5em',
         '2.5': '2.5em',
+        
       },
-      // borderRadius: {
-      //   '4xl': '2rem',
-      // }
+      lineHeight: {
+        '18.78': '18.78px',
+        '64': '64px',
+        '23':'23px',
+        '25.4':'25.04px'
+
+      },
+      width:{
+        '85':'85%'
+      },
+      maxWidth: {
+        'x100': '100%',
+      },
+      fontSize: {
+        '2xl': '64px',
+
+      },
+      zIndex: {
+        '1': '1',
+        '2': '2',
+        '3': '3',
+
+      }
+    },
+    translate: {
+      '100': '-100%',
     }
   },
   plugins: [
