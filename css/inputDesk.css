@@ -80,3 +80,47 @@ border-bottom:1px solid #1E1E1E;
 
  }
   
+
+
+ .mouse {
+  margin: 0 auto;
+  display: block;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  height: 82px;
+  width: 82px;
+  position: relative;
+}
+
+.move {
+  position: absolute;
+  background-color: #fff;
+  height: 13px;
+  width: 7px;
+  border-radius: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: move 2s linear infinite;
+}
+
+@keyframes move {
+  0% {
+    transform: translate(-50%,10px);
+    opacity: 0;
+  }
+  50% {
+    transform: translate(-50%,40px);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%,80px);
+    opacity: 0;
+  }
+}
+
+.catBox:nth-child(odd) .overInfo p{
+color: #1E1E1E;
+}
+.catBox:nth-child(even) .overInfo p{
+color: white;
+}

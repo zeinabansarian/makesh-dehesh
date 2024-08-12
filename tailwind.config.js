@@ -24,6 +24,7 @@ module.exports = {
       'b11': '#FBFBFF',
       'b12': '#BCBDBD',
       'b13': '#F9CF66',
+      'white': '#FFFFFF',
       'gray-500':'#64748B',
     },
     fontFamily: {
