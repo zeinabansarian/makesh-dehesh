@@ -5,6 +5,7 @@ module.exports = {
     './**/*.{html,js}',
     './css/**/*.css',
     './js/**/*.js',
+  
   ],
   theme: {
     screens: {
@@ -18,6 +19,7 @@ module.exports = {
       'b3':'#E4E4E7',
       'b4':'#FAFAFA',
       'b6': '#2E3192F3',
+      'b7':'#2E3192',
       'b8': '#F26737',
       'b9': '#1E1E1E',
       'b10': '#D9D9D9',
@@ -33,6 +35,8 @@ module.exports = {
       'IRANSansWeb400': ['IRANSansWeb400', 'IRANSansWeb400'],
       'IRANSansWeb500': ['IRANSansWeb500', 'IRANSansWeb500'],
       'IRANSansWeb700': ['IRANSansWeb700', 'IRANSansWeb700'],
+      'YekanBakh400':[' YekanBakh400'],
+      'YekanBakh700':[' YekanBakh700']
     },
     extend: {
       spacing: {
@@ -40,13 +44,22 @@ module.exports = {
         '2.5': '2.5em',
         
       },
+      content:{
+  'content1':' '
+      },
       lineHeight: {
         '18.78': '18.78px',
         '64': '64px',
         '23':'23px',
-        '25.4':'25.04px'
+        '25.4':'25.04px',
+        '57.97':'57.97px',
+        '17.96': '17.96px',
+        '21.91': '21.91px',
+        '32.03':'32.03px'
+
 
       },
+
       width:{
         '85':'85%'
       },
@@ -54,8 +67,12 @@ module.exports = {
         'x100': '100%',
       },
       fontSize: {
+        'f1':'20px',
+        'xl':'24px',
         '2xl': '64px',
-
+'        3xl': '1.953rem',
+        '4xl': '2.441rem',
+        '5xl': '3.052rem',
       },
       zIndex: {
         '1': '1',
@@ -69,12 +86,32 @@ module.exports = {
     }
   },
   plugins: [
-    plugin(function({ addComponents }) {
+    plugin(function({ addComponents , theme}) {
       addComponents({
         '.btn': {
-          padding: '.5rem 1rem',
-          borderRadius: '.25rem',
-          fontWeight: '600',
+          width:'auto',
+          display:'flex',
+          justifyContent:'center',
+          alignItems :'center',
+          position:'relative',
+          backgroundColor:'#FAFAFA' ,
+          paddingBottom:'.5rem',
+          paddingTop:'.5rem',
+          paddingLeft:'2.5rem',
+          paddingRight:'2.5rem',
+          '&::before':{
+            width:'12px',
+            height:'12px',
+            // content:var(--tw-content),
+            position:'absolute',
+            top:'40%',
+            bottom:'50%',
+            left:'.5rem',
+            borderRadius:'50%',
+            backgroundColor: '#F26737',
+          }
+
+
         },
         '.btn-blue': {
           backgroundColor: '#3490dc',
