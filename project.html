@@ -261,8 +261,8 @@
                             </div>
                            
                         </div>
-                        <a href="" class=" w-max mt-[3em]
-                        ShowListBTN btn 
+                        <span class=" w-max mt-[3em]
+                        ShowListBTN btn hover:cursor-pointer
                         before:content-[''] 
                         before:absolute 
                         before:right-2 
@@ -275,12 +275,12 @@
                          pt-[1em]
                          pb-[1em] 
                         ">
-                            <span  class="font-IRANSansWeb500 w-auto font-medium
+                            <span  class="OpenPopUP font-IRANSansWeb500 w-auto font-medium
                             text-sm leading-17.96 text-gray-500">
                                 مشاهده عکس های مربوطه 
                             </span>
 
-                         </a>
+                         </span>
                     </div>
                 </div>
             </div>
@@ -293,6 +293,46 @@
          </div>
         <!-- SECTION ONE -->
          
+<div class="Galerys hidden">
+    <img src="images/pict1881141000019920482000012754001 1 (1).png" alt="">
+    <img src="images/p.png" alt="">
+    <img src="images/Frame 16133.png" alt="">
+
+</div>
+        <!-- POPOP -->
+        <div class="Gallerypopup [&.showPOPUP]:opacity-[1]  [&.showPOPUP]:pointer-events-auto fixed left-0 top-0 h-[100vh]
+         w-screen z-[999] bg-[#000000CC]
+        flex justify-center items-center opacity-0 duration-[.4s] pointer-events-none">
+  
+            <div class="close absolute right-0 top-0 pr-[3em] pt-[3em] hover:cursor-pointer">
+                <div class="box">
+                <svg width="40" height="40" viewbox="0 0 40 40"><path d="M 10,10 L 30,30 M 30,10 L 10,30" stroke="white" stroke-width="4" /></svg>
+                </div>
+            </div>
+            <div class="popUp w-full flex justify-between items-center">
+
+                <span class="Gprev hover:cursor-pointer w-[75px] h-[75px] bg-b7 flex justify-center items-center">
+                    <svg width="26" height="46" viewBox="0 0 26 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2 2L23 23L2 44" stroke="white" stroke-width="3"/>
+                        </svg>
+                        
+                </span>
+                  
+                 <img class="Main w-[953px] h-[535px] object-cover mr-auto ml-auto scale-[1.2] duration-[.5s] 
+                 [&.active]:scale-[1] [&.active]:opacity-[1] opacity-0
+                 " src="@largeIMG" alt="@title" title="@title"/>  
+
+                 <span class="Gnext hover:cursor-pointer w-[75px] h-[75px] bg-b7 flex justify-center items-center">
+                    <svg width="23" height="44" viewBox="0 0 23 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22 1L1 22L22 43" stroke="white"/>
+                        </svg>
+                        
+                 </span>
+
+            </div>
+          
+        </div>
+         <!-- POPOP -->
        <!-- FOOTER -->
         <footer class="FooterDesktop flex flex-col bg-b7 relative">
           <div class="News-Form absolute left-0 top-0 right-0 translate-y-[-4.5em] 
@@ -607,7 +647,9 @@
   <script src="js/scrollTrigger.js"></script>
   <script src="js/lenisScroll.js"></script>
   <script src="js/project.js"></script>
+  <script src="js/gallery.js"></script>
   <script src="js/formConfig.js"></script>
+
 
 
 </body>
