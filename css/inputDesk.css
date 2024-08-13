@@ -9,6 +9,26 @@
 
 
 
+
+  @font-face {
+    font-family: "YekanBakh400";
+    src: url("../fonts/Yekan\ Bakh\ FA\ 04\ Regular.eot");
+    src: url("../fonts/Yekan\ Bakh\ FA\ 04\ Regular.eot?#iefix") format("embedded-opentype"),
+      url("../fonts/Yekan\ Bakh\ FA\ 04\ Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "YekanBakh700";
+    src: url("../fonts/Yekan\ Bakh\ FA\ 06\ Bold.eot");
+    src: url("../fonts/Yekan\ Bakh\ FA\ 06\ Bold.eot?#iefix") format("embedded-opentype"),
+      url("../fonts/Yekan\ Bakh\ FA\ 06\ Bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+
   @font-face {
     font-family: "IRANSansWeb500";
     src: url("../_fonts/IRANSansWeb_Medium.eot");
