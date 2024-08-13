@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project</title>
+    <link rel="stylesheet" href="/css/swiper.css">
     <link rel="stylesheet" href="/css/outputDesk.css">
     <script src="https://cdn.basiscore.net/academy.basiscore.com/_js/basiscore-2.23.1.min.js"></script>
     <script src="https://cdn.basiscore.net/basispanel.ir/_js/alasql.min.js"></script>
@@ -127,7 +128,7 @@
          <!-- HEADER -->
 
           <!-- SECTION ONE -->
-         <div class="Section-1 w-full flex justify-between items-start mt-1 overflow-hidden h-[83vh] mb-[10em]">
+         <div class="Section-1 w-full flex justify-between items-start mt-1 overflow-hidden h-[83vh] mb-[5em]">
             <div class="Right w-[30%] h-full flex flex-col justify-between items-center">
                 <div class="Content w-full h-full flex justify-between items-center flex-col">
                   
@@ -293,46 +294,485 @@
          </div>
         <!-- SECTION ONE -->
          
-<div class="Galerys hidden">
-    <img src="images/pict1881141000019920482000012754001 1 (1).png" alt="">
-    <img src="images/p.png" alt="">
-    <img src="images/Frame 16133.png" alt="">
-
-</div>
-        <!-- POPOP -->
-        <div class="Gallerypopup [&.showPOPUP]:opacity-[1]  [&.showPOPUP]:pointer-events-auto fixed left-0 top-0 h-[100vh]
-         w-screen z-[999] bg-[#000000CC]
-        flex justify-center items-center opacity-0 duration-[.4s] pointer-events-none">
-  
-            <div class="close absolute right-0 top-0 pr-[3em] pt-[3em] hover:cursor-pointer">
-                <div class="box">
-                <svg width="40" height="40" viewbox="0 0 40 40"><path d="M 10,10 L 30,30 M 30,10 L 10,30" stroke="white" stroke-width="4" /></svg>
-                </div>
-            </div>
-            <div class="popUp w-full flex justify-between items-center">
-
-                <span class="Gprev hover:cursor-pointer w-[75px] h-[75px] bg-b7 flex justify-center items-center">
-                    <svg width="26" height="46" viewBox="0 0 26 46" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M2 2L23 23L2 44" stroke="white" stroke-width="3"/>
+        <!-- SECTION TWO -->
+         <div class="Section-2 w-full flex justify-start flex-col items-center mb-[5em]">
+            <div class="TitleP w-full flex justify-center items-center gap-10 mb-3">
+                <span>
+                    <svg width="25" height="15" viewBox="0 0 25 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24.3905 6.26662V1.81182C24.3905 1.42542 24.0769 1.11182 23.6905 1.11182H19.2357V2.51182H22.0007L21.4141 3.09842C20.9199 3.59122 20.3011 3.94122 19.6249 4.11062L19.3379 4.18202C17.8119 4.56422 16.6835 5.81722 16.4609 7.37262L16.3153 8.39462L16.1697 9.41662C16.0283 10.4064 15.3101 11.203 14.3371 11.4466L14.0515 11.518C13.1275 11.749 12.2833 12.2264 11.6113 12.8984L12.6025 13.8882C13.0953 13.394 13.7127 13.044 14.3917 12.8746L14.6759 12.8032C16.2019 12.4224 17.3303 11.1694 17.5543 9.61402L17.6999 8.59202L17.8469 7.57142C17.9883 6.58022 18.7065 5.78362 19.6781 5.54002L19.9651 5.46862C20.8863 5.23762 21.7305 4.76162 22.4039 4.08822L22.9905 3.50162V6.26662H24.3905Z" fill="#BCBDBD"/>
+                        <path d="M13.3905 6.26662V1.81182C13.3905 1.42542 13.0769 1.11182 12.6905 1.11182H8.23573V2.51182H11.0007L10.4141 3.09842C9.91993 3.59122 9.30113 3.94122 8.62493 4.11062L8.33793 4.18202C6.81193 4.56422 5.68353 5.81722 5.46093 7.37262L5.31533 8.39462L5.16973 9.41662C5.02833 10.4064 4.31013 11.203 3.33713 11.4466L3.05153 11.518C2.12753 11.749 1.28333 12.2264 0.611328 12.8984L1.60253 13.8882C2.09533 13.394 2.71273 13.044 3.39173 12.8746L3.67593 12.8032C5.20193 12.4224 6.33033 11.1694 6.55433 9.61402L6.69993 8.59202L6.84693 7.57142C6.98833 6.58022 7.70653 5.78362 8.67813 5.54002L8.96513 5.46862C9.88633 5.23762 10.7305 4.76162 11.4039 4.08822L11.9905 3.50162V6.26662H13.3905Z" fill="#BCBDBD"/>
                         </svg>
                         
                 </span>
-                  
-                 <img class="Main w-[953px] h-[535px] object-cover mr-auto ml-auto scale-[1.2] duration-[.5s] 
-                 [&.active]:scale-[1] [&.active]:opacity-[1] opacity-0
-                 " src="@largeIMG" alt="@title" title="@title"/>  
-
-                 <span class="Gnext hover:cursor-pointer w-[75px] h-[75px] bg-b7 flex justify-center items-center">
-                    <svg width="23" height="44" viewBox="0 0 23 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M22 1L1 22L22 43" stroke="white"/>
+                <h2 class="font-IRANSansWeb700 text-xl leading-37.57 text-b12">
+                    پروژه های منتخب
+                </h2>
+                <span>
+                    <svg width="25" height="15" viewBox="0 0 25 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24.3905 6.26662V1.81182C24.3905 1.42542 24.0769 1.11182 23.6905 1.11182H19.2357V2.51182H22.0007L21.4141 3.09842C20.9199 3.59122 20.3011 3.94122 19.6249 4.11062L19.3379 4.18202C17.8119 4.56422 16.6835 5.81722 16.4609 7.37262L16.3153 8.39462L16.1697 9.41662C16.0283 10.4064 15.3101 11.203 14.3371 11.4466L14.0515 11.518C13.1275 11.749 12.2833 12.2264 11.6113 12.8984L12.6025 13.8882C13.0953 13.394 13.7127 13.044 14.3917 12.8746L14.6759 12.8032C16.2019 12.4224 17.3303 11.1694 17.5543 9.61402L17.6999 8.59202L17.8469 7.57142C17.9883 6.58022 18.7065 5.78362 19.6781 5.54002L19.9651 5.46862C20.8863 5.23762 21.7305 4.76162 22.4039 4.08822L22.9905 3.50162V6.26662H24.3905Z" fill="#BCBDBD"/>
+                        <path d="M13.3905 6.26662V1.81182C13.3905 1.42542 13.0769 1.11182 12.6905 1.11182H8.23573V2.51182H11.0007L10.4141 3.09842C9.91993 3.59122 9.30113 3.94122 8.62493 4.11062L8.33793 4.18202C6.81193 4.56422 5.68353 5.81722 5.46093 7.37262L5.31533 8.39462L5.16973 9.41662C5.02833 10.4064 4.31013 11.203 3.33713 11.4466L3.05153 11.518C2.12753 11.749 1.28333 12.2264 0.611328 12.8984L1.60253 13.8882C2.09533 13.394 2.71273 13.044 3.39173 12.8746L3.67593 12.8032C5.20193 12.4224 6.33033 11.1694 6.55433 9.61402L6.69993 8.59202L6.84693 7.57142C6.98833 6.58022 7.70653 5.78362 8.67813 5.54002L8.96513 5.46862C9.88633 5.23762 10.7305 4.76162 11.4039 4.08822L11.9905 3.50162V6.26662H13.3905Z" fill="#BCBDBD"/>
                         </svg>
                         
-                 </span>
+                </span>
 
             </div>
-          
-        </div>
-         <!-- POPOP -->
+            <div class="Projects-Related w-full flex justify-between items-start mt-[5em] ">
+                <div class="swiper-projects w-[96%] flex justify-between items-start mr-auto overflow-hidden">
+                    <div class="swiper-wrapper w-full">
+                        <div class="swiper-slide w-full flex justify-between items-start">
+                            <div class="Project group hover:scale-105 duration-[.5s] hover:cursor-pointer 
+                            w-full flex flex-col justify-center items-center" >
+       
+                                          <div class="IMG w-full flex justify-center items-center relative">
+                                              <img src="images/p.png" alt="" class="w-full h-full object-cover">
+       
+                                              <div class="OV group absolute hover:bg-[#00000073] 
+                                              top-0 left-0 w-full h-full ease-linear duration-[.8s]
+                                              flex justify-center items-center z-1">
+       
+                                                  <div class="Box w-full 
+                                                  gap-3 h-full flex flex-col overflow-hidden justify-center items-center relative">
+       
+                                                      <div class="Inner-IMG relative w-2/3 h-2/3 
+                                                      flex justify-center items-center translate-y-[-200px] opacity-0 
+                                                      group-hover:translate-y-[0px] duration-[.8s] delay-75 
+                                                       group-hover:opacity-100
+       
+                                                         ">
+       
+                                                          <img src="images/p.png" alt="" class="w-full h-full
+                                                           ml-auto mr-auto  object-cover hue-rotate-90">
+       
+                                                          <div class="Inner-OV absolute top-0 left-0 w-full h-full
+                                                          flex flex-col justify-center gap-y-6 items-center z-2 
+                                                          mr-auto ml-auto right-0
+                                                          bottom-0 mt-auto mb-auto">
+                                                          <div class="Title-1 w-full flex items-center justify-center overflow-hidden">
+                                                           <p class="font-IRANSansWeb400 text-sm leading-21.91 text-f font-normal
+                                                          
+                                                           ">پروژه های ساختمانی</p>
+                                                       </div>
+                                                              <a href="" class="
+                                                              ShowListBTN btn 
+                                                              before:content-[''] 
+                                                              before:absolute 
+                                                              before:right-2 
+                                                              before:inset-y-2/4 
+                                                              before:top-[40%] 
+                                                              before:w-[12px] before:h-[12px]
+                                                               before:bg-b8 before:rounded-full
+                                                               pl-[1.1rem]
+                                                               pr-[1.5rem]
+                                                              ">
+                                                                  <span  class="font-IRANSansWeb500 w-full font-medium
+                                                                  text-sm leading-17.96 text-gray-500">
+                                                                      مشاهده 
+                                                                  </span>
+       
+                                                               </a>
+       
+                                                          </div>
+       
+                                                      </div>
+       
+                                                
+       
+                                                  </div>
+       
+                                              </div>
+       
+                                          </div>
+                                        
+       
+                                          <div class="Title-2 w-full flex items-center justify-center overflow-hidden">
+                                              <p class="font-IRANSansWeb400 font-normal text-sm group-hover:opacity-0  
+                                              group-hover:translate-y-[100px]
+                                              leading-21.91 text-b9 mt-3.5 duration-[.5s]
+                                             
+                                              ">پروژه های ساختمانی</p>
+                                          </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide w-full flex justify-between items-start">
+                            <div class="Project group hover:scale-105 duration-[.5s] hover:cursor-pointer 
+                            w-full flex flex-col justify-center items-center" >
+       
+                                          <div class="IMG w-full flex justify-center items-center relative">
+                                              <img src="images/p.png" alt="" class="w-full h-full object-cover">
+       
+                                              <div class="OV group absolute hover:bg-[#00000073] 
+                                              top-0 left-0 w-full h-full ease-linear duration-[.8s]
+                                              flex justify-center items-center z-1">
+       
+                                                  <div class="Box w-full 
+                                                  gap-3 h-full flex flex-col overflow-hidden justify-center items-center relative">
+       
+                                                      <div class="Inner-IMG relative w-2/3 h-2/3 
+                                                      flex justify-center items-center translate-y-[-200px] opacity-0 
+                                                      group-hover:translate-y-[0px] duration-[.8s] delay-75 
+                                                       group-hover:opacity-100
+       
+                                                         ">
+       
+                                                          <img src="images/p.png" alt="" class="w-full h-full
+                                                           ml-auto mr-auto  object-cover hue-rotate-90">
+       
+                                                          <div class="Inner-OV absolute top-0 left-0 w-full h-full
+                                                          flex flex-col justify-center gap-y-6 items-center z-2 
+                                                          mr-auto ml-auto right-0
+                                                          bottom-0 mt-auto mb-auto">
+                                                          <div class="Title-1 w-full flex items-center justify-center overflow-hidden">
+                                                           <p class="font-IRANSansWeb400 text-sm leading-21.91 text-f font-normal
+                                                          
+                                                           ">پروژه های ساختمانی</p>
+                                                       </div>
+                                                              <a href="" class="
+                                                              ShowListBTN btn 
+                                                              before:content-[''] 
+                                                              before:absolute 
+                                                              before:right-2 
+                                                              before:inset-y-2/4 
+                                                              before:top-[40%] 
+                                                              before:w-[12px] before:h-[12px]
+                                                               before:bg-b8 before:rounded-full
+                                                               pl-[1.1rem]
+                                                               pr-[1.5rem]
+                                                              ">
+                                                                  <span  class="font-IRANSansWeb500 w-full font-medium
+                                                                  text-sm leading-17.96 text-gray-500">
+                                                                      مشاهده 
+                                                                  </span>
+       
+                                                               </a>
+       
+                                                          </div>
+       
+                                                      </div>
+       
+                                                
+       
+                                                  </div>
+       
+                                              </div>
+       
+                                          </div>
+                                        
+       
+                                          <div class="Title-2 w-full flex items-center justify-center overflow-hidden">
+                                              <p class="font-IRANSansWeb400 font-normal text-sm group-hover:opacity-0  
+                                              group-hover:translate-y-[100px]
+                                              leading-21.91 text-b9 mt-3.5 duration-[.5s]
+                                             
+                                              ">پروژه های ساختمانی</p>
+                                          </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide w-full flex justify-between items-start">
+                            <div class="Project group hover:scale-105 duration-[.5s] hover:cursor-pointer 
+                            w-full flex flex-col justify-center items-center" >
+       
+                                          <div class="IMG w-full flex justify-center items-center relative">
+                                              <img src="images/p.png" alt="" class="w-full h-full object-cover">
+       
+                                              <div class="OV group absolute hover:bg-[#00000073] 
+                                              top-0 left-0 w-full h-full ease-linear duration-[.8s]
+                                              flex justify-center items-center z-1">
+       
+                                                  <div class="Box w-full 
+                                                  gap-3 h-full flex flex-col overflow-hidden justify-center items-center relative">
+       
+                                                      <div class="Inner-IMG relative w-2/3 h-2/3 
+                                                      flex justify-center items-center translate-y-[-200px] opacity-0 
+                                                      group-hover:translate-y-[0px] duration-[.8s] delay-75 
+                                                       group-hover:opacity-100
+       
+                                                         ">
+       
+                                                          <img src="images/p.png" alt="" class="w-full h-full
+                                                           ml-auto mr-auto  object-cover hue-rotate-90">
+       
+                                                          <div class="Inner-OV absolute top-0 left-0 w-full h-full
+                                                          flex flex-col justify-center gap-y-6 items-center z-2 
+                                                          mr-auto ml-auto right-0
+                                                          bottom-0 mt-auto mb-auto">
+                                                          <div class="Title-1 w-full flex items-center justify-center overflow-hidden">
+                                                           <p class="font-IRANSansWeb400 text-sm leading-21.91 text-f font-normal
+                                                          
+                                                           ">پروژه های ساختمانی</p>
+                                                       </div>
+                                                              <a href="" class="
+                                                              ShowListBTN btn 
+                                                              before:content-[''] 
+                                                              before:absolute 
+                                                              before:right-2 
+                                                              before:inset-y-2/4 
+                                                              before:top-[40%] 
+                                                              before:w-[12px] before:h-[12px]
+                                                               before:bg-b8 before:rounded-full
+                                                               pl-[1.1rem]
+                                                               pr-[1.5rem]
+                                                              ">
+                                                                  <span  class="font-IRANSansWeb500 w-full font-medium
+                                                                  text-sm leading-17.96 text-gray-500">
+                                                                      مشاهده 
+                                                                  </span>
+       
+                                                               </a>
+       
+                                                          </div>
+       
+                                                      </div>
+       
+                                                
+       
+                                                  </div>
+       
+                                              </div>
+       
+                                          </div>
+                                        
+       
+                                          <div class="Title-2 w-full flex items-center justify-center overflow-hidden">
+                                              <p class="font-IRANSansWeb400 font-normal text-sm group-hover:opacity-0  
+                                              group-hover:translate-y-[100px]
+                                              leading-21.91 text-b9 mt-3.5 duration-[.5s]
+                                             
+                                              ">پروژه های ساختمانی</p>
+                                          </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide w-full flex justify-between items-start">
+                            <div class="Project group hover:scale-105 duration-[.5s] hover:cursor-pointer 
+                            w-full flex flex-col justify-center items-center" >
+       
+                                          <div class="IMG w-full flex justify-center items-center relative">
+                                              <img src="images/p.png" alt="" class="w-full h-full object-cover">
+       
+                                              <div class="OV group absolute hover:bg-[#00000073] 
+                                              top-0 left-0 w-full h-full ease-linear duration-[.8s]
+                                              flex justify-center items-center z-1">
+       
+                                                  <div class="Box w-full 
+                                                  gap-3 h-full flex flex-col overflow-hidden justify-center items-center relative">
+       
+                                                      <div class="Inner-IMG relative w-2/3 h-2/3 
+                                                      flex justify-center items-center translate-y-[-200px] opacity-0 
+                                                      group-hover:translate-y-[0px] duration-[.8s] delay-75 
+                                                       group-hover:opacity-100
+       
+                                                         ">
+       
+                                                          <img src="images/p.png" alt="" class="w-full h-full
+                                                           ml-auto mr-auto  object-cover hue-rotate-90">
+       
+                                                          <div class="Inner-OV absolute top-0 left-0 w-full h-full
+                                                          flex flex-col justify-center gap-y-6 items-center z-2 
+                                                          mr-auto ml-auto right-0
+                                                          bottom-0 mt-auto mb-auto">
+                                                          <div class="Title-1 w-full flex items-center justify-center overflow-hidden">
+                                                           <p class="font-IRANSansWeb400 text-sm leading-21.91 text-f font-normal
+                                                          
+                                                           ">پروژه های ساختمانی</p>
+                                                       </div>
+                                                              <a href="" class="
+                                                              ShowListBTN btn 
+                                                              before:content-[''] 
+                                                              before:absolute 
+                                                              before:right-2 
+                                                              before:inset-y-2/4 
+                                                              before:top-[40%] 
+                                                              before:w-[12px] before:h-[12px]
+                                                               before:bg-b8 before:rounded-full
+                                                               pl-[1.1rem]
+                                                               pr-[1.5rem]
+                                                              ">
+                                                                  <span  class="font-IRANSansWeb500 w-full font-medium
+                                                                  text-sm leading-17.96 text-gray-500">
+                                                                      مشاهده 
+                                                                  </span>
+       
+                                                               </a>
+       
+                                                          </div>
+       
+                                                      </div>
+       
+                                                
+       
+                                                  </div>
+       
+                                              </div>
+       
+                                          </div>
+                                        
+       
+                                          <div class="Title-2 w-full flex items-center justify-center overflow-hidden">
+                                              <p class="font-IRANSansWeb400 font-normal text-sm group-hover:opacity-0  
+                                              group-hover:translate-y-[100px]
+                                              leading-21.91 text-b9 mt-3.5 duration-[.5s]
+                                             
+                                              ">پروژه های ساختمانی</p>
+                                          </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide w-full flex justify-between items-start">
+                            <div class="Project group hover:scale-105 duration-[.5s] hover:cursor-pointer 
+                            w-full flex flex-col justify-center items-center" >
+       
+                                          <div class="IMG w-full flex justify-center items-center relative">
+                                              <img src="images/p.png" alt="" class="w-full h-full object-cover">
+       
+                                              <div class="OV group absolute hover:bg-[#00000073] 
+                                              top-0 left-0 w-full h-full ease-linear duration-[.8s]
+                                              flex justify-center items-center z-1">
+       
+                                                  <div class="Box w-full 
+                                                  gap-3 h-full flex flex-col overflow-hidden justify-center items-center relative">
+       
+                                                      <div class="Inner-IMG relative w-2/3 h-2/3 
+                                                      flex justify-center items-center translate-y-[-200px] opacity-0 
+                                                      group-hover:translate-y-[0px] duration-[.8s] delay-75 
+                                                       group-hover:opacity-100
+       
+                                                         ">
+       
+                                                          <img src="images/p.png" alt="" class="w-full h-full
+                                                           ml-auto mr-auto  object-cover hue-rotate-90">
+       
+                                                          <div class="Inner-OV absolute top-0 left-0 w-full h-full
+                                                          flex flex-col justify-center gap-y-6 items-center z-2 
+                                                          mr-auto ml-auto right-0
+                                                          bottom-0 mt-auto mb-auto">
+                                                          <div class="Title-1 w-full flex items-center justify-center overflow-hidden">
+                                                           <p class="font-IRANSansWeb400 text-sm leading-21.91 text-f font-normal
+                                                          
+                                                           ">پروژه های ساختمانی</p>
+                                                       </div>
+                                                              <a href="" class="
+                                                              ShowListBTN btn 
+                                                              before:content-[''] 
+                                                              before:absolute 
+                                                              before:right-2 
+                                                              before:inset-y-2/4 
+                                                              before:top-[40%] 
+                                                              before:w-[12px] before:h-[12px]
+                                                               before:bg-b8 before:rounded-full
+                                                               pl-[1.1rem]
+                                                               pr-[1.5rem]
+                                                              ">
+                                                                  <span  class="font-IRANSansWeb500 w-full font-medium
+                                                                  text-sm leading-17.96 text-gray-500">
+                                                                      مشاهده 
+                                                                  </span>
+       
+                                                               </a>
+       
+                                                          </div>
+       
+                                                      </div>
+       
+                                                
+       
+                                                  </div>
+       
+                                              </div>
+       
+                                          </div>
+                                        
+       
+                                          <div class="Title-2 w-full flex items-center justify-center overflow-hidden">
+                                              <p class="font-IRANSansWeb400 font-normal text-sm group-hover:opacity-0  
+                                              group-hover:translate-y-[100px]
+                                              leading-21.91 text-b9 mt-3.5 duration-[.5s]
+                                             
+                                              ">پروژه های ساختمانی</p>
+                                          </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide w-full flex justify-between items-start">
+                            <div class="Project group hover:scale-105 duration-[.5s] hover:cursor-pointer 
+                            w-full flex flex-col justify-center items-center" >
+       
+                                          <div class="IMG w-full flex justify-center items-center relative">
+                                              <img src="images/p.png" alt="" class="w-full h-full object-cover">
+       
+                                              <div class="OV group absolute hover:bg-[#00000073] 
+                                              top-0 left-0 w-full h-full ease-linear duration-[.8s]
+                                              flex justify-center items-center z-1">
+       
+                                                  <div class="Box w-full 
+                                                  gap-3 h-full flex flex-col overflow-hidden justify-center items-center relative">
+       
+                                                      <div class="Inner-IMG relative w-2/3 h-2/3 
+                                                      flex justify-center items-center translate-y-[-200px] opacity-0 
+                                                      group-hover:translate-y-[0px] duration-[.8s] delay-75 
+                                                       group-hover:opacity-100
+       
+                                                         ">
+       
+                                                          <img src="images/p.png" alt="" class="w-full h-full
+                                                           ml-auto mr-auto  object-cover hue-rotate-90">
+       
+                                                          <div class="Inner-OV absolute top-0 left-0 w-full h-full
+                                                          flex flex-col justify-center gap-y-6 items-center z-2 
+                                                          mr-auto ml-auto right-0
+                                                          bottom-0 mt-auto mb-auto">
+                                                          <div class="Title-1 w-full flex items-center justify-center overflow-hidden">
+                                                           <p class="font-IRANSansWeb400 text-sm leading-21.91 text-f font-normal
+                                                          
+                                                           ">پروژه های ساختمانی</p>
+                                                       </div>
+                                                              <a href="" class="
+                                                              ShowListBTN btn 
+                                                              before:content-[''] 
+                                                              before:absolute 
+                                                              before:right-2 
+                                                              before:inset-y-2/4 
+                                                              before:top-[40%] 
+                                                              before:w-[12px] before:h-[12px]
+                                                               before:bg-b8 before:rounded-full
+                                                               pl-[1.1rem]
+                                                               pr-[1.5rem]
+                                                              ">
+                                                                  <span  class="font-IRANSansWeb500 w-full font-medium
+                                                                  text-sm leading-17.96 text-gray-500">
+                                                                      مشاهده 
+                                                                  </span>
+       
+                                                               </a>
+       
+                                                          </div>
+       
+                                                      </div>
+       
+                                                
+       
+                                                  </div>
+       
+                                              </div>
+       
+                                          </div>
+                                        
+       
+                                          <div class="Title-2 w-full flex items-center justify-center overflow-hidden">
+                                              <p class="font-IRANSansWeb400 font-normal text-sm group-hover:opacity-0  
+                                              group-hover:translate-y-[100px]
+                                              leading-21.91 text-b9 mt-3.5 duration-[.5s]
+                                             
+                                              ">پروژه های ساختمانی</p>
+                                          </div>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+         </div>
+        <!-- SECTION TWO -->
+
+
+
+
        <!-- FOOTER -->
         <footer class="FooterDesktop flex flex-col bg-b7 relative">
           <div class="News-Form absolute left-0 top-0 right-0 translate-y-[-4.5em] 
@@ -639,6 +1079,46 @@
         </footer>
         <!-- FOOTER -->
     </main>
+            <!-- POPOP -->
+            <div class="Galerys hidden">
+                <img src="images/pict1881141000019920482000012754001 1 (1).png" alt="">
+                <img src="images/p.png" alt="">
+                <img src="images/Frame 16133.png" alt="">
+            
+            </div>
+            <div class="Gallerypopup [&.showPOPUP]:opacity-[1]  [&.showPOPUP]:pointer-events-auto fixed left-0 top-0 h-[100vh]
+             w-screen z-[999] bg-[#000000CC]
+            flex justify-center items-center opacity-0 duration-[.4s] pointer-events-none">
+      
+                <div class="close absolute right-0 top-0 pr-[3em] pt-[3em] hover:cursor-pointer">
+                    <div class="box">
+                    <svg width="40" height="40" viewbox="0 0 40 40"><path d="M 10,10 L 30,30 M 30,10 L 10,30" stroke="white" stroke-width="4" /></svg>
+                    </div>
+                </div>
+                <div class="popUp w-full flex justify-between items-center">
+    
+                    <span class="Gprev hover:cursor-pointer w-[75px] h-[75px] bg-b7 flex justify-center items-center">
+                        <svg width="26" height="46" viewBox="0 0 26 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2 2L23 23L2 44" stroke="white" stroke-width="3"/>
+                            </svg>
+                            
+                    </span>
+                      
+                     <img class="Main w-[953px] h-[535px] object-cover mr-auto ml-auto scale-[1.2] duration-[.5s] 
+                     [&.active]:scale-[1] [&.active]:opacity-[1] opacity-0
+                     " src="@largeIMG" alt="@title" title="@title"/>  
+    
+                     <span class="Gnext hover:cursor-pointer w-[75px] h-[75px] bg-b7 flex justify-center items-center">
+                        <svg width="23" height="44" viewBox="0 0 23 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22 1L1 22L22 43" stroke="white"/>
+                            </svg>
+                            
+                     </span>
+    
+                </div>
+              
+            </div>
+             <!-- POPOP -->
   <div class="main-container">
     <span></span>
   </div>
@@ -646,6 +1126,7 @@
   <script src="js/jQuery.js"></script>
   <script src="js/scrollTrigger.js"></script>
   <script src="js/lenisScroll.js"></script>
+  <script src="js/swiper.js"></script>
   <script src="js/project.js"></script>
   <script src="js/gallery.js"></script>
   <script src="js/formConfig.js"></script>
