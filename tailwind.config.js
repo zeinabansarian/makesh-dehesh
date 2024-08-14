@@ -29,7 +29,7 @@ module.exports = {
       'white': '#FFFFFF',
       'gray-500':'#64748B',
       'f':'#ffff',
-
+    
     },
     fontFamily: {
       'IRANSansWeb300': ['IRANSansWeb300', 'IRANSansWeb300'],
@@ -90,11 +90,7 @@ module.exports = {
     plugin(function({ addComponents , theme}) {
       addComponents({
         '.linear':{
-          transition:' background .5s ease',
-          '&:hover':{
-            background:'linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(46, 49, 146, 0.5) 100%)' ,
-            transition:' background .5s ease',
-          }
+          background:'linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(46, 49, 146, 0.5) 100%)' 
         },
         '.btn': {
           width:'auto',
