@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>galleryCat</title>
+    <title>galleryList</title>
     <link rel="stylesheet" href="/css/swiper.css">
     <link rel="stylesheet" href="/css/outputDesk.css">
     <script src="https://cdn.basiscore.net/academy.basiscore.com/_js/basiscore-2.23.1.min.js"></script>
     <script src="https://cdn.basiscore.net/basispanel.ir/_js/alasql.min.js"></script>
 </head>
 <body dir="rtl"> 
-    <main class="galleryCat">
+    <main class="galleryList">
         <!-- HEADER -->
         <header class="DesktopHeader w-full flex justify-center items-center">
             <nav class="Menu w-3/4 grid ml-auto mr-auto grid-cols-[2fr,1fr,2fr] justify-center items-center pt-10 pb-10 gap-x-12">
@@ -126,7 +126,7 @@
         </header>
          <!-- HEADER -->
 
-     <div class="GalleryCats-C w-full flex flex-col justify-between items-center mt-5 overflow-hidden pb-[10em]">
+     <div class="GalleryList-C w-full flex flex-col justify-between items-center mt-5 overflow-hidden pb-[10em]">
         <div class="Top w-[90%] mr-auto ml-auto">
             <div class="Navigation flex justify-start items-center gap-1">
                 <span class="nav w-auto flex justify-center items-center ">
@@ -154,7 +154,7 @@
                         
                 </span>
                 <h1 class="font-IRANSansWeb700 text-xl leading-57.97 text-b12">
-                      گالری
+                    گالری همایش و نمایشگاه ها
                 </h1>
                 <span>
                     <svg width="25" height="15" viewBox="0 0 25 15" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -167,85 +167,222 @@
             </div>
 
             <div class="list-Gallerys w-[90%] ml-auto mr-auto
-             grid grid-cols-[1fr] gap-[4em] mt-[5em] ">
-                <div class="Gallery translate-y-[50px] scale-[1.2] opacity-0 odd:justify-start 
+             grid grid-cols-[1fr,1fr,1fr] gap-0 mt-[5em] ">
+                <div class="Gallery group flex-col translate-y-[50px] scale-[1.2] pt-[1em] pb-[1em] pl-[1em] pr-[1em]
+                hover:shadow-[0_2.8px_2.2px_rgba(0,_0,_0,_0.034),_0_6.7px_5.3px_rgba(0,_0,_0,_0.048),_0_12.5px_10px_rgba(0,_0,_0,_0.06),_0_22.3px_17.9px_rgba(0,_0,_0,_0.072),_0_41.8px_33.4px_rgba(0,_0,_0,_0.086),_0_100px_80px_rgba(0,_0,_0,_0.12)]
+                opacity-0 odd:justify-start overflow-hidden
                 even:justify-end w-auto flex justify-center items-center duration-[.8s] delay-[.3s] ">
-                    <div class="IMG group hover:cursor-pointer w-auto flex justify-center items-center relative ">
+                    <div class="IMG  hover:cursor-pointer w-auto flex justify-center items-center relative ">
                         <img src="images/Frame 16133.png" alt="" class="w-auto object-cover">
                         <div class="OV w-full h-full flex justify-center items-end absolute 
-                         left-0 top-0 z-2 linear group-hover:opacity-[1] opacity-0 duration-[.5s] ">
-                            <div class="Title w-full flex justify-center items-center mb-[4.5em]">
-                                <p class="font-IRANSansWeb500 text-4xl font-medium leading-23 text-f">
+                         left-0 top-0 z-2 linear group-hover:opacity-[0] opacity-1 duration-[.5s] ">
+                            <div class="Title w-full flex justify-center items-center mb-[1em]">
+                                <p class="font-IRANSansWeb700 text-base font-bold leading-25.4 text-f">
                                     همایش و نمایشگاه ها
                                 </p>
                             </div>
                         </div>
                     </div>
+                    <div class="Title group-hover:opacity-[1] pt-[.5em] pb-[.5em]
+                    group-hover:translate-y-[0] duration-[.5s] opacity-0 translate-y-[100px]
+                    w-full flex justify-center items-center">
+                       <a href="" class="w-full flex justify-center items-center">
+                       <p class="font-IRANSansWeb500 text-sm font-medium leading-23 text-b9 text-center">
+                           تهویه مطبوع
+                       </p>
+                   </a>
+                   </div>
                     
                 </div>
-                <div class="Gallery translate-y-[50px] scale-[1.2] opacity-0  odd:justify-start 
+                <div class="Gallery group flex-col translate-y-[50px] scale-[1.2] pt-[1em] pb-[1em] pl-[1em] pr-[1em]
+                hover:shadow-[0_2.8px_2.2px_rgba(0,_0,_0,_0.034),_0_6.7px_5.3px_rgba(0,_0,_0,_0.048),_0_12.5px_10px_rgba(0,_0,_0,_0.06),_0_22.3px_17.9px_rgba(0,_0,_0,_0.072),_0_41.8px_33.4px_rgba(0,_0,_0,_0.086),_0_100px_80px_rgba(0,_0,_0,_0.12)]
+                opacity-0 odd:justify-start overflow-hidden
                 even:justify-end w-auto flex justify-center items-center duration-[.8s] delay-[.3s] ">
-                    <div class="IMG group hover:cursor-pointer w-auto flex justify-center items-center relative ">
+                    <div class="IMG  hover:cursor-pointer w-auto flex justify-center items-center relative ">
                         <img src="images/Frame 16133.png" alt="" class="w-auto object-cover">
                         <div class="OV w-full h-full flex justify-center items-end absolute 
-                         left-0 top-0 z-2 linear group-hover:opacity-[1] opacity-0 duration-[.5s] ">
-                            <div class="Title w-full flex justify-center items-center mb-[4.5em]">
-                                <p class="font-IRANSansWeb500 text-4xl font-medium leading-23 text-f">
+                         left-0 top-0 z-2 linear group-hover:opacity-[0] opacity-1 duration-[.5s] ">
+                            <div class="Title w-full flex justify-center items-center mb-[1em]">
+                                <p class="font-IRANSansWeb700 text-base font-bold leading-25.4 text-f">
                                     همایش و نمایشگاه ها
                                 </p>
                             </div>
                         </div>
                     </div>
+                    <div class="Title group-hover:opacity-[1] pt-[.5em] pb-[.5em]
+                    group-hover:translate-y-[0] duration-[.5s] opacity-0 translate-y-[100px]
+                    w-full flex justify-center items-center">
+                       <a href="" class="w-full flex justify-center items-center">
+                       <p class="font-IRANSansWeb500 text-sm font-medium leading-23 text-b9 text-center">
+                           تهویه مطبوع
+                       </p>
+                   </a>
+                   </div>
                     
                 </div>
-       
-                <div class="Gallery translate-y-[50px] scale-[1.2] opacity-0  odd:justify-start 
-                even:justify-end w-auto flex justify-center items-center duration-[.8s] delay-[.3s]">
-                    <div class="IMG group hover:cursor-pointer w-auto flex justify-center items-center relative ">
+           
+                <div class="Gallery group flex-col translate-y-[50px] scale-[1.2] pt-[1em] pb-[1em] pl-[1em] pr-[1em]
+                hover:shadow-[0_2.8px_2.2px_rgba(0,_0,_0,_0.034),_0_6.7px_5.3px_rgba(0,_0,_0,_0.048),_0_12.5px_10px_rgba(0,_0,_0,_0.06),_0_22.3px_17.9px_rgba(0,_0,_0,_0.072),_0_41.8px_33.4px_rgba(0,_0,_0,_0.086),_0_100px_80px_rgba(0,_0,_0,_0.12)]
+                opacity-0 odd:justify-start overflow-hidden
+                even:justify-end w-auto flex justify-center items-center duration-[.8s] delay-[.3s] ">
+                    <div class="IMG  hover:cursor-pointer w-auto flex justify-center items-center relative ">
                         <img src="images/Frame 16133.png" alt="" class="w-auto object-cover">
                         <div class="OV w-full h-full flex justify-center items-end absolute 
-                         left-0 top-0 z-2 linear group-hover:opacity-[1] opacity-0 duration-[.5s] ">
-                            <div class="Title w-full flex justify-center items-center mb-[4.5em]">
-                                <p class="font-IRANSansWeb500 text-4xl font-medium leading-23 text-f">
+                         left-0 top-0 z-2 linear group-hover:opacity-[0] opacity-1 duration-[.5s] ">
+                            <div class="Title w-full flex justify-center items-center mb-[1em]">
+                                <p class="font-IRANSansWeb700 text-base font-bold leading-25.4 text-f">
                                     همایش و نمایشگاه ها
                                 </p>
                             </div>
                         </div>
                     </div>
+                    <div class="Title group-hover:opacity-[1] pt-[.5em] pb-[.5em]
+                    group-hover:translate-y-[0] duration-[.5s] opacity-0 translate-y-[100px]
+                    w-full flex justify-center items-center">
+                       <a href="" class="w-full flex justify-center items-center">
+                       <p class="font-IRANSansWeb500 text-sm font-medium leading-23 text-b9 text-center">
+                           تهویه مطبوع
+                       </p>
+                   </a>
+                   </div>
                     
                 </div>
-       
-                <div class="Gallery translate-y-[50px] scale-[1.2] opacity-0  odd:justify-start 
-                even:justify-end w-auto flex justify-center items-center duration-[.8s] delay-[.3s]">
-                    <div class="IMG group hover:cursor-pointer w-auto flex justify-center items-center relative ">
+           
+                <div class="Gallery group flex-col translate-y-[50px] scale-[1.2] pt-[1em] pb-[1em] pl-[1em] pr-[1em]
+                hover:shadow-[0_2.8px_2.2px_rgba(0,_0,_0,_0.034),_0_6.7px_5.3px_rgba(0,_0,_0,_0.048),_0_12.5px_10px_rgba(0,_0,_0,_0.06),_0_22.3px_17.9px_rgba(0,_0,_0,_0.072),_0_41.8px_33.4px_rgba(0,_0,_0,_0.086),_0_100px_80px_rgba(0,_0,_0,_0.12)]
+                opacity-0 odd:justify-start overflow-hidden
+                even:justify-end w-auto flex justify-center items-center duration-[.8s] delay-[.3s] ">
+                    <div class="IMG  hover:cursor-pointer w-auto flex justify-center items-center relative ">
                         <img src="images/Frame 16133.png" alt="" class="w-auto object-cover">
                         <div class="OV w-full h-full flex justify-center items-end absolute 
-                         left-0 top-0 z-2 linear group-hover:opacity-[1] opacity-0 duration-[.5s] ">
-                            <div class="Title w-full flex justify-center items-center mb-[4.5em]">
-                                <p class="font-IRANSansWeb500 text-4xl font-medium leading-23 text-f">
+                         left-0 top-0 z-2 linear group-hover:opacity-[0] opacity-1 duration-[.5s] ">
+                            <div class="Title w-full flex justify-center items-center mb-[1em]">
+                                <p class="font-IRANSansWeb700 text-base font-bold leading-25.4 text-f">
                                     همایش و نمایشگاه ها
                                 </p>
                             </div>
                         </div>
                     </div>
+                    <div class="Title group-hover:opacity-[1] pt-[.5em] pb-[.5em]
+                    group-hover:translate-y-[0] duration-[.5s] opacity-0 translate-y-[100px]
+                    w-full flex justify-center items-center">
+                       <a href="" class="w-full flex justify-center items-center">
+                       <p class="font-IRANSansWeb500 text-sm font-medium leading-23 text-b9 text-center">
+                           تهویه مطبوع
+                       </p>
+                   </a>
+                   </div>
                     
                 </div>
-       
-                <div class="Gallery translate-y-[50px] scale-[1.2] opacity-0  odd:justify-start 
-                even:justify-end w-auto flex justify-center items-center duration-[.8s] delay-[.3s]">
-                    <div class="IMG group hover:cursor-pointer w-auto flex justify-center items-center relative ">
+           
+                <div class="Gallery group flex-col translate-y-[50px] scale-[1.2] pt-[1em] pb-[1em] pl-[1em] pr-[1em]
+                hover:shadow-[0_2.8px_2.2px_rgba(0,_0,_0,_0.034),_0_6.7px_5.3px_rgba(0,_0,_0,_0.048),_0_12.5px_10px_rgba(0,_0,_0,_0.06),_0_22.3px_17.9px_rgba(0,_0,_0,_0.072),_0_41.8px_33.4px_rgba(0,_0,_0,_0.086),_0_100px_80px_rgba(0,_0,_0,_0.12)]
+                opacity-0 odd:justify-start overflow-hidden
+                even:justify-end w-auto flex justify-center items-center duration-[.8s] delay-[.3s] ">
+                    <div class="IMG  hover:cursor-pointer w-auto flex justify-center items-center relative ">
                         <img src="images/Frame 16133.png" alt="" class="w-auto object-cover">
                         <div class="OV w-full h-full flex justify-center items-end absolute 
-                         left-0 top-0 z-2 linear group-hover:opacity-[1] opacity-0 duration-[.5s] ">
-                            <div class="Title w-full flex justify-center items-center mb-[4.5em]">
-                                <p class="font-IRANSansWeb500 text-4xl font-medium leading-23 text-f">
+                         left-0 top-0 z-2 linear group-hover:opacity-[0] opacity-1 duration-[.5s] ">
+                            <div class="Title w-full flex justify-center items-center mb-[1em]">
+                                <p class="font-IRANSansWeb700 text-base font-bold leading-25.4 text-f">
                                     همایش و نمایشگاه ها
                                 </p>
                             </div>
                         </div>
                     </div>
+                    <div class="Title group-hover:opacity-[1] pt-[.5em] pb-[.5em]
+                    group-hover:translate-y-[0] duration-[.5s] opacity-0 translate-y-[100px]
+                    w-full flex justify-center items-center">
+                       <a href="" class="w-full flex justify-center items-center">
+                       <p class="font-IRANSansWeb500 text-sm font-medium leading-23 text-b9 text-center">
+                           تهویه مطبوع
+                       </p>
+                   </a>
+                   </div>
                     
                 </div>
+           
+                <div class="Gallery group flex-col translate-y-[50px] scale-[1.2] pt-[1em] pb-[1em] pl-[1em] pr-[1em]
+                hover:shadow-[0_2.8px_2.2px_rgba(0,_0,_0,_0.034),_0_6.7px_5.3px_rgba(0,_0,_0,_0.048),_0_12.5px_10px_rgba(0,_0,_0,_0.06),_0_22.3px_17.9px_rgba(0,_0,_0,_0.072),_0_41.8px_33.4px_rgba(0,_0,_0,_0.086),_0_100px_80px_rgba(0,_0,_0,_0.12)]
+                opacity-0 odd:justify-start overflow-hidden
+                even:justify-end w-auto flex justify-center items-center duration-[.8s] delay-[.3s] ">
+                    <div class="IMG  hover:cursor-pointer w-auto flex justify-center items-center relative ">
+                        <img src="images/Frame 16133.png" alt="" class="w-auto object-cover">
+                        <div class="OV w-full h-full flex justify-center items-end absolute 
+                         left-0 top-0 z-2 linear group-hover:opacity-[0] opacity-1 duration-[.5s] ">
+                            <div class="Title w-full flex justify-center items-center mb-[1em]">
+                                <p class="font-IRANSansWeb700 text-base font-bold leading-25.4 text-f">
+                                    همایش و نمایشگاه ها
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Title group-hover:opacity-[1] pt-[.5em] pb-[.5em]
+                    group-hover:translate-y-[0] duration-[.5s] opacity-0 translate-y-[100px]
+                    w-full flex justify-center items-center">
+                       <a href="" class="w-full flex justify-center items-center">
+                       <p class="font-IRANSansWeb500 text-sm font-medium leading-23 text-b9 text-center">
+                           تهویه مطبوع
+                       </p>
+                   </a>
+                   </div>
+                    
+                </div>
+           
+                <div class="Gallery group flex-col translate-y-[50px] scale-[1.2] pt-[1em] pb-[1em] pl-[1em] pr-[1em]
+                hover:shadow-[0_2.8px_2.2px_rgba(0,_0,_0,_0.034),_0_6.7px_5.3px_rgba(0,_0,_0,_0.048),_0_12.5px_10px_rgba(0,_0,_0,_0.06),_0_22.3px_17.9px_rgba(0,_0,_0,_0.072),_0_41.8px_33.4px_rgba(0,_0,_0,_0.086),_0_100px_80px_rgba(0,_0,_0,_0.12)]
+                opacity-0 odd:justify-start overflow-hidden
+                even:justify-end w-auto flex justify-center items-center duration-[.8s] delay-[.3s] ">
+                    <div class="IMG  hover:cursor-pointer w-auto flex justify-center items-center relative ">
+                        <img src="images/Frame 16133.png" alt="" class="w-auto object-cover">
+                        <div class="OV w-full h-full flex justify-center items-end absolute 
+                         left-0 top-0 z-2 linear group-hover:opacity-[0] opacity-1 duration-[.5s] ">
+                            <div class="Title w-full flex justify-center items-center mb-[1em]">
+                                <p class="font-IRANSansWeb700 text-base font-bold leading-25.4 text-f">
+                                    همایش و نمایشگاه ها
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Title group-hover:opacity-[1] pt-[.5em] pb-[.5em]
+                    group-hover:translate-y-[0] duration-[.5s] opacity-0 translate-y-[100px]
+                    w-full flex justify-center items-center">
+                       <a href="" class="w-full flex justify-center items-center">
+                       <p class="font-IRANSansWeb500 text-sm font-medium leading-23 text-b9 text-center">
+                           تهویه مطبوع
+                       </p>
+                   </a>
+                   </div>
+                    
+                </div>
+           
+                <div class="Gallery group flex-col translate-y-[50px] scale-[1.2] pt-[1em] pb-[1em] pl-[1em] pr-[1em]
+                hover:shadow-[0_2.8px_2.2px_rgba(0,_0,_0,_0.034),_0_6.7px_5.3px_rgba(0,_0,_0,_0.048),_0_12.5px_10px_rgba(0,_0,_0,_0.06),_0_22.3px_17.9px_rgba(0,_0,_0,_0.072),_0_41.8px_33.4px_rgba(0,_0,_0,_0.086),_0_100px_80px_rgba(0,_0,_0,_0.12)]
+                opacity-0 odd:justify-start overflow-hidden
+                even:justify-end w-auto flex justify-center items-center duration-[.8s] delay-[.3s] ">
+                    <div class="IMG  hover:cursor-pointer w-auto flex justify-center items-center relative ">
+                        <img src="images/Frame 16133.png" alt="" class="w-auto object-cover">
+                        <div class="OV w-full h-full flex justify-center items-end absolute 
+                         left-0 top-0 z-2 linear group-hover:opacity-[0] opacity-1 duration-[.5s] ">
+                            <div class="Title w-full flex justify-center items-center mb-[1em]">
+                                <p class="font-IRANSansWeb700 text-base font-bold leading-25.4 text-f">
+                                    همایش و نمایشگاه ها
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Title group-hover:opacity-[1] pt-[.5em] pb-[.5em]
+                    group-hover:translate-y-[0] duration-[.5s] opacity-0 translate-y-[100px]
+                    w-full flex justify-center items-center">
+                       <a href="" class="w-full flex justify-center items-center">
+                       <p class="font-IRANSansWeb500 text-sm font-medium leading-23 text-b9 text-center">
+                           تهویه مطبوع
+                       </p>
+                   </a>
+                   </div>
+                    
+                </div>
+           
        
             </div>
             
