@@ -4,6 +4,5 @@ let productCat = new Swiper('.swiper-cat-proj',{
         spaceBetween: 30,
         centeredSlides: true,
         loop:true,
-        mousewheel: true,
         grabCursor:true,
 })
