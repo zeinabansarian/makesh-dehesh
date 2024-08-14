@@ -89,6 +89,13 @@ module.exports = {
   plugins: [
     plugin(function({ addComponents , theme}) {
       addComponents({
+        '.linear':{
+          transition:' background .5s ease',
+          '&:hover':{
+            background:'linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(46, 49, 146, 0.5) 100%)' ,
+            transition:' background .5s ease',
+          }
+        },
         '.btn': {
           width:'auto',
           display:'flex',
