@@ -410,3 +410,10 @@ color: white;
   /* Corrects inability to style clickable `input` types in iOS */
   -webkit-appearance: none;
 }
+
+
+
+.brandCat .backBrand .imgS img[active]{
+  opacity: 1;
+  transform: scale(1);
+}
