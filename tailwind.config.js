@@ -56,8 +56,11 @@ module.exports = {
         '57.97':'57.97px',
         '17.96': '17.96px',
         '21.91': '21.91px',
-        '32.03':'32.03px'
-
+        '32.03':'32.03px',
+        '56.35':'56.35px',
+        '25.04':'25.04px',
+        '37.57':'37.57px'
+       
 
       },
 
@@ -71,9 +74,6 @@ module.exports = {
         'f1':'20px',
         'xl':'24px',
         '2xl': '64px',
-'        3xl': '1.953rem',
-        '4xl': '2.441rem',
-        '5xl': '3.052rem',
       },
       zIndex: {
         '1': '1',
@@ -89,6 +89,13 @@ module.exports = {
   plugins: [
     plugin(function({ addComponents , theme}) {
       addComponents({
+        '.linear':{
+          transition:' background .5s ease',
+          '&:hover':{
+            background:'linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(46, 49, 146, 0.5) 100%)' ,
+            transition:' background .5s ease',
+          }
+        },
         '.btn': {
           width:'auto',
           display:'flex',
