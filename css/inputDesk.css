@@ -417,3 +417,17 @@ color: white;
   opacity: 1;
   transform: scale(1);
 }
+
+.activeSchema{
+  transform:scale(1)!important;
+}
+
+.schemaList{
+  transition: 1s ease-out;
+}
+
+.productList .section3 .proBox:hover{
+  box-shadow: 0px 33px 63px -18px rgba(0,0,0,0.33);
+  -webkit-box-shadow: 0px 33px 63px -18px rgba(0,0,0,0.33);
+  -moz-box-shadow: 0px 33px 63px -18px rgba(0,0,0,0.33);
+}
