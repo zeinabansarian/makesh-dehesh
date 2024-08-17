@@ -7,6 +7,8 @@ module.exports = {
     './js/**/*.js',
   
   ],
+  darkMode: 'class',
+
   theme: {
     screens: {
       sm: '480px',
@@ -87,6 +89,7 @@ module.exports = {
     }
   },
   plugins: [
+
     plugin(function({ addComponents , theme}) {
       addComponents({
         '.linear':{
@@ -138,4 +141,6 @@ module.exports = {
       })
     })
   ]
+  ,
+
 }
