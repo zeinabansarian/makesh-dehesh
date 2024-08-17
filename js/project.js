@@ -8,7 +8,7 @@ ShareB.addEventListener('click',()=>{
 // RELATED PROJECT SLIDER
 let swiperProject= new Swiper(".swiper-projects", {
     slidesPerView:2.5,
-    spaceBetween: 40,
+    spaceBetween: 70,
    speed:800
   });  
 

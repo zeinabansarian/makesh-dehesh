@@ -732,6 +732,10 @@ video {
   bottom: -40%;
 }
 
+.bottom-\[1\.5em\] {
+  bottom: 1.5em;
+}
+
 .bottom-\[231px\] {
   bottom: 231px;
 }
@@ -782,6 +786,14 @@ video {
 
 .top-\[40\%\] {
   top: 40%;
+}
+
+.bottom-\[\.7em\] {
+  bottom: .7em;
+}
+
+.bottom-\[\.8em\] {
+  bottom: .8em;
 }
 
 .isolate {
@@ -1268,10 +1280,6 @@ video {
   height: 10px;
 }
 
-.h-\[20\%\] {
-  height: 20%;
-}
-
 .h-\[257px\] {
   height: 257px;
 }
@@ -1310,10 +1318,6 @@ video {
 
 .h-\[80\%\] {
   height: 80%;
-}
-
-.h-\[81vh\] {
-  height: 81vh;
 }
 
 .h-\[83vh\] {
@@ -1596,6 +1600,18 @@ video {
 .scale-\[1\.2\] {
   --tw-scale-x: 1.2;
   --tw-scale-y: 1.2;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.scale-\[1\.3\] {
+  --tw-scale-x: 1.3;
+  --tw-scale-y: 1.3;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.scale-\[1\.4\] {
+  --tw-scale-x: 1.4;
+  --tw-scale-y: 1.4;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -2199,6 +2215,10 @@ video {
 
 .gap-\[6rem\] {
   gap: 6rem;
+}
+
+.gap-\[8em\] {
+  gap: 8em;
 }
 
 .gap-x-1 {
@@ -3048,6 +3068,10 @@ video {
   padding-bottom: 30px;
 }
 
+.pb-\[3em\] {
+  padding-bottom: 3em;
+}
+
 .pb-\[50px\] {
   padding-bottom: 50px;
 }
@@ -3332,6 +3356,10 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-f3 {
+  font-size: 64px;
 }
 
 .font-bold {
@@ -4129,14 +4157,14 @@ video {
   color: #1E1E1E;
 }
 
-.swiper-cat-proj .swiper-slide-active{
+/*   
+ .swiper-cat-proj .swiper-slide-active{
   transform: scale(1) !important;
   -webkit-transform: scale(1) !important;
   -moz-transform: scale(1) !important;
   -ms-transform: scale(1) !important;
   -o-transform: scale(1) !important;
 }
-
 .swiper-cat-proj .swiper-slide{
   transform: scale(.7) ;
   -webkit-transform: scale(.7) ;
@@ -4149,16 +4177,14 @@ video {
   -ms-transition: all .8s ease;
   -o-transition: all .8s ease;
 }
-
 .swiper-cat-proj .swiper-slide-active .Project .OV{
-  background-color:  #00000073 !important;
-  transition: all .8s ease;
-  -webkit-transition: all .8s ease;
-  -moz-transition: all .8s ease;
-  -ms-transition: all .8s ease;
-  -o-transition: all .8s ease;
+ background-color:  #00000073 !important;
+ transition: all .8s ease;
+ -webkit-transition: all .8s ease;
+ -moz-transition: all .8s ease;
+ -ms-transition: all .8s ease;
+ -o-transition: all .8s ease;
 }
-
 .swiper-cat-proj .swiper-slide .Project .OV{
   background-color: transparent;
   transition: all .8s ease;
@@ -4166,9 +4192,8 @@ video {
   -moz-transition: all .8s ease;
   -ms-transition: all .8s ease;
   -o-transition: all .8s ease;
-}
-
-.swiper-cat-proj .swiper-slide-active .Title-1 h1{
+ }
+ .swiper-cat-proj .swiper-slide-active .Title-1 h1{
   transform: translate(0);
   opacity: 1;
   -webkit-transform: translate(0);
@@ -4181,7 +4206,6 @@ video {
   -ms-transition: all .8s 1.5s ease;
   -o-transition: all .8s 1.5s ease;
 }
-
 .swiper-cat-proj .swiper-slide-active .Title-2 h1{
   transform: translateY(2rem);
   opacity: 0;
@@ -4195,7 +4219,6 @@ video {
   -ms-transition: all .8s  ease;
   -o-transition: all .8s  ease;
 }
-
 .swiper-cat-proj .swiper-slide .Inner-IMG{
   transition: all 1s  ease;
   -webkit-transition: all 1s  ease;
@@ -4208,20 +4231,20 @@ video {
   -ms-transform: translateY(-100%);
   -o-transform: translateY(-100%);
 }
-
 .swiper-cat-proj .swiper-slide-active .Inner-IMG{
-  transform: unset;
-  opacity: 1;
-  transition: all 1s 1s ease;
-  -webkit-transition: all 1s 1s ease;
-  -moz-transition: all 1s 1s ease;
-  -ms-transition: all 1s 1s ease;
-  -o-transition: all 1s 1s ease;
-  -webkit-transform: unset;
-  -moz-transform: unset;
-  -ms-transform: unset;
-  -o-transform: unset;
-}
+   transform: unset;
+   opacity: 1;
+   transition: all 1s 1s ease;
+   -webkit-transition: all 1s 1s ease;
+   -moz-transition: all 1s 1s ease;
+   -ms-transition: all 1s 1s ease;
+   -o-transition: all 1s 1s ease;
+   -webkit-transform: unset;
+   -moz-transform: unset;
+   -ms-transform: unset;
+   -o-transform: unset;
+
+} */
 
 .mouse {
   margin: 0 auto;
