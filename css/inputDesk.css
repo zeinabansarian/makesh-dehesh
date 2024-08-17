@@ -506,3 +506,25 @@ color: white;
     transform: translateX(0);
   }
 }
+
+
+
+
+.swiper-slide:hover .callBtn{
+  transform: scale(1);
+  height: 47px;
+  transition: 1s ease;
+  /* transition-property: transform; */
+  
+}
+.callBtn:hover{
+  transform: scale(1.1)!important;
+  transition: 0.5s ease;
+  font-weight: 700;
+}
+
+.home .section4 .swiper-slide:hover{
+  box-shadow: 0px 18px 50px -25px rgba(0,0,0,0.33);
+  -webkit-box-shadow: 0px 18px 50px -25px rgba(0,0,0,0.33);
+  -moz-box-shadow: 0px 18px 50px -25px rgba(0,0,0,0.33);
+}

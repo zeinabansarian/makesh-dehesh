@@ -809,6 +809,14 @@ video {
   top: 40%;
 }
 
+.right-10 {
+  right: 2.5rem;
+}
+
+.left-10 {
+  left: 2.5rem;
+}
+
 .isolate {
   isolation: isolate;
 }
@@ -933,9 +941,18 @@ video {
   margin: 3.5rem;
 }
 
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .my-10 {
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
+}
+
+.-mt-1 {
+  margin-top: -0.25rem;
 }
 
 .-mt-12 {
@@ -946,8 +963,16 @@ video {
   margin-top: -3.5rem;
 }
 
+.-mt-16 {
+  margin-top: -4rem;
+}
+
 .-mt-2 {
   margin-top: -0.5rem;
+}
+
+.-mt-20 {
+  margin-top: -5rem;
 }
 
 .-mt-5 {
@@ -1090,6 +1115,10 @@ video {
   margin-top: 6rem;
 }
 
+.mt-28 {
+  margin-top: 7rem;
+}
+
 .mt-3 {
   margin-top: 0.75rem;
 }
@@ -1160,18 +1189,6 @@ video {
 
 .mt-auto {
   margin-top: auto;
-}
-
-.-mt-20 {
-  margin-top: -5rem;
-}
-
-.-mt-1 {
-  margin-top: -0.25rem;
-}
-
-.-mt-16 {
-  margin-top: -4rem;
 }
 
 .box-border {
@@ -1271,6 +1288,10 @@ video {
 
 .hidden {
   display: none;
+}
+
+.h-0 {
+  height: 0px;
 }
 
 .h-16 {
@@ -2957,6 +2978,10 @@ video {
   padding: 0.25rem;
 }
 
+.p-12 {
+  padding: 3rem;
+}
+
 .p-\[18\%\] {
   padding: 18%;
 }
@@ -2969,6 +2994,11 @@ video {
 .px-1\.5 {
   padding-left: 1.5em;
   padding-right: 1.5em;
+}
+
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
 
 .px-12 {
@@ -2984,6 +3014,16 @@ video {
 .px-36 {
   padding-left: 9rem;
   padding-right: 9rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.px-40 {
+  padding-left: 10rem;
+  padding-right: 10rem;
 }
 
 .px-5 {
@@ -4547,6 +4587,25 @@ color: white;
   100% {
     transform: translateX(0);
   }
+}
+
+.swiper-slide:hover .callBtn{
+  transform: scale(1);
+  height: 47px;
+  transition: 1s ease;
+  /* transition-property: transform; */
+}
+
+.callBtn:hover{
+  transform: scale(1.1)!important;
+  transition: 0.5s ease;
+  font-weight: 700;
+}
+
+.home .section4 .swiper-slide:hover{
+  box-shadow: 0px 18px 50px -25px rgba(0,0,0,0.33);
+  -webkit-box-shadow: 0px 18px 50px -25px rgba(0,0,0,0.33);
+  -moz-box-shadow: 0px 18px 50px -25px rgba(0,0,0,0.33);
 }
 
 @media (min-width: 480px) {

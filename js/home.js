@@ -24,17 +24,34 @@ var swiper = new Swiper('.swiper-container', {
 
 
 
-if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-    document.documentElement.classList.add('dark')
-  } else {
-    document.documentElement.classList.remove('dark')
-  }
+const relatedPro = new Swiper('.relatedPro', {
+    // Optional parameters
+    // loop: true,
+    spaceBetween : 52,
+    slidesPerView : 3,
   
-  // Whenever the user explicitly chooses light mode
-//   localStorage.theme = 'light'
+    // Navigation arrows
+    navigation: {
+      nextEl: '.nextProBtn',
+      prevEl: '.prevProBtn',
+    },
   
-  // Whenever the user explicitly chooses dark mode
-  localStorage.theme = 'dark'
+
+  });
+
+
+
+// if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+//     document.documentElement.classList.add('dark')
+//   } else {
+//     document.documentElement.classList.remove('dark')
+//   }
   
-  // Whenever the user explicitly chooses to respect the OS preference
-//   localStorage.removeItem('theme')
+//   // Whenever the user explicitly chooses light mode
+// //   localStorage.theme = 'light'
+  
+//   // Whenever the user explicitly chooses dark mode
+//   localStorage.theme = 'dark'
+  
+//   // Whenever the user explicitly chooses to respect the OS preference
+// //   localStorage.removeItem('theme')
