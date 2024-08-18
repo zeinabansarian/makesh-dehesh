@@ -13,7 +13,7 @@
 <body dir="rtl" >
     <main class="Cat-Project">
        <!-- HEADER -->
-       <header class="DesktopHeader absolute top-0 left-0 z-[100] bg-f w-full flex justify-center items-center">
+       <header class="DesktopHeader fixed top-0 left-0 z-[100] bg-f w-full flex justify-center items-center">
         <nav class="Menu w-3/4 grid ml-auto mr-auto grid-cols-[2fr,1fr,2fr] justify-center items-center pt-10 pb-10 gap-x-12">
 
             <div class="Left w-full flex justify-start items-center">
@@ -124,10 +124,10 @@
             </div>
         
         </nav>
-</header>
- <!-- HEADER -->
+        </header>
+        <!-- HEADER -->
 
-        <div class="Catp-Container  w-full flex flex-col justify-between items-center mt-5 overflow-hidden">
+        <div class="Catp-Container mt-[8em] mb-auto  w-full flex flex-col justify-between items-center overflow-hidden">
             <div class="Top w-[90%] mr-auto ml-auto">
                 <div class="Navigation flex justify-start items-center gap-1">
                     <span class="nav w-auto flex justify-center items-center ">
@@ -146,7 +146,7 @@
                 </div>
             </div>
 
-            <div class="Bottom h-[80%] w-full flex flex-col justify-start items-center">
+            <div class="Bottom h-[80%] mt-[5em] w-full flex flex-col justify-start items-center">
                 <div class="Projects-C w-[95%]  mr-auto flex justify-center items-start ">
                     <div class="swiper-cat-proj w-full flex justify-center items-center pt-[3em] pb-[3em] overflow-hidden">
                         <div class="swiper-wrapper w-full max-w-x100">
@@ -174,13 +174,7 @@
                                                            <img src="images/p.png" alt="" class="w-full h-full
                                                            ml-auto mr-auto object-cover ">
                                                             
-                                                         <div class="Title-1 w-full flex absolute bottom-[.8em] left-0 right-0 z-10
-                                                         items-center justify-center overflow-hidden">
-                                                            <p class="font-IRANSansWeb700 text-base leading-25.4 text-f 
-                                                            font-bold
-                                                           
-                                                            ">پروژه های ساختمانی</p>
-                                                        </div>
+                                                      
                                                          </div>
                                                          <div class="IMG-2 w-full h-full right-0 bottom-0
                                                           mr-auto ml-auto mt-auto mb-auto
@@ -190,18 +184,20 @@
                                                            ml-auto mr-auto  object-cover hue-rotate-90">
        
                                                           <div class="Inner-OV absolute top-0 left-0 w-full h-full
-                                                          flex flex-col justify-center gap-y-6 items-center z-2 
+                                                          flex flex-col justify-center gap-y-[3.5rem] items-center z-2 
                                                           mr-auto ml-auto right-0
                                                           bottom-0 mt-auto mb-auto">
                                                       
-                                                          <span class="Number-proj w-auto flex justify-center items-center
+                                                          <span class="Number-proj w-auto flex justify-center 
+                                                          items-center leading-23
                                                           font-IRANSansWeb500 text-f3 text-f font-medium 
                                                           
                                                           ">23</span>
     
-                                                          <a href="" class="ShowListBTN w-auto flex justify-center 
+                                                          <a href="" class="ShowListBTN
+                                                          rounded-[5px] w-auto flex justify-center 
                                                           items-center relative
-                                                          bg-b4 pt-2 pb-2 pl-10 pr-10 before:content-[''] before:absolute 
+                                                          bg-b4 pt-2 pb-2 pl-[1rem] pr-[2rem] before:content-[''] before:absolute 
                                                           before:right-2
                                                           before:inset-y-2/4 before:top-[40%] before:w-[12px] before:h-[12px]
                                                            before:bg-b8 before:rounded-full
@@ -227,8 +223,9 @@
                                           </div>
                                         
        
-                                          <div class="Title-2 w-full flex items-center justify-center overflow-hidden">
-                                              <p class="font-IRANSansWeb700 text-base leading-25.4
+                                          <div class="Title-2 w-full flex items-center group-hover:z-[10] duration-[.4s]
+                                          group-hover:relative  justify-center overflow-hidden">
+                                              <p class="font-IRANSansWeb700  group-hover:text-f text-base leading-25.4
                                                text-b9 mt-3.5 duration-[.5s]  font-bold
                                              
                                               ">پروژه های ساختمانی</p>
@@ -259,13 +256,7 @@
                                                           <img src="images/p.png" alt="" class="w-full h-full
                                                           ml-auto mr-auto object-cover ">
                                                            
-                                                        <div class="Title-1 w-full flex absolute bottom-[.8em] left-0 right-0 z-10
-                                                        items-center justify-center overflow-hidden">
-                                                           <p class="font-IRANSansWeb700 text-base leading-25.4 text-f 
-                                                           font-bold
-                                                          
-                                                           ">پروژه های ساختمانی</p>
-                                                       </div>
+                                                     
                                                         </div>
                                                         <div class="IMG-2 w-full h-full right-0 bottom-0
                                                          mr-auto ml-auto mt-auto mb-auto
@@ -275,18 +266,20 @@
                                                           ml-auto mr-auto  object-cover hue-rotate-90">
       
                                                          <div class="Inner-OV absolute top-0 left-0 w-full h-full
-                                                         flex flex-col justify-center gap-y-6 items-center z-2 
+                                                         flex flex-col justify-center gap-y-[3.5rem] items-center z-2 
                                                          mr-auto ml-auto right-0
                                                          bottom-0 mt-auto mb-auto">
                                                      
-                                                         <span class="Number-proj w-auto flex justify-center items-center
+                                                         <span class="Number-proj w-auto flex justify-center 
+                                                         items-center leading-23
                                                          font-IRANSansWeb500 text-f3 text-f font-medium 
                                                          
                                                          ">23</span>
    
-                                                         <a href="" class="ShowListBTN w-auto flex justify-center 
+                                                         <a href="" class="ShowListBTN
+                                                         rounded-[5px] w-auto flex justify-center 
                                                          items-center relative
-                                                         bg-b4 pt-2 pb-2 pl-10 pr-10 before:content-[''] before:absolute 
+                                                         bg-b4 pt-2 pb-2 pl-[1rem] pr-[2rem] before:content-[''] before:absolute 
                                                          before:right-2
                                                          before:inset-y-2/4 before:top-[40%] before:w-[12px] before:h-[12px]
                                                           before:bg-b8 before:rounded-full
@@ -312,8 +305,9 @@
                                          </div>
                                        
       
-                                         <div class="Title-2 w-full flex items-center justify-center overflow-hidden">
-                                             <p class="font-IRANSansWeb700 text-base leading-25.4
+                                         <div class="Title-2 w-full flex items-center group-hover:z-[10] duration-[.4s]
+                                         group-hover:relative  justify-center overflow-hidden">
+                                             <p class="font-IRANSansWeb700  group-hover:text-f text-base leading-25.4
                                               text-b9 mt-3.5 duration-[.5s]  font-bold
                                             
                                              ">پروژه های ساختمانی</p>
@@ -344,13 +338,7 @@
                                                          <img src="images/p.png" alt="" class="w-full h-full
                                                          ml-auto mr-auto object-cover ">
                                                           
-                                                       <div class="Title-1 w-full flex absolute bottom-[.8em] left-0 right-0 z-10
-                                                       items-center justify-center overflow-hidden">
-                                                          <p class="font-IRANSansWeb700 text-base leading-25.4 text-f 
-                                                          font-bold
-                                                         
-                                                          ">پروژه های ساختمانی</p>
-                                                      </div>
+                                                    
                                                        </div>
                                                        <div class="IMG-2 w-full h-full right-0 bottom-0
                                                         mr-auto ml-auto mt-auto mb-auto
@@ -360,18 +348,20 @@
                                                          ml-auto mr-auto  object-cover hue-rotate-90">
      
                                                         <div class="Inner-OV absolute top-0 left-0 w-full h-full
-                                                        flex flex-col justify-center gap-y-6 items-center z-2 
+                                                        flex flex-col justify-center gap-y-[3.5rem] items-center z-2 
                                                         mr-auto ml-auto right-0
                                                         bottom-0 mt-auto mb-auto">
                                                     
-                                                        <span class="Number-proj w-auto flex justify-center items-center
+                                                        <span class="Number-proj w-auto flex justify-center 
+                                                        items-center leading-23
                                                         font-IRANSansWeb500 text-f3 text-f font-medium 
                                                         
                                                         ">23</span>
   
-                                                        <a href="" class="ShowListBTN w-auto flex justify-center 
+                                                        <a href="" class="ShowListBTN
+                                                        rounded-[5px] w-auto flex justify-center 
                                                         items-center relative
-                                                        bg-b4 pt-2 pb-2 pl-10 pr-10 before:content-[''] before:absolute 
+                                                        bg-b4 pt-2 pb-2 pl-[1rem] pr-[2rem] before:content-[''] before:absolute 
                                                         before:right-2
                                                         before:inset-y-2/4 before:top-[40%] before:w-[12px] before:h-[12px]
                                                          before:bg-b8 before:rounded-full
@@ -397,8 +387,9 @@
                                         </div>
                                       
      
-                                        <div class="Title-2 w-full flex items-center justify-center overflow-hidden">
-                                            <p class="font-IRANSansWeb700 text-base leading-25.4
+                                        <div class="Title-2 w-full flex items-center group-hover:z-[10] duration-[.4s]
+                                        group-hover:relative  justify-center overflow-hidden">
+                                            <p class="font-IRANSansWeb700  group-hover:text-f text-base leading-25.4
                                              text-b9 mt-3.5 duration-[.5s]  font-bold
                                            
                                             ">پروژه های ساختمانی</p>
@@ -429,13 +420,7 @@
                                                         <img src="images/p.png" alt="" class="w-full h-full
                                                         ml-auto mr-auto object-cover ">
                                                          
-                                                      <div class="Title-1 w-full flex absolute bottom-[.8em] left-0 right-0 z-10
-                                                      items-center justify-center overflow-hidden">
-                                                         <p class="font-IRANSansWeb700 text-base leading-25.4 text-f 
-                                                         font-bold
-                                                        
-                                                         ">پروژه های ساختمانی</p>
-                                                     </div>
+                                                   
                                                       </div>
                                                       <div class="IMG-2 w-full h-full right-0 bottom-0
                                                        mr-auto ml-auto mt-auto mb-auto
@@ -445,18 +430,20 @@
                                                         ml-auto mr-auto  object-cover hue-rotate-90">
     
                                                        <div class="Inner-OV absolute top-0 left-0 w-full h-full
-                                                       flex flex-col justify-center gap-y-6 items-center z-2 
+                                                       flex flex-col justify-center gap-y-[3.5rem] items-center z-2 
                                                        mr-auto ml-auto right-0
                                                        bottom-0 mt-auto mb-auto">
                                                    
-                                                       <span class="Number-proj w-auto flex justify-center items-center
+                                                       <span class="Number-proj w-auto flex justify-center 
+                                                       items-center leading-23
                                                        font-IRANSansWeb500 text-f3 text-f font-medium 
                                                        
                                                        ">23</span>
  
-                                                       <a href="" class="ShowListBTN w-auto flex justify-center 
+                                                       <a href="" class="ShowListBTN
+                                                       rounded-[5px] w-auto flex justify-center 
                                                        items-center relative
-                                                       bg-b4 pt-2 pb-2 pl-10 pr-10 before:content-[''] before:absolute 
+                                                       bg-b4 pt-2 pb-2 pl-[1rem] pr-[2rem] before:content-[''] before:absolute 
                                                        before:right-2
                                                        before:inset-y-2/4 before:top-[40%] before:w-[12px] before:h-[12px]
                                                         before:bg-b8 before:rounded-full
@@ -482,8 +469,9 @@
                                        </div>
                                      
     
-                                       <div class="Title-2 w-full flex items-center justify-center overflow-hidden">
-                                           <p class="font-IRANSansWeb700 text-base leading-25.4
+                                       <div class="Title-2 w-full flex items-center group-hover:z-[10] duration-[.4s]
+                                       group-hover:relative  justify-center overflow-hidden">
+                                           <p class="font-IRANSansWeb700  group-hover:text-f text-base leading-25.4
                                             text-b9 mt-3.5 duration-[.5s]  font-bold
                                           
                                            ">پروژه های ساختمانی</p>
@@ -514,13 +502,7 @@
                                                        <img src="images/p.png" alt="" class="w-full h-full
                                                        ml-auto mr-auto object-cover ">
                                                         
-                                                     <div class="Title-1 w-full flex absolute bottom-[.8em] left-0 right-0 z-10
-                                                     items-center justify-center overflow-hidden">
-                                                        <p class="font-IRANSansWeb700 text-base leading-25.4 text-f 
-                                                        font-bold
-                                                       
-                                                        ">پروژه های ساختمانی</p>
-                                                    </div>
+                                                  
                                                      </div>
                                                      <div class="IMG-2 w-full h-full right-0 bottom-0
                                                       mr-auto ml-auto mt-auto mb-auto
@@ -530,18 +512,20 @@
                                                        ml-auto mr-auto  object-cover hue-rotate-90">
    
                                                       <div class="Inner-OV absolute top-0 left-0 w-full h-full
-                                                      flex flex-col justify-center gap-y-6 items-center z-2 
+                                                      flex flex-col justify-center gap-y-[3.5rem] items-center z-2 
                                                       mr-auto ml-auto right-0
                                                       bottom-0 mt-auto mb-auto">
                                                   
-                                                      <span class="Number-proj w-auto flex justify-center items-center
+                                                      <span class="Number-proj w-auto flex justify-center 
+                                                      items-center leading-23
                                                       font-IRANSansWeb500 text-f3 text-f font-medium 
                                                       
                                                       ">23</span>
 
-                                                      <a href="" class="ShowListBTN w-auto flex justify-center 
+                                                      <a href="" class="ShowListBTN
+                                                      rounded-[5px] w-auto flex justify-center 
                                                       items-center relative
-                                                      bg-b4 pt-2 pb-2 pl-10 pr-10 before:content-[''] before:absolute 
+                                                      bg-b4 pt-2 pb-2 pl-[1rem] pr-[2rem] before:content-[''] before:absolute 
                                                       before:right-2
                                                       before:inset-y-2/4 before:top-[40%] before:w-[12px] before:h-[12px]
                                                        before:bg-b8 before:rounded-full
@@ -567,15 +551,15 @@
                                       </div>
                                     
    
-                                      <div class="Title-2 w-full flex items-center justify-center overflow-hidden">
-                                          <p class="font-IRANSansWeb700 text-base leading-25.4
+                                      <div class="Title-2 w-full flex items-center group-hover:z-[10] duration-[.4s]
+                                      group-hover:relative  justify-center overflow-hidden">
+                                          <p class="font-IRANSansWeb700  group-hover:text-f text-base leading-25.4
                                            text-b9 mt-3.5 duration-[.5s]  font-bold
                                          
                                           ">پروژه های ساختمانی</p>
                                       </div>
                         </div>
                        </div>
-             
                         </div>
                     </div>
                 </div>

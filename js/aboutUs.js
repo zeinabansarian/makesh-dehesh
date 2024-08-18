@@ -1,3 +1,4 @@
+gsap.registerPlugin(ScrollTrigger) 
 // VIDEO PLAY
 let secs = document.querySelectorAll('.VideoBox')
 let videos = document.querySelectorAll(' .Video')
@@ -75,3 +76,30 @@ let swiperCertificate= new Swiper(".swiper-certificate", {
       },
       speed:1000
   });  
+  // ANIMATIONS
+  let sections = document.querySelectorAll('.sec')
+  sections.forEach(s=>{
+    gsap.to(s.querySelectorAll('.fade-in'),{
+      y:0,
+      opacity:1,
+      stagger:.2,
+      scrollTrigger:{
+        trigger:s,
+        start:"top 60%",
+        end:"bottom bottom"
+    }
+  })
+  })
+  
+let textF = document.querySelectorAll('.Section-4 .fade-in')
+textF.forEach(p=>{
+    gsap.to(p,{
+        y:0,
+        opacity:1,
+        scrollTrigger:{
+          trigger:'.Section-3',
+          start:"top 60%",
+          end:"bottom bottom",
+      }
+    })
+})

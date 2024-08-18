@@ -1,3 +1,4 @@
+gsap.registerPlugin(ScrollTrigger) 
 // shareBox
 let ShareB = document.querySelector('.ShareB')
 let ShareBox = document.querySelector('.ShareBox')
@@ -22,3 +23,12 @@ let swiperProduct= new Swiper(".swiper-products", {
       },
       speed:1000
   });  
+
+// ANIMATIONS
+let textF = document.querySelectorAll('.fade-in')
+textF.forEach(p=>{
+    gsap.to(p,{
+        y:0,
+        opacity:1,
+    })
+})

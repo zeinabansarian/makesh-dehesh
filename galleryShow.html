@@ -12,8 +12,8 @@
 </head>
 <body dir="rtl"> 
     <main class="GalleryShow-v">
-     <!-- HEADER -->
-     <header class="DesktopHeader absolute top-0 left-0 z-[100] bg-f w-full flex justify-center items-center">
+       <!-- HEADER -->
+       <header class="DesktopHeader fixed top-0 left-0 z-[100] bg-f w-full flex justify-center items-center">
         <nav class="Menu w-3/4 grid ml-auto mr-auto grid-cols-[2fr,1fr,2fr] justify-center items-center pt-10 pb-10 gap-x-12">
 
             <div class="Left w-full flex justify-start items-center">
@@ -128,7 +128,7 @@
  <!-- HEADER -->
 
 
-        <div class="galleryVideo px-12" dir="rtl">
+        <div class="galleryVideo px-[5rem] mt-[10em]" dir="rtl" >
             <div class="Top w-[99%] mr-auto ml-auto">
                 <div class="Navigation flex justify-start items-center gap-1">
                     <span class="nav w-auto flex justify-center items-center ">
@@ -146,7 +146,7 @@
                     </span>
                 </div>
             </div>
-            <div class="TitleP w-full flex justify-center items-center gap-10 mb-3 mt-[5em]">
+            <div class="TitleP w-full flex justify-center items-center gap-[6.5em] mb-3 mt-[5em]">
                 <span>
                     <svg width="25" height="15" viewBox="0 0 25 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M24.3905 6.26662V1.81182C24.3905 1.42542 24.0769 1.11182 23.6905 1.11182H19.2357V2.51182H22.0007L21.4141 3.09842C20.9199 3.59122 20.3011 3.94122 19.6249 4.11062L19.3379 4.18202C17.8119 4.56422 16.6835 5.81722 16.4609 7.37262L16.3153 8.39462L16.1697 9.41662C16.0283 10.4064 15.3101 11.203 14.3371 11.4466L14.0515 11.518C13.1275 11.749 12.2833 12.2264 11.6113 12.8984L12.6025 13.8882C13.0953 13.394 13.7127 13.044 14.3917 12.8746L14.6759 12.8032C16.2019 12.4224 17.3303 11.1694 17.5543 9.61402L17.6999 8.59202L17.8469 7.57142C17.9883 6.58022 18.7065 5.78362 19.6781 5.54002L19.9651 5.46862C20.8863 5.23762 21.7305 4.76162 22.4039 4.08822L22.9905 3.50162V6.26662H24.3905Z" fill="#BCBDBD"/>
@@ -154,7 +154,7 @@
                         </svg>
                         
                 </span>
-                <h1 class="font-IRANSansWeb700 font-bold text-2xl leading-37.97 text-b12">
+                <h1 class="font-IRANSansWeb700 font-bold text-2xl leading-37.57 text-b12">
                     نمایشگاه شماره یک
                 </h1>
                 <span>
@@ -167,7 +167,7 @@
 
             </div>
             <div class="galleryContainer mb-[204px] mt-24 flex gap-x-11">
-                <section class="h-fit sticky top-24 sidebar min-w-[300px]">
+                <section class="h-fit sticky top-24 sidebar min-w-[350px]">
                     <div class="Title w-full flex justify-start items-center border-b
                      border-b9/[0.2] py-4  gap-x-4">
                         <p class=" font-IRANSansWeb500 font-medium leading-25.4
@@ -199,39 +199,77 @@
                     </ul>
                 </section>
                
-                 <div class="gridIMGS tab [&.show]:grid grid-cols-2 gap-x-[1em] gap-y-10 hidden">
-                 <div class="Gallery group flex-col  pt-[1em] pb-[1em] pl-[1em] pr-[1em]
-                    hover:shadow-[0_2.8px_2.2px_rgba(0,_0,_0,_0.034),_0_6.7px_5.3px_rgba(0,_0,_0,_0.048),_0_12.5px_10px_rgba(0,_0,_0,_0.06),_0_22.3px_17.9px_rgba(0,_0,_0,_0.072),_0_41.8px_33.4px_rgba(0,_0,_0,_0.086),_0_100px_80px_rgba(0,_0,_0,_0.12)]
-                     odd:justify-start overflow-hidden
-                    even:justify-end w-auto flex justify-center items-center duration-[.8s] delay-[.3s] ">
+                 <div class="gridIMGS tab overflow-hidden [&.show]:grid grid-cols-2 gap-x-[1em] gap-y-10 hidden">
+                 <div class="Gallery opacity-0 translate-y-100 group flex-col  hover:translate-y-[-1px]
+                    hover:shadow-[rgba(0,_0,_0,_0.25)_0px_25px_50px_-12px]
+                    overflow-hidden
+                   w-auto flex justify-center items-center duration-[.8s] delay-[.3s] ">
                         <div class="IMG  hover:cursor-pointer w-auto flex justify-center items-center relative ">
                             <img src="images/Frame 16133.png" alt="" class="w-auto object-cover">
-                            <div class="OV w-full h-full flex justify-center items-end absolute 
-                             left-0 top-0 z-2 linear group-hover:opacity-[0] opacity-1 duration-[.5s] ">
-                               
-                            </div>
+                          
                         </div>
                      
                         
                     </div>
-                    <div class="Gallery group flex-col  pt-[1em] pb-[1em] pl-[1em] pr-[1em]
-                    hover:shadow-[0_2.8px_2.2px_rgba(0,_0,_0,_0.034),_0_6.7px_5.3px_rgba(0,_0,_0,_0.048),_0_12.5px_10px_rgba(0,_0,_0,_0.06),_0_22.3px_17.9px_rgba(0,_0,_0,_0.072),_0_41.8px_33.4px_rgba(0,_0,_0,_0.086),_0_100px_80px_rgba(0,_0,_0,_0.12)]
-                    odd:justify-start overflow-hidden
-                    even:justify-end w-auto flex justify-center items-center duration-[.8s] delay-[.3s] ">
+                    <div class="Gallery opacity-0 translate-y-100 group flex-col  hover:translate-y-[-1px]
+                    hover:shadow-[rgba(0,_0,_0,_0.25)_0px_25px_50px_-12px]
+                    overflow-hidden
+                   w-auto flex justify-center items-center duration-[.8s] delay-[.3s] ">
                         <div class="IMG  hover:cursor-pointer w-auto flex justify-center items-center relative ">
                             <img src="images/Frame 16133.png" alt="" class="w-auto object-cover">
-                            <div class="OV w-full h-full flex justify-center items-end absolute 
-                             left-0 top-0 z-2 linear group-hover:opacity-[0] opacity-1 duration-[.5s] ">
-                             
-                            </div>
+                          
                         </div>
-                      
+                     
+                        
+                    </div>
+                    <div class="Gallery opacity-0 translate-y-100 group flex-col  hover:translate-y-[-1px]
+                    hover:shadow-[rgba(0,_0,_0,_0.25)_0px_25px_50px_-12px]
+                    overflow-hidden
+                   w-auto flex justify-center items-center duration-[.8s] delay-[.3s] ">
+                        <div class="IMG  hover:cursor-pointer w-auto flex justify-center items-center relative ">
+                            <img src="images/Frame 16133.png" alt="" class="w-auto object-cover">
+                          
+                        </div>
+                     
+                        
+                    </div>
+                    <div class="Gallery opacity-0 translate-y-100 group flex-col  hover:translate-y-[-1px]
+                    hover:shadow-[rgba(0,_0,_0,_0.25)_0px_25px_50px_-12px]
+                    overflow-hidden
+                   w-auto flex justify-center items-center duration-[.8s] delay-[.3s] ">
+                        <div class="IMG  hover:cursor-pointer w-auto flex justify-center items-center relative ">
+                            <img src="images/Frame 16133.png" alt="" class="w-auto object-cover">
+                          
+                        </div>
+                     
+                        
+                    </div>
+                    <div class="Gallery opacity-0 translate-y-100 group flex-col  hover:translate-y-[-1px]
+                    hover:shadow-[rgba(0,_0,_0,_0.25)_0px_25px_50px_-12px]
+                    overflow-hidden
+                   w-auto flex justify-center items-center duration-[.8s] delay-[.3s] ">
+                        <div class="IMG  hover:cursor-pointer w-auto flex justify-center items-center relative ">
+                            <img src="images/Frame 16133.png" alt="" class="w-auto object-cover">
+                          
+                        </div>
+                     
+                        
+                    </div>
+                    <div class="Gallery opacity-0 translate-y-100 group flex-col  hover:translate-y-[-1px]
+                    hover:shadow-[rgba(0,_0,_0,_0.25)_0px_25px_50px_-12px]
+                    overflow-hidden
+                   w-auto flex justify-center items-center duration-[.8s] delay-[.3s] ">
+                        <div class="IMG  hover:cursor-pointer w-auto flex justify-center items-center relative ">
+                            <img src="images/Frame 16133.png" alt="" class="w-auto object-cover">
+                          
+                        </div>
+                     
                         
                     </div>
                 </div>
-                <div class="gridVideos tab [&.show]:grid hidden grid-cols-2 gap-x-[1.5em] gap-y-10">
+                <div class="gridVideos tab overflow-hidden [&.show]:grid hidden grid-cols-2 gap-x-[1.5em] gap-y-10">
                   
-                    <div class="VideoBox group">
+                    <div class="VideoBox group  hover:shadow-[rgba(0,_0,_0,_0.25)_0px_25px_50px_-12px]">
                         <div class="Video w-full flex justify-center items-center relative hover:cursor-pointer
                         overflow-hidden flex-col duration-[.5s]">
                             <video class="w-full object-cover" src="/images/ssstwitter.com_1707122752489.mp4"
@@ -248,7 +286,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="VideoBox group">
+                    <div class="VideoBox group  hover:shadow-[rgba(0,_0,_0,_0.25)_0px_25px_50px_-12px]">
                         <div class="Video w-full flex justify-center items-center relative hover:cursor-pointer
                         overflow-hidden flex-col duration-[.5s]">
                             <video src="/images/ssstwitter.com_1707122752489.mp4" class="w-full object-cover" poster="images/pict1881141000019920482000012754001 1 (1).png"></video>
@@ -264,7 +302,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="VideoBox group">
+                    <div class="VideoBox group  hover:shadow-[rgba(0,_0,_0,_0.25)_0px_25px_50px_-12px]">
                         <div class="Video w-full flex justify-center items-center relative hover:cursor-pointer
                         overflow-hidden flex-col duration-[.5s]">
                             <video src="/images/ssstwitter.com_1707122752489.mp4"  class="w-full object-cover" poster="images/pict8559241000013367203000018654001 (1) 3.jpg"></video>
@@ -280,7 +318,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="VideoBox group">
+                    <div class="VideoBox group  hover:shadow-[rgba(0,_0,_0,_0.25)_0px_25px_50px_-12px]">
                         <div class="Video w-full flex justify-center items-center relative hover:cursor-pointer
                         overflow-hidden flex-col duration-[.5s]">
                             <video src="/images/ssstwitter.com_1707122752489.mp4" class="w-full object-cover" poster="images/pict8559241000013367203000018654001 (1) 3.jpg"></video>
@@ -296,7 +334,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="VideoBox group">
+                    <div class="VideoBox group  hover:shadow-[rgba(0,_0,_0,_0.25)_0px_25px_50px_-12px]">
                         <div class="Video w-full flex justify-center items-center relative hover:cursor-pointer
                         overflow-hidden flex-col duration-[.5s]">
                             <video src="/images/ssstwitter.com_1707122752489.mp4" class="w-full object-cover" poster="images/pict8559241000013367203000018654001 (1) 3.jpg"></video>
