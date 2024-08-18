@@ -136,6 +136,7 @@ border-bottom:1px solid #1E1E1E;
   border: 1px solid #fff;
   height: 82px;
   width: 82px;
+  overflow: hidden;
   position: relative;
 }
 
@@ -910,15 +911,13 @@ height: 10px;
   visibility: visible;
   animation: 0.1s left forwards;
 }
-.productShow
-  .section1
+.serviceShow
   .share
   .share__wrapper--active
   .social-link:nth-child(1) {
   animation-delay: 0.075s;
 }
-.productShow
-  .section1
+.serviceShow
   .share
   .share__wrapper--active
   .social-link:nth-child(2) {
