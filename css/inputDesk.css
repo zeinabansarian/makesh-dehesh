@@ -128,113 +128,6 @@ border-bottom:1px solid #1E1E1E;
   color: #1E1E1E;
 
  }
-/*   
- .swiper-cat-proj .swiper-slide-active{
-  transform: scale(1) !important;
-  -webkit-transform: scale(1) !important;
-  -moz-transform: scale(1) !important;
-  -ms-transform: scale(1) !important;
-  -o-transform: scale(1) !important;
-}
-.swiper-cat-proj .swiper-slide {
-  transform: scale(0.7);
-  -webkit-transform: scale(0.7);
-  -moz-transform: scale(0.7);
-  -ms-transform: scale(0.7);
-  -o-transform: scale(0.7);
-  transition: all 0.8s ease;
-  -webkit-transition: all 0.8s ease;
-  -moz-transition: all 0.8s ease;
-  -ms-transition: all 0.8s ease;
-  -o-transition: all 0.8s ease;
-}
-.swiper-cat-proj .swiper-slide-active .Project .OV {
-  background-color: #00000073 !important;
-  transition: all 0.8s ease;
-  -webkit-transition: all 0.8s ease;
-  -moz-transition: all 0.8s ease;
-  -ms-transition: all 0.8s ease;
-  -o-transition: all 0.8s ease;
-}
-.swiper-cat-proj .swiper-slide .Project .OV {
-  background-color: transparent;
-  transition: all 0.8s ease;
-  -webkit-transition: all 0.8s ease;
-  -moz-transition: all 0.8s ease;
-  -ms-transition: all 0.8s ease;
-  -o-transition: all 0.8s ease;
-}
-.swiper-cat-proj .swiper-slide-active .Title-1 h1 {
-  transform: translate(0);
-  opacity: 1;
-  -webkit-transform: translate(0);
-  -moz-transform: translate(0);
-  -ms-transform: translate(0);
-  -o-transform: translate(0);
-  transition: all 0.8s 1.5s ease;
-  -webkit-transition: all 0.8s 1.5s ease;
-  -moz-transition: all 0.8s 1.5s ease;
-  -ms-transition: all 0.8s 1.5s ease;
-  -o-transition: all 0.8s 1.5s ease;
-}
-.swiper-cat-proj .swiper-slide-active .Title-2 h1 {
-  transform: translateY(2rem);
-  opacity: 0;
-  -webkit-transform: translateY(2rem);
-  -moz-transform: translateY(2rem);
-  -ms-transform: translateY(2rem);
-  -o-transform: translateY(2rem);
-  transition: all 0.8s ease;
-  -webkit-transition: all 0.8s ease;
-  -moz-transition: all 0.8s ease;
-  -ms-transition: all 0.8s ease;
-  -o-transition: all 0.8s ease;
-}
-.swiper-cat-proj .swiper-slide .Inner-IMG {
-  transition: all 1s ease;
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -ms-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  transform: translateY(-100%);
-  -webkit-transform: translateY(-100%);
-  -moz-transform: translateY(-100%);
-  -ms-transform: translateY(-100%);
-  -o-transform: translateY(-100%);
-}
-.swiper-cat-proj .swiper-slide-active .Inner-IMG {
-  transform: unset;
-  opacity: 1;
-  transition: all 1s 1s ease;
-  -webkit-transition: all 1s 1s ease;
-  -moz-transition: all 1s 1s ease;
-  -ms-transition: all 1s 1s ease;
-  -o-transition: all 1s 1s ease;
-  -webkit-transform: unset;
-  -moz-transform: unset;
-  -ms-transform: unset;
-  -o-transform: unset;
-}
-.swiper-cat-proj .swiper-slide-active .Inner-IMG{
-   transform: unset;
-   opacity: 1;
-   transition: all 1s 1s ease;
-   -webkit-transition: all 1s 1s ease;
-   -moz-transition: all 1s 1s ease;
-   -ms-transition: all 1s 1s ease;
-   -o-transition: all 1s 1s ease;
-   -webkit-transform: unset;
-   -moz-transform: unset;
-   -ms-transform: unset;
-   -o-transform: unset;
-
-}
-
- 
-} */
-
-  
-
 
 .mouse {
   margin: 0 auto;
@@ -529,7 +422,9 @@ li {
     transform: translateX(0);
   }
 }
-
+a:hover {
+  text-decoration: none;
+}
 .productList .proBox:hover .callBtn {
   transform: scale(1);
   transition: 1s ease;
@@ -782,4 +677,62 @@ li {
 .play {
   opacity: 0;
   display: none;
+}
+
+
+.productShow .swiper-button-disabled svg{
+  opacity: 0.5;
+  cursor: auto;
+}
+
+
+.collapse.show{
+  visibility: visible;
+}
+
+
+
+.productShow .accordion .card-header {
+  background-color: transparent;
+}
+.productShow .accordion .card-header p {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.productShow .accordion .card-header button::before {
+  content: "";
+  display: inline-block;
+  width: 67px;
+  height: 1px;
+  background-color: black;
+  transition: 0.5s;
+}
+.productShow .accordion .card-header button {
+  display: flex;
+  align-items: center;
+}
+.productShow .accordion .card-header button:focus {
+  outline: none;
+}
+.productShow .accordion .card-header p::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: black;
+  transition: 0.5s;
+}
+.productShow .accordion .card-header button[aria-expanded=true]::before {
+  width: 87px;
+  background-color: #F26737;
+}
+.productShow .accordion .card-header button[aria-expanded=true] p::before {
+  background-color: #F26737;
+}
+
+.productShow .Project:hover .Title-2 p{
+color: white;
 }

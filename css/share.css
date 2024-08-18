@@ -1,137 +1,40 @@
-.productShow .section1 .share .share__wrapper,
-.productShow .section1 .share .social-link {
-  height: 48px;
-  width: 48px;
-  position: absolute;
-  cursor: pointer;
+.productShow .accordion .card-header {
+  background-color: transparent;
 }
-.productShow .section1 .share .share__wrapper {
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.productShow .accordion .card-header p {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
 }
-.productShow .section1 .share .toggle-button {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  border-radius: 50%;
-  background: #FA7D19;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-}
-.productShow .section1 .share .toggle-button:focus {
-  outline: 0;
-}
-.productShow .section1 .share .toggle-button:before, .productShow .section1 .share .toggle-button:after {
+.productShow .accordion .card-header button::before {
   content: "";
-  position: absolute;
-}
-.productShow .section1 .share .toggle-button:after {
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url('data:image/svg+xml;charset=US-ASCII,<svg width="23" height="25" viewBox="0 0 23 25" xmlns="http://www.w3.org/2000/svg"><g transform="translate(-11 -11) translate(12 12)" stroke="#fff" stroke-width="2" fill="none"><ellipse id="Oval-5" cx="3.652" cy="11.5" rx="3.652" ry="3.538"/><ellipse id="Oval-5" cx="17.348" cy="3.538" rx="3.652" ry="3.538"/><ellipse cx="17.348" cy="19.462" rx="3.652" ry="3.538"/><path d="M6.592 13.25l7.602 4.585"/><path d="M6.719 9.917l7.657-4.452"/></g></svg>') center/auto no-repeat;
-  transition: all 0.2s ease;
-}
-.productShow .section1 .share .toggle-button--active:after {
-  background-image: url('data:image/svg+xml;charset=US-ASCII,<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><g fill="#fff"><path d="M1.516.102l18.382 18.382-1.414 1.414-18.382-18.382zM19.898 1.516l-18.382 18.382-1.414-1.414 18.382-18.382z"/></g></svg>');
-}
-.productShow .section1 .share .social-link {
-  visibility: hidden;
-  border-radius: 50%;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-  transition: all 0.1s ease;
-}
-.productShow .section1 .share .social-link:nth-child(1) {
-  background: #28AFE7 url('data:image/svg+xml;charset=US-ASCII,<svg width="21" height="18" viewBox="0 0 21 18" xmlns="http://www.w3.org/2000/svg"><path d="M18.526 2.846c.89-.562 1.573-1.452 1.893-2.513-.833.521-1.754.898-2.736 1.102-.784-.884-1.904-1.435-3.144-1.435-2.379 0-4.307 2.035-4.307 4.544 0 .356.036.703.11 1.035-3.58-.19-6.753-1.997-8.88-4.748-.371.673-.583 1.453-.583 2.285 0 1.576.761 2.967 1.917 3.783-.706-.023-1.371-.23-1.952-.568v.056c0 2.202 1.484 4.039 3.457 4.455-.362.107-.742.16-1.136.16-.277 0-.549-.027-.81-.081.547 1.804 2.139 3.12 4.024 3.155-1.475 1.219-3.333 1.945-5.351 1.945-.348 0-.691-.02-1.028-.062 1.907 1.288 4.171 2.041 6.604 2.041 7.926 0 12.257-6.924 12.257-12.929l-.011-.588c.842-.641 1.574-1.442 2.15-2.353-.773.361-1.604.606-2.474.715z" fill="#fff"/></svg>') center/auto no-repeat;
-  left: -132px;
-}
-.productShow .section1 .share .social-link:nth-child(2) {
-  background: #3E5D9E url('data:image/svg+xml;charset=US-ASCII,<svg width="11" height="23" viewBox="0 0 11 23" xmlns="http://www.w3.org/2000/svg"><path d="M7.315 23h-4.877v-11.501h-2.437v-3.963h2.437v-2.379c0-3.233 1.375-5.156 5.286-5.156h3.255v3.964h-2.034c-1.522 0-1.623.554-1.623 1.587l-.007 1.984h3.686l-.431 3.963h-3.255v11.501h.001z" fill="#fff"/></svg>') center/auto no-repeat;
-  left: -66px;
-}
-.productShow .section1 .share .social-link:nth-child(3) {
-  background: #D94C34 url('data:image/svg+xml;charset=US-ASCII,<svg width="27" height="17" viewBox="0 0 27 17" xmlns="http://www.w3.org/2000/svg"><path d="M8.485 6.817h8.149c.567 4.073-1.145 10.183-8.149 10.183-4.686 0-8.485-3.806-8.485-8.5s3.799-8.5 8.485-8.5c2.199 0 4.202.837 5.709 2.212-1.776 1.68-1.717 1.78-2.415 2.479-.872-.722-1.823-1.241-3.294-1.241-2.784 0-4.957 2.261-4.957 5.049 0 2.789 2.173 5.05 4.957 5.05 2.751 0 3.868-1.188 4.587-3.371-1.327 0-4.587.005-4.587.005v-3.366zm15.289.168h2.94v2.104h-2.94v3.03h-2.1v-3.03h-3.025v-2.104h3.025v-2.945h2.1v2.945z" fill="#fff"/></svg>') center/auto no-repeat;
-}
-.productShow .section1 .share .share__wrapper--active .social-link {
-  visibility: visible;
-  animation: 0.1s left forwards;
-}
-.productShow .section1 .share .share__wrapper--active .social-link:nth-child(1) {
-  animation-delay: 0.075s;
-}
-.productShow .section1 .share .share__wrapper--active .social-link:nth-child(2) {
-  animation-delay: 0.05s;
-}
-@keyframes shareClose {
-  0% {
-    opacity: 0;
-    transform: rotateY(0);
-  }
-  100% {
-    opacity: 1;
-    transform: rotateY(360deg);
-  }
-}
-@keyframes left {
-  50% {
-    transform: translateX(-170%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(-130%);
-  }
-}
-@keyframes right {
-  0% {
-    transform: translateX(-130%);
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    transform: translateX(0);
-    left: 0;
-  }
-}
-.productShow .section1 .share body {
-  width: 100vw;
-  height: 100vh;
-  background: #34393F;
-}
-.productShow .section1 .share .visually-hidden {
-  position: absolute;
-  left: 9999px;
-  width: 1px;
+  display: inline-block;
+  width: 67px;
   height: 1px;
+  background-color: black;
+  transition: 0.5s;
 }
-.productShow .section1 .share ul, .productShow .section1 .share li {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
+.productShow .accordion .card-header button {
+  display: flex;
+  align-items: center;
 }
-.productShow .section1 .share button {
-  border: none;
-  margin: 0;
-  padding: 0;
-  width: auto;
-  overflow: visible;
-  background: transparent;
-  /* inherit font & color from ancestor */
-  color: inherit;
-  font: inherit;
-  /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
-  line-height: normal;
-  /* Corrects font smoothing for webkit */
-  -webkit-font-smoothing: inherit;
-  -moz-osx-font-smoothing: inherit;
-  /* Corrects inability to style clickable `input` types in iOS */
-  -webkit-appearance: none;
+.productShow .accordion .card-header button:focus {
+  outline: none;
+}
+.productShow .accordion .card-header p::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: black;
+  transition: 0.5s;
+}
+.productShow .accordion .card-header button[aria-expanded=true]::before {
+  width: 87px;
+  background-color: #F26737;
+}
+.productShow .accordion .card-header button[aria-expanded=true] p::before {
+  background-color: #F26737;
 }/*# sourceMappingURL=share.css.map */
