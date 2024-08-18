@@ -99,10 +99,16 @@ function rendered(){
 
         
       },100)
- 
-
-
-
-
 
 }
+
+// SEARCH
+let sBTN = document.querySelector('.DesktopHeader .SearchIcon')
+let sCon = document.querySelector('.searchContainer')
+let sClose  = document.querySelector('.searchContainer .CloseSerch')
+sBTN.addEventListener('click',()=>{
+  sCon.classList.add('show')
+})
+sClose.addEventListener('click',()=>{
+  sCon.classList.remove('show')
+})
