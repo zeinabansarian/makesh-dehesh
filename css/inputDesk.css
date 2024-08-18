@@ -830,3 +830,204 @@ height: 10px;
 .home{
   cursor: none;
 }
+
+
+
+
+
+
+
+.serviceShow .swiper-button-disabled .arrPath{
+  opacity: 0.5;
+}
+
+
+
+.serviceShow .share .share__wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+}
+.serviceShow .share svg{
+  stroke: #F26737;
+}
+.serviceShow .share .social-link {
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  cursor: pointer;
+}
+/* .serviceShow .share .share__wrapper {
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
+.serviceShow .share .toggle-button {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.serviceShow .share .toggle-button:focus {
+  outline: 0;
+}
+.serviceShow .share .toggle-button:before,
+.serviceShow .share .toggle-button:after {
+  content: "";
+  position: absolute;
+}
+.serviceShow .share .toggle-button:after {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 0.2s ease;
+}
+.serviceShow .share .toggle-button--active:after {
+}
+.serviceShow .share .social-link {
+  visibility: hidden;
+  border-radius: 50%;
+  transition: all 0.1s ease;
+}
+.serviceShow .share .social-link:nth-child(1) {
+  left: 80px;
+}
+.serviceShow .share .social-link:nth-child(2) {
+  left: 120px;
+}
+.serviceShow .share .social-link:nth-child(3) {
+  left: 160px;
+}
+.serviceShow .share .share__wrapper--active .social-link {
+  visibility: visible;
+  animation: 0.1s left forwards;
+}
+.productShow
+  .section1
+  .share
+  .share__wrapper--active
+  .social-link:nth-child(1) {
+  animation-delay: 0.075s;
+}
+.productShow
+  .section1
+  .share
+  .share__wrapper--active
+  .social-link:nth-child(2) {
+  animation-delay: 0.05s;
+}
+@keyframes shareClose {
+  0% {
+    opacity: 0;
+    transform: rotateY(0);
+  }
+  100% {
+    opacity: 1;
+    transform: rotateY(360deg);
+  }
+}
+@keyframes left {
+  50% {
+    transform: translateX(-170%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(-130%);
+  }
+}
+@keyframes right {
+  0% {
+    transform: translateX(-130%);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(0);
+    left: 0;
+  }
+}
+.serviceShow .share body {
+  width: 100vw;
+  height: 100vh;
+  background: #34393f;
+}
+.serviceShow .share .visually-hidden {
+  position: absolute;
+  left: 9999px;
+  width: 1px;
+  height: 1px;
+}
+.serviceShow .share ul,
+.serviceShow .share li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.serviceShow .share button {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+  background: transparent;
+  /* inherit font & color from ancestor */
+  color: inherit;
+  font: inherit;
+  /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
+  line-height: normal;
+  /* Corrects font smoothing for webkit */
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+  /* Corrects inability to style clickable `input` types in iOS */
+  -webkit-appearance: none;
+} /*# sourceMappingURL=share.css.map */
+
+
+.card-header{
+  background-color: transparent;
+}
+.serviceShow .accordion .card-header button::before {
+  content: "";
+  display: inline-block;
+  width: 67px;
+  height: 1px;
+  background-color: black;
+  transition: 0.5s;
+}
+.serviceShow .accordion .card-header button {
+  display: flex;
+  align-items: center;
+}
+.serviceShow .accordion .card-header button:focus {
+  outline: none;
+}
+.serviceShow .accordion .card-header p::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: black;
+  transition: 0.5s;
+}
+.serviceShow .accordion .card-header button[aria-expanded=true]::before {
+  width: 87px;
+  background-color: #F26737;
+}
+.serviceShow .accordion .card-header button[aria-expanded=true] p::before {
+  background-color: #F26737;
+}
+
+.serviceShow .accordion:nth-child(1) .card-header{
+border-top: 1px solid rgba(0,0,0,.125);
+}
