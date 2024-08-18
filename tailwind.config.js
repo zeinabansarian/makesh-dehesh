@@ -72,11 +72,11 @@ module.exports = {
       maxWidth: {
         'x100': '100%',
       },
-      // fontSize: {
-      //   'f1':'20px',
-      //   'xl':'24px',
-      //   '2xl': '64px',
-      // },
+      fontSize: {
+        'f1':'20px',
+        // 'xl':'24px',
+        // '2xl': '64px',
+      },
       zIndex: {
         '1': '1',
         '2': '2',
