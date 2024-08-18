@@ -765,6 +765,13 @@ video {
   bottom: -40%;
 }
 
+<<<<<<< HEAD
+=======
+.bottom-\[\.8em\] {
+  bottom: .8em;
+}
+
+>>>>>>> 8d19e9b8ff1cdf5edbd6fdd9f2520b47e1e9adad
 .bottom-\[231px\] {
   bottom: 231px;
 }
@@ -845,8 +852,13 @@ video {
   top: 40%;
 }
 
+<<<<<<< HEAD
 .top-\[8px\] {
   top: 8px;
+=======
+.top-\[80px\] {
+  top: 80px;
+>>>>>>> 8d19e9b8ff1cdf5edbd6fdd9f2520b47e1e9adad
 }
 
 .isolate {
@@ -901,6 +913,7 @@ video {
   z-index: 999;
 }
 
+<<<<<<< HEAD
 .order-1 {
   order: 1;
 }
@@ -909,6 +922,8 @@ video {
   order: 2;
 }
 
+=======
+>>>>>>> 8d19e9b8ff1cdf5edbd6fdd9f2520b47e1e9adad
 .col-span-2 {
   grid-column: span 2 / span 2;
 }
@@ -999,6 +1014,10 @@ video {
 
 .clear-none {
   clear: none;
+}
+
+.m-0 {
+  margin: 0px;
 }
 
 .m-14 {
@@ -1179,6 +1198,10 @@ video {
   margin-left: auto;
 }
 
+.mr-14 {
+  margin-right: 3.5rem;
+}
+
 .mr-16 {
   margin-right: 4rem;
 }
@@ -1299,10 +1322,13 @@ video {
   margin-top: 154px;
 }
 
+<<<<<<< HEAD
 .mt-\[15em\] {
   margin-top: 15em;
 }
 
+=======
+>>>>>>> 8d19e9b8ff1cdf5edbd6fdd9f2520b47e1e9adad
 .mt-\[26px\] {
   margin-top: 26px;
 }
@@ -1315,6 +1341,13 @@ video {
   margin-top: 3em;
 }
 
+<<<<<<< HEAD
+=======
+.mt-\[4em\] {
+  margin-top: 4em;
+}
+
+>>>>>>> 8d19e9b8ff1cdf5edbd6fdd9f2520b47e1e9adad
 .mt-\[5em\] {
   margin-top: 5em;
 }
@@ -1329,6 +1362,14 @@ video {
 
 .mt-auto {
   margin-top: auto;
+}
+
+.mt-1\.5 {
+  margin-top: 1.5em;
+}
+
+.mt-0 {
+  margin-top: 0px;
 }
 
 .box-border {
@@ -1775,6 +1816,10 @@ video {
 
 .min-w-\[50px\] {
   min-width: 50px;
+}
+
+.max-w-\[724px\] {
+  max-width: 724px;
 }
 
 .max-w-\[890px\] {
@@ -2999,6 +3044,10 @@ video {
   border-radius: 0.375rem;
 }
 
+.rounded-none {
+  border-radius: 0px;
+}
+
 .rounded-b {
   border-bottom-right-radius: 0.25rem;
   border-bottom-left-radius: 0.25rem;
@@ -3063,6 +3112,10 @@ video {
 
 .border {
   border-width: 1px;
+}
+
+.border-0 {
+  border-width: 0px;
 }
 
 .border-x {
@@ -3382,6 +3435,14 @@ video {
   padding: 3rem;
 }
 
+.p-3 {
+  padding: 0.75rem;
+}
+
+.p-5 {
+  padding: 1.25rem;
+}
+
 .p-\[18\%\] {
   padding: 18%;
 }
@@ -3404,6 +3465,16 @@ video {
 .px-12 {
   padding-left: 3rem;
   padding-right: 3rem;
+}
+
+.px-14 {
+  padding-left: 3.5rem;
+  padding-right: 3.5rem;
+}
+
+.px-16 {
+  padding-left: 4rem;
+  padding-right: 4rem;
 }
 
 .px-20 {
@@ -3466,6 +3537,16 @@ video {
   padding-bottom: 4rem;
 }
 
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.py-2\.5 {
+  padding-top: 2.5em;
+  padding-bottom: 2.5em;
+}
+
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
@@ -3486,11 +3567,14 @@ video {
   padding-bottom: 31px;
 }
 
+<<<<<<< HEAD
 .py-\[4em\] {
   padding-top: 4em;
   padding-bottom: 4em;
 }
 
+=======
+>>>>>>> 8d19e9b8ff1cdf5edbd6fdd9f2520b47e1e9adad
 .pb-10 {
   padding-bottom: 2.5rem;
 }
@@ -3521,6 +3605,10 @@ video {
 
 .pb-4 {
   padding-bottom: 1rem;
+}
+
+.pb-40 {
+  padding-bottom: 10rem;
 }
 
 .pb-5 {
@@ -3633,6 +3721,7 @@ video {
 
 .pl-\[125px\] {
   padding-left: 125px;
+<<<<<<< HEAD
 }
 
 .pl-\[1em\] {
@@ -3641,6 +3730,12 @@ video {
 
 .pl-\[1rem\] {
   padding-left: 1rem;
+=======
+>>>>>>> 8d19e9b8ff1cdf5edbd6fdd9f2520b47e1e9adad
+}
+
+.pl-\[1em\] {
+  padding-left: 1em;
 }
 
 .pl-\[2rem\] {
@@ -3715,6 +3810,13 @@ video {
   padding-top: 3rem;
 }
 
+<<<<<<< HEAD
+=======
+.pt-14 {
+  padding-top: 3.5rem;
+}
+
+>>>>>>> 8d19e9b8ff1cdf5edbd6fdd9f2520b47e1e9adad
 .pt-2 {
   padding-top: 0.5rem;
 }
@@ -3753,6 +3855,10 @@ video {
 
 .pt-\[10px\] {
   padding-top: 10px;
+}
+
+.pt-\[120px\] {
+  padding-top: 120px;
 }
 
 .pt-\[126px\] {
@@ -4051,10 +4157,6 @@ video {
   line-height: 37.57px;
 }
 
-.leading-37\.97 {
-  line-height: 37.97px;
-}
-
 .leading-56\.35 {
   line-height: 56.35px;
 }
@@ -4351,6 +4453,12 @@ video {
 .shadow-\[rgba\(50\2c 50\2c 93\2c 0\.25\)_0px_6px_12px_-2px\2c _rgba\(0\2c 0\2c 0\2c 0\.3\)_0px_3px_7px_-3px\] {
   --tw-shadow: rgba(50,50,93,0.25) 0px 6px 12px -2px, rgba(0,0,0,0.3) 0px 3px 7px -3px;
   --tw-shadow-colored: 0px 6px 12px -2px var(--tw-shadow-color), 0px 3px 7px -3px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-sm {
+  --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
@@ -4804,6 +4912,7 @@ video {
 
 .swiper-cat-proj .swiper-slide-active {
   color: #1E1E1E;
+<<<<<<< HEAD
 }
 
 p{
@@ -4812,6 +4921,8 @@ p{
   -moz-transition: opacity 1s, transform 1.2s cubic-bezier(.165,.84,.44,1);
   -ms-transition: opacity 1s, transform 1.2s cubic-bezier(.165,.84,.44,1);
   -o-transition: opacity 1s, transform 1.2s cubic-bezier(.165,.84,.44,1);
+=======
+>>>>>>> 8d19e9b8ff1cdf5edbd6fdd9f2520b47e1e9adad
 }
 
 .mouse {
@@ -5122,6 +5233,10 @@ li {
   }
 }
 
+a:hover {
+  text-decoration: none;
+}
+
 .productList .proBox:hover .callBtn {
   transform: scale(1);
   transition: 1s ease;
@@ -5410,6 +5525,67 @@ li {
 .play {
   opacity: 0;
   display: none;
+}
+
+.productShow .swiper-button-disabled svg{
+  opacity: 0.5;
+  cursor: auto;
+}
+
+.collapse.show{
+  visibility: visible;
+}
+
+.productShow .accordion .card-header {
+  background-color: transparent;
+}
+
+.productShow .accordion .card-header p {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 10px;
+  column-gap: 10px;
+}
+
+.productShow .accordion .card-header button::before {
+  content: "";
+  display: inline-block;
+  width: 67px;
+  height: 1px;
+  background-color: black;
+  transition: 0.5s;
+}
+
+.productShow .accordion .card-header button {
+  display: flex;
+  align-items: center;
+}
+
+.productShow .accordion .card-header button:focus {
+  outline: none;
+}
+
+.productShow .accordion .card-header p::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: black;
+  transition: 0.5s;
+}
+
+.productShow .accordion .card-header button[aria-expanded=true]::before {
+  width: 87px;
+  background-color: #F26737;
+}
+
+.productShow .accordion .card-header button[aria-expanded=true] p::before {
+  background-color: #F26737;
+}
+
+.productShow .Project:hover .Title-2 p{
+  color: white;
 }
 
 @media (min-width: 480px) {
@@ -5853,8 +6029,14 @@ li {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+<<<<<<< HEAD
 .group:hover .group-hover\:text-f {
   color: #ffff;
+=======
+.group:hover .group-hover\:text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+>>>>>>> 8d19e9b8ff1cdf5edbd6fdd9f2520b47e1e9adad
 }
 
 .group:hover .group-hover\:opacity-\[0\] {

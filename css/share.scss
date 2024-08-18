@@ -1,3 +1,51 @@
 .productShow{
-   
+   .accordion{
+    .card-header{
+        background-color: transparent;
+        p{
+            display: flex;
+            align-items: center;
+
+            column-gap: 10px;
+        }
+        button::before{
+            content: "";
+            display: inline-block;
+            width: 67px;
+            height: 1px;
+            background-color: black;
+            transition: 0.5s;
+
+        }
+        button{
+            display: flex;
+            align-items: center;
+        }
+        button:focus{
+            outline: none;
+        }
+        p::before{
+            content: "";
+            display: inline-block;
+            width: 10px;
+            height:10px;
+            border-radius: 50%;
+            background-color: black;
+            transition: 0.5s;
+
+        }
+
+        button[aria-expanded=true]::before{
+           width: 87px;
+           background-color: #F26737;
+
+          
+        }
+        button[aria-expanded=true]{
+            p::before{
+                background-color: #F26737;
+               }
+        }
+    }
+   }
 }
