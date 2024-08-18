@@ -31,7 +31,7 @@ module.exports = {
       'white': '#FFFFFF',
       'gray-500':'#64748B',
       'f':'#ffff',
-    
+
     },
     fontFamily: {
       'IRANSansWeb300': ['IRANSansWeb300', 'IRANSansWeb300'],
@@ -61,8 +61,8 @@ module.exports = {
         '32.03':'32.03px',
         '56.35':'56.35px',
         '25.04':'25.04px',
-        '37.97':'37.97px',
         '37.57':'37.57px'
+       
 
       },
 
@@ -77,11 +77,6 @@ module.exports = {
       //   'xl':'24px',
       //   '2xl': '64px',
       // },
-      fontSize: {
-        'f1':'20px',
-        'f2':'24px',
-        'f3': '64px',
-      },
       zIndex: {
         '1': '1',
         '2': '2',
@@ -98,7 +93,11 @@ module.exports = {
     plugin(function({ addComponents , theme}) {
       addComponents({
         '.linear':{
-          background:'linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(46, 49, 146, 0.5) 100%)' 
+          transition:' background .5s ease',
+          '&:hover':{
+            background:'linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(46, 49, 146, 0.5) 100%)' ,
+            transition:' background .5s ease',
+          }
         },
         '.btn': {
           width:'auto',
