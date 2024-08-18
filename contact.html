@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/leaflet.css">
+    <link rel="stylesheet" href="css/outputDesk.css" />
+</head>
+
+<body>
+    <div class="contactUS">
+        <div class="section1 flex gap-x-[117px] mt-[100px] justify-between" dir="rtl">
+            <div class="contactDetail mt-[26px] pr-[80px]">
+                <div class="breadcrum">
+                    <ul class="flex items-center gap-x-2">
+                        <li class="flex items-center gap-x-2">
+                            <a class="text-xs text-b1 font-IRANSansWeb400 no-underline" href="/" title="@title">
+                                صفحه نخست
+                            </a>
+                            <span class="text-xs text-b1 font-IRANSansWeb400">
+                                /
+                            </span>
+                        </li>
+                    
+                        <li>
+                            <h2 class="text-xs text-b1 font-IRANSansWeb400 no-underline">
+                                تماس با ما
+                            </h2>
+                        </li>
+                    </ul>
+                </div>
+                <h1 class="mt-[112px] mb-8 font-IRANSansWeb500 text-b1 text-3xl">
+                 فرم ارتباط با ما
+                </h1>
+                <form action="" class="mb-[116px]">
+                    <button class=" cursor-pointer callBtn w-[108px] h-[45px] bg-b4 rounded-md justify-center flex items-center gap-x-5">
+                        <span class="w-3 h-3 bg-b8 rounded-full block"></span>
+                        <p class="font-IRANSansWeb500 text-sm text-gray-500"> مشاهده</p>
+                    </button>
+                </form>
+            </div>
+            <div class="mapSection">
+                <div class="mapContainer w-[60.5vw] h-full">
+                    <div class="mapIn map h-full" id="map" data-x="51.3987223" data-y="35.7569334"></div>
+                </div>
+            </div>
+        </div>
+        <div class="section2 pr-[85px] pl-[125px] py-16 mb-[250px]" dir="rtl">
+            <div class="in2  flex gap-x-20">
+                <div class="contactInfo">
+                    <h1 class=" mb-13 font-IRANSansWeb500 text-b1 text-3xl">
+                        فرم ارتباط با ما
+                       </h1>
+                       <div class="address font-IRANSansWeb300 text-sm text-b9 mb-5">
+                        <p>
+                            تهران ، ابتدای خیابان مفتح جنوبی ، نرسیده به خیابان انقلاب ، جنب پل زیرگذر سواری دروازه دولت ، مجتمع تجاری اداری 21 ، طبقه اول ، واحد 32
+                        </p>
+                       </div>
+                       <ul class="flex items-center gap-x-1">
+                        <li class="font-IRANSansWeb300 text-sm text-b9">
+                            <p>
+                                02188329979
+                            </p>
+                        </li>
+                        <li>
+                            ,
+                        </li>
+                        <li>
+                            <p>
+                                02188329978
+                            </p>
+                        </li>
+                        <li class="last:hidden">
+                            ,
+                        </li>
+                       </ul>
+                       <div class="OpenPopUP mt-6 cursor-pointer callBtn w-[108px] h-[45px] bg-b4 rounded-md justify-center flex items-center gap-x-0.5">
+                        <span class="w-3 h-3 bg-b8 rounded-full block"></span>
+                        <p class="font-IRANSansWeb500 text-sm text-gray-500">نمایندگی ها </p>
+                    </div>
+                </div>
+                <div class="qr">
+                    <div class="imgS">
+                        <img src="images/QRCode (1) 2.png" alt="QRCode" title="QRCode">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+      <!-- POPOP -->
+      <div class="Galerys hidden">
+        <img src="images/pict1881141000019920482000012754001 1 (1).png" alt="">
+        <img src="images/p.png" alt="">
+        <img src="images/Frame 16133.png" alt="">
+    
+    </div>
+    <div class="Gallerypopup [&.showPOPUP]:opacity-[1]  [&.showPOPUP]:pointer-events-auto fixed left-0 top-0 h-[100vh]
+     w-screen z-[1000] bg-[#000000CC]
+    flex justify-center items-center opacity-0 duration-[.4s] pointer-events-none">
+
+        <div class="close absolute right-0 top-0 pr-[3em] pt-[3em] hover:cursor-pointer">
+            <div class="box">
+            <svg width="40" height="40" viewbox="0 0 40 40"><path d="M 10,10 L 30,30 M 30,10 L 10,30" stroke="white" stroke-width="4" /></svg>
+            </div>
+        </div>
+        <div class="popUp w-full flex justify-between items-center" dir="rtl">
+
+            <span class="Gprev hover:cursor-pointer w-[75px] h-[75px] bg-b7 flex justify-center items-center">
+                <svg width="26" height="46" viewBox="0 0 26 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 2L23 23L2 44" stroke="white" stroke-width="3"/>
+                    </svg>
+                    
+            </span>
+              
+             <img class="Main w-[50.5vw]  object-cover mr-auto ml-auto scale-[1.2] duration-[.5s] 
+             [&.active]:scale-[1] [&.active]:opacity-[1] opacity-0
+             " src="@largeIMG" alt="@title" title="@title"/>  
+
+             <span class="Gnext hover:cursor-pointer w-[75px] h-[75px] bg-b7 flex justify-center items-center">
+                <svg class="rotate-180" width="26" height="46" viewBox="0 0 26 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 2L23 23L2 44" stroke="white" stroke-width="3"/>
+                    </svg>
+                    
+                    
+             </span>
+
+        </div>
+      
+    </div>
+     <!-- POPOP -->
+    <script src="js/gallery.js"></script>
+    <script src="js/leaflet.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+
+</html>
