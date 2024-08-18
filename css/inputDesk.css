@@ -448,6 +448,11 @@ a:hover {
   -webkit-box-shadow: 0px 18px 50px -25px rgba(0, 0, 0, 0.33);
   -moz-box-shadow: 0px 18px 50px -25px rgba(0, 0, 0, 0.33);
 }
+.brandShow .section3 .swiper-slide:hover {
+  box-shadow: 0px 18px 50px -25px rgba(0, 0, 0, 0.33);
+  -webkit-box-shadow: 0px 18px 50px -25px rgba(0, 0, 0, 0.33);
+  -moz-box-shadow: 0px 18px 50px -25px rgba(0, 0, 0, 0.33);
+}
 
 .home .listSlider::before {
   content: "";

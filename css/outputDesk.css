@@ -1287,6 +1287,10 @@ video {
   margin-top: 20rem;
 }
 
+.mt-9 {
+  margin-top: 2.25rem;
+}
+
 .mt-\[100px\] {
   margin-top: 100px;
 }
@@ -5110,6 +5114,12 @@ a:hover {
 }
 
 .home .section4 .swiper-slide:hover {
+  box-shadow: 0px 18px 50px -25px rgba(0, 0, 0, 0.33);
+  -webkit-box-shadow: 0px 18px 50px -25px rgba(0, 0, 0, 0.33);
+  -moz-box-shadow: 0px 18px 50px -25px rgba(0, 0, 0, 0.33);
+}
+
+.brandShow .section3 .swiper-slide:hover {
   box-shadow: 0px 18px 50px -25px rgba(0, 0, 0, 0.33);
   -webkit-box-shadow: 0px 18px 50px -25px rgba(0, 0, 0, 0.33);
   -moz-box-shadow: 0px 18px 50px -25px rgba(0, 0, 0, 0.33);
