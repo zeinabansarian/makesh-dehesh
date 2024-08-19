@@ -765,13 +765,6 @@ video {
   bottom: -40%;
 }
 
-<<<<<<< HEAD
-=======
-.bottom-\[\.8em\] {
-  bottom: .8em;
-}
-
->>>>>>> 8d19e9b8ff1cdf5edbd6fdd9f2520b47e1e9adad
 .bottom-\[231px\] {
   bottom: 231px;
 }
@@ -852,13 +845,12 @@ video {
   top: 40%;
 }
 
-<<<<<<< HEAD
-.top-\[8px\] {
-  top: 8px;
-=======
 .top-\[80px\] {
   top: 80px;
->>>>>>> 8d19e9b8ff1cdf5edbd6fdd9f2520b47e1e9adad
+}
+
+.top-\[8px\] {
+  top: 8px;
 }
 
 .isolate {
@@ -913,7 +905,6 @@ video {
   z-index: 999;
 }
 
-<<<<<<< HEAD
 .order-1 {
   order: 1;
 }
@@ -922,8 +913,6 @@ video {
   order: 2;
 }
 
-=======
->>>>>>> 8d19e9b8ff1cdf5edbd6fdd9f2520b47e1e9adad
 .col-span-2 {
   grid-column: span 2 / span 2;
 }
@@ -1230,6 +1219,10 @@ video {
   margin-right: auto;
 }
 
+.mt-0 {
+  margin-top: 0px;
+}
+
 .mt-1 {
   margin-top: 0.25rem;
 }
@@ -1322,13 +1315,10 @@ video {
   margin-top: 154px;
 }
 
-<<<<<<< HEAD
 .mt-\[15em\] {
   margin-top: 15em;
 }
 
-=======
->>>>>>> 8d19e9b8ff1cdf5edbd6fdd9f2520b47e1e9adad
 .mt-\[26px\] {
   margin-top: 26px;
 }
@@ -1341,13 +1331,6 @@ video {
   margin-top: 3em;
 }
 
-<<<<<<< HEAD
-=======
-.mt-\[4em\] {
-  margin-top: 4em;
-}
-
->>>>>>> 8d19e9b8ff1cdf5edbd6fdd9f2520b47e1e9adad
 .mt-\[5em\] {
   margin-top: 5em;
 }
@@ -1362,14 +1345,6 @@ video {
 
 .mt-auto {
   margin-top: auto;
-}
-
-.mt-1\.5 {
-  margin-top: 1.5em;
-}
-
-.mt-0 {
-  margin-top: 0px;
 }
 
 .box-border {
@@ -3567,14 +3542,11 @@ video {
   padding-bottom: 31px;
 }
 
-<<<<<<< HEAD
 .py-\[4em\] {
   padding-top: 4em;
   padding-bottom: 4em;
 }
 
-=======
->>>>>>> 8d19e9b8ff1cdf5edbd6fdd9f2520b47e1e9adad
 .pb-10 {
   padding-bottom: 2.5rem;
 }
@@ -3721,7 +3693,6 @@ video {
 
 .pl-\[125px\] {
   padding-left: 125px;
-<<<<<<< HEAD
 }
 
 .pl-\[1em\] {
@@ -3730,12 +3701,6 @@ video {
 
 .pl-\[1rem\] {
   padding-left: 1rem;
-=======
->>>>>>> 8d19e9b8ff1cdf5edbd6fdd9f2520b47e1e9adad
-}
-
-.pl-\[1em\] {
-  padding-left: 1em;
 }
 
 .pl-\[2rem\] {
@@ -3810,13 +3775,10 @@ video {
   padding-top: 3rem;
 }
 
-<<<<<<< HEAD
-=======
 .pt-14 {
   padding-top: 3.5rem;
 }
 
->>>>>>> 8d19e9b8ff1cdf5edbd6fdd9f2520b47e1e9adad
 .pt-2 {
   padding-top: 0.5rem;
 }
@@ -4155,6 +4117,10 @@ video {
 
 .leading-37\.57 {
   line-height: 37.57px;
+}
+
+.leading-37\.97 {
+  line-height: 37.97px;
 }
 
 .leading-56\.35 {
@@ -4755,11 +4721,11 @@ video {
 @font-face {
   font-family: "YekanBakh400";
 
-  src: url("../fonts/Yekan\ Bakh\ FA\ 04\ Regular.eot");
+  src: url("../../_fonts/Yekan\ Bakh\ FA\ 04\ Regular.eot");
 
-  src: url("../fonts/Yekan\ Bakh\ FA\ 04\ Regular.eot?#iefix")
+  src: url("../../_fonts/Yekan\ Bakh\ FA\ 04\ Regular.eot?#iefix")
       format("embedded-opentype"),
-    url("../fonts/Yekan\ Bakh\ FA\ 04\ Regular.woff") format("woff");
+    url("../../_fonts/Yekan\ Bakh\ FA\ 04\ Regular.woff") format("woff");
 
   font-weight: 400;
 
@@ -4771,11 +4737,11 @@ video {
 @font-face {
   font-family: "YekanBakh700";
 
-  src: url("../fonts/Yekan\ Bakh\ FA\ 06\ Bold.eot");
+  src: url("../../_fonts/Yekan\ Bakh\ FA\ 06\ Bold.eot");
 
-  src: url("../fonts/Yekan\ Bakh\ FA\ 06\ Bold.eot?#iefix")
+  src: url("../../_fonts/Yekan\ Bakh\ FA\ 06\ Bold.eot?#iefix")
       format("embedded-opentype"),
-    url("../fonts/Yekan\ Bakh\ FA\ 06\ Bold.woff") format("woff");
+    url("../../_fonts/Yekan\ Bakh\ FA\ 06\ Bold.woff") format("woff");
 
   font-weight: 700;
 
@@ -4787,13 +4753,13 @@ video {
 @font-face {
   font-family: "IRANSansWeb500";
 
-  src: url("../_fonts/IRANSansWeb_Medium.eot");
+  src: url("../../_fonts/IRANSansWeb_Medium.eot");
 
-  src: url("../_fonts/IRANSansWeb_Medium.eot?#iefix")
+  src: url("../../_fonts/IRANSansWeb_Medium.eot?#iefix")
       format("embedded-opentype"),
-    url("../_fonts/IRANSansWeb_Medium.woff") format("woff"),
-    url("../_fonts/IRANSansWeb_Medium.woff2") format("woff2"),
-    url("../_fonts/IRANSansWeb_Medium.ttf") format("truetype");
+    url("../../_fonts/IRANSansWeb_Medium.woff") format("woff"),
+    url("../../_fonts/IRANSansWeb_Medium.woff2") format("woff2"),
+    url("../../_fonts/IRANSansWeb_Medium.ttf") format("truetype");
 
   font-weight: 500;
 
@@ -4805,13 +4771,13 @@ video {
 @font-face {
   font-family: "IRANSansWeb400";
 
-  src: url("../_fonts/IRANSansWebRegular.eot");
+  src: url("../../_fonts/IRANSansWebRegular.eot");
 
-  src: url("../_fonts/IRANSansWebRegular.eot?#iefix")
+  src: url("../../_fonts/IRANSansWebRegular.eot?#iefix")
       format("embedded-opentype"),
-    url("../_fonts/IRANSansWebRegular.woff") format("woff"),
-    url("../_fonts/IRANSansWebRegular.woff2") format("woff2"),
-    url("../_fonts/IRANSansWebRegular.ttf") format("truetype");
+    url("../../_fonts/IRANSansWebRegular.woff") format("woff"),
+    url("../../_fonts/IRANSansWebRegular.woff2") format("woff2"),
+    url("../../_fonts/IRANSansWebRegular.ttf") format("truetype");
 
   font-weight: 400;
 
@@ -4823,13 +4789,13 @@ video {
 @font-face {
   font-family: "IRANSansWeb300";
 
-  src: url("../_fonts/IRANSansWeb(FaNum)_Light.eot");
+  src: url("../../_fonts/IRANSansWeb(FaNum)_Light.eot");
 
-  src: url("../_fonts/IRANSansWeb(FaNum)_Light.eot?#iefix")
+  src: url("../../_fonts/IRANSansWeb(FaNum)_Light.eot?#iefix")
       format("embedded-opentype"),
-    url("../_fonts/IRANSansWeb(FaNum)_Light.woff") format("woff"),
-    url("../_fonts/IRANSansWeb(FaNum)_Light.woff2") format("woff2"),
-    url("../_fonts/IRANSansWeb(FaNum)_Light.ttf") format("truetype");
+    url("../../_fonts/IRANSansWeb(FaNum)_Light.woff") format("woff"),
+    url("../../_fonts/IRANSansWeb(FaNum)_Light.woff2") format("woff2"),
+    url("../../_fonts/IRANSansWeb(FaNum)_Light.ttf") format("truetype");
 
   font-weight: 300;
 
@@ -4841,13 +4807,13 @@ video {
 @font-face {
   font-family: "IRANSansWeb700";
 
-  src: url("../_fonts/IRANSansWeb(FaNum)_Bold.eot");
+  src: url("../../_fonts/IRANSansWeb(FaNum)_Bold.eot");
 
-  src: url("../_fonts/IRANSansWeb(FaNum)_Bold.eot?#iefix")
+  src: url("../../_fonts/IRANSansWeb(FaNum)_Bold.eot?#iefix")
       format("embedded-opentype"),
-    url("../_fonts/IRANSansWeb(FaNum)_Bold.woff") format("woff"),
-    url("../_fonts/IRANSansWeb(FaNum)_Bold.woff2") format("woff2"),
-    url("../_fonts/IRANSansWeb(FaNum)_Bold.ttf") format("truetype");
+    url("../../_fonts/IRANSansWeb(FaNum)_Bold.woff") format("woff"),
+    url("../../_fonts/IRANSansWeb(FaNum)_Bold.woff2") format("woff2"),
+    url("../../_fonts/IRANSansWeb(FaNum)_Bold.ttf") format("truetype");
 
   font-weight: 700;
 
@@ -4912,7 +4878,6 @@ video {
 
 .swiper-cat-proj .swiper-slide-active {
   color: #1E1E1E;
-<<<<<<< HEAD
 }
 
 p{
@@ -4921,8 +4886,6 @@ p{
   -moz-transition: opacity 1s, transform 1.2s cubic-bezier(.165,.84,.44,1);
   -ms-transition: opacity 1s, transform 1.2s cubic-bezier(.165,.84,.44,1);
   -o-transition: opacity 1s, transform 1.2s cubic-bezier(.165,.84,.44,1);
-=======
->>>>>>> 8d19e9b8ff1cdf5edbd6fdd9f2520b47e1e9adad
 }
 
 .mouse {
@@ -6029,14 +5992,13 @@ a:hover {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-<<<<<<< HEAD
 .group:hover .group-hover\:text-f {
   color: #ffff;
-=======
+}
+
 .group:hover .group-hover\:text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
->>>>>>> 8d19e9b8ff1cdf5edbd6fdd9f2520b47e1e9adad
 }
 
 .group:hover .group-hover\:opacity-\[0\] {
