@@ -15,3 +15,9 @@ var map = L.map("map", {
  minZoom: "10",
  }
  ).addTo(map);
+
+
+
+ greenIcon = L.icon({ iconUrl: "images/location-64.png", iconSize: [29,34] });
+ marker = L.marker([yLat, xLat], { icon: greenIcon });
+marker.addTo(map);

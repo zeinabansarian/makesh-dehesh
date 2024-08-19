@@ -13,11 +13,11 @@ popBTN.addEventListener('click',(e)=>{
   })
     let popup = document.querySelector('.Gallerypopup')
     popup.classList.add('showPOPUP')
-    let MimgSCR = gallerys[0].getAttribute('poster')
+    let MimgSCR = gallerys[0].getAttribute('src')
    let clickedIMG =0
     console.log(MimgSCR);
     let mainIMG = document.querySelector('video.Main')
-    mainIMG.setAttribute('poster',MimgSCR)
+    mainIMG.setAttribute('src',MimgSCR)
     mainIMG.classList.add('active')
     let previewIMG = document.querySelector('video.Main')
     let newIndex = clickedIMG 
@@ -29,7 +29,7 @@ popBTN.addEventListener('click',(e)=>{
          console.log('indec',newIndex);
          previewIMG.classList.remove('active')
          setTimeout(()=>{
-             previewIMG.setAttribute('poster',selectedIMGurl.getAttribute('poster'))
+             previewIMG.setAttribute('src',selectedIMGurl.getAttribute('src'))
              previewIMG.classList.add('active')
          },200)
          }
