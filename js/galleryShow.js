@@ -1,3 +1,17 @@
+gsap.registerPlugin(ScrollTrigger) 
+let boxes = document.querySelectorAll('.Gallery')
+boxes.forEach(p=>{
+    gsap.to(p,{
+        y:0,
+        opacity:1,
+        scale:1,
+        scrollTrigger:{
+            trigger:p,
+            start:"top 60%",
+            end:"bottom bottom"
+        }
+    })
+})
 let sideBarLi = document.querySelectorAll(".sidebar li")
 
 sideBarLi[0].classList.add("activeList")

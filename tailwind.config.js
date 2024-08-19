@@ -38,6 +38,7 @@ module.exports = {
       'IRANSansWeb400': ['IRANSansWeb400', 'IRANSansWeb400'],
       'IRANSansWeb500': ['IRANSansWeb500', 'IRANSansWeb500'],
       'IRANSansWeb700': ['IRANSansWeb700', 'IRANSansWeb700'],
+      'IRANSansWeb900': ['IRANSansWeb900', 'IRANSansWeb900'],
       'YekanBakh400':[' YekanBakh400'],
       'YekanBakh700':[' YekanBakh700']
     },
@@ -61,7 +62,10 @@ module.exports = {
         '32.03':'32.03px',
         '56.35':'56.35px',
         '25.04':'25.04px',
-        '37.57':'37.57px'
+        '37.97':'37.97px',
+        '37.57':'37.57px',
+        '31.03':'31.03px',
+
        
 
       },

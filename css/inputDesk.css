@@ -128,6 +128,14 @@ border-bottom:1px solid #1E1E1E;
   color: #1E1E1E;
 
  }
+p{
+  transition: opacity 1s, transform 1.2s cubic-bezier(.165,.84,.44,1);
+  -webkit-transition: opacity 1s, transform 1.2s cubic-bezier(.165,.84,.44,1);
+  -moz-transition: opacity 1s, transform 1.2s cubic-bezier(.165,.84,.44,1);
+  -ms-transition: opacity 1s, transform 1.2s cubic-bezier(.165,.84,.44,1);
+  -o-transition: opacity 1s, transform 1.2s cubic-bezier(.165,.84,.44,1);
+}
+
 
 .mouse {
   margin: 0 auto;
