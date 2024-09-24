@@ -26,31 +26,43 @@ v.addEventListener('click',function (event) {
 });
 })
 
-
 //DROPDOWN NAV
 $(document).ready(function() {
-    $('.DropDowns').slideUp();
-  let navBtns = document.querySelectorAll('.history-Tab .tab-title')
-  navBtns.forEach(nav=>{
-      let IsOpen = false;
-  nav.addEventListener('click',(e)=>{
-      if(!IsOpen){
-       console.log(e.target);
-          e.target.classList.add('active')
-          $(e.target.nextElementSibling).slideDown();
-          e.target.querySelector('svg').style.transform=" rotate(180deg)"
-          IsOpen =true;
-      }
-      else{
-           e.target.classList.remove('active')
-          $(e.target.nextElementSibling).slideUp();
-          e.target.querySelector('svg').style.transform=" unset"
-          IsOpen = false;
-      } 
-      })
-  })
-  
-  })
+  $('.DropDowns').slideUp();
+  $(document.querySelector('.history-Tab .DropDowns')).slideDown();
+document.querySelectorAll('.history-Tab .tab-title svg')[0].style.transform=" rotate(180deg)"
+// let IsOpen = true;
+let navBtns = document.querySelectorAll('.history-Tab .tab-title')
+for(let i=0 ; i<navBtns.length ; i++){
+  navBtns[i].setAttribute('IS-OP',false)
+}
+navBtns[0].setAttribute('IS-OP',true)
+navBtns[0].classList.add('active')
+navBtns.forEach(nav=>{
+  let IsOpen = false;
+nav.addEventListener('click',(e)=>{
+  IsOpen =Boolean(`${e.currentTarget.getAttribute('IS-OP')}`) 
+ console.log(e.currentTarget.getAttribute('IS-OP'));
+if(e.currentTarget.getAttribute('IS-OP') == 'false'){
+  console.log(e.currentTarget);
+       e.currentTarget.classList.add('active')
+        $(e.currentTarget.nextElementSibling).slideDown();
+        e.currentTarget.querySelector('svg').style.transform=" rotate(180deg)"
+  IsOpen =false;
+  e.currentTarget.setAttribute('IS-OP',true)
+}
+else{
+  console.log(e.currentTarget);
+      e.currentTarget.classList.remove('active')
+        $(e.currentTarget.nextElementSibling).slideUp();
+        e.currentTarget.querySelector('svg').style.transform=" unset"
+  e.currentTarget.setAttribute('IS-OP',false)
+  IsOpen =true;
+}
+    })
+})
+
+})
 
 //   PARTNER SLIDER
 let PartnerSwiper = new Swiper('.swiper-partner',{
@@ -101,5 +113,91 @@ textF.forEach(p=>{
           start:"top 60%",
           end:"bottom bottom",
       }
+    })
+})
+// Scale in animation
+let faders = document.querySelectorAll('.fadeIN')
+faders.forEach(fade=>{
+    gsap.to(fade.querySelectorAll('p'),{
+        y:0,
+        opacity:1,
+        scale:1,
+        stagger:.2,
+        scrollTrigger:{
+            trigger:fade,
+            start:"top 60%",
+            end:"bottom bottom"
+        }
+    })
+    gsap.to(fade.querySelectorAll('a'),{
+        y:0,
+        opacity:1,
+        scale:1,
+        stagger:.2,
+        scrollTrigger:{
+            trigger:fade,
+            start:"top 60%",
+            end:"bottom bottom"
+        }
+    })
+    gsap.to(fade.querySelectorAll('span'),{
+        y:0,
+        opacity:1,
+        scale:1,
+        scrollTrigger:{
+            trigger:fade,
+            start:"top 60%",
+            end:"bottom bottom"
+        }
+    })
+    gsap.to(fade.querySelectorAll('h1'),{
+        y:0,
+        opacity:1,
+        scale:1,
+        scrollTrigger:{
+            trigger:fade,
+            start:"top 60%",
+            end:"bottom bottom"
+        }
+    })
+    gsap.to(fade.querySelectorAll('h2'),{
+        y:0,
+        opacity:1,
+        scale:1,
+        scrollTrigger:{
+            trigger:fade,
+            start:"top 60%",
+            end:"bottom bottom"
+        }
+    })
+    gsap.to(fade.querySelectorAll('h3'),{
+        y:0,
+        opacity:1,
+        scale:1,
+        scrollTrigger:{
+            trigger:fade,
+            start:"top 60%",
+            end:"bottom bottom"
+        }
+    })
+    gsap.to(fade.querySelectorAll('h4'),{
+        y:0,
+        opacity:1,
+        scale:1,
+        scrollTrigger:{
+            trigger:fade,
+            start:"top 60%",
+            end:"bottom bottom"
+        }
+    })
+    gsap.to(fade.querySelectorAll('h5'),{
+        y:0,
+        opacity:1,
+        scale:1,
+        scrollTrigger:{
+            trigger:fade,
+            start:"top 60%",
+            end:"bottom bottom"
+        }
     })
 })

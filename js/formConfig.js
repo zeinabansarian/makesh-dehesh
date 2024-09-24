@@ -4,6 +4,7 @@ var host = {
     settings:{
               'connection.web.trust_login': 'https://basispanel.ir/apicms', 
           'connection.web.basiscore': 'https://basispanel.ir/apicms', 
+          'connection.web.userbehavior': 'https://basispanel.ir/apicms', 
           'connection.web.media': 'https://basispanel.ir/apicms', 
           'default.dbsource.verb': 'post', 
           'default.call.verb': 'get', 
@@ -13,17 +14,6 @@ var host = {
           }
   }
  
-  // Enable Scroll
-
-const lenis = new Lenis()
-
-
-function raf(time) {
-lenis.raf(time)
-requestAnimationFrame(raf)
-}
-
-requestAnimationFrame(raf)
 function onSource(args) { 
     const captcha = document.querySelector("input[name='captcha']").value; 
     const captchaid = document.querySelector("input[name='captchaid']").value; 
@@ -69,13 +59,12 @@ document.querySelector('.main-container').classList.remove('SEND')
 
 function rendered(){
   setTimeout(()=>{
-    let a =document.querySelectorAll('[data-bc-schema-column] [data-bc-question]')  
-    let email = $('[data-bc-schema-column]').children('[data-bc-question]')[0]
-    $(email.querySelector('input')).attr('placeholder',' ایمیل ');
-    child1.appendChild($('[data-bc-schema-column]').children('[data-bc-question]')[0])
+    let a =document.querySelectorAll('footer [data-bc-schema-column] [data-bc-question]')  
+    let email = $('footer [data-bc-schema-column]').children('[data-bc-question]')[0]
+    $(email.querySelector('footer input')).attr('placeholder',' ایمیل ');
    let isEmpty=false
-   let buttons = document.querySelector('.schemaBtn')
-  let inputs = document.querySelectorAll('input[type="email"], input[type="text"]')
+   let buttons = document.querySelector('footer .schemaBtn')
+  let inputs = document.querySelectorAll('footer input')
   buttons.addEventListener('click',()=>{
     console.log('vkkkk');
     inputs.forEach(input=>{
@@ -83,16 +72,13 @@ function rendered(){
         if(input.value == ""){
            isEmpty = true
             console.log('فیلد را پرکنید');
+            document.querySelector('.main-container').querySelector('span').innerHTML='  فیلدها را پرکنید '
+            document.querySelector('.main-container').classList.add('SEND')
+       setTimeout(()=>{
+       document.querySelector('.main-container').classList.remove('SEND')
+       },2000)
         }
       })
-    if(isEmpty){
-      isEmpty = false
-      document.querySelector('.main-container').querySelector('span').innerHTML='  فیلدها را پرکنید '
-      document.querySelector('.main-container').classList.add('SEND')
- setTimeout(()=>{
- document.querySelector('.main-container').classList.remove('SEND')
- },2000)
-    }
   })
 
    console.log('rendered');
@@ -102,17 +88,45 @@ function rendered(){
 
 }
 
-// SEARCH
-let sBTN = document.querySelector('.DesktopHeader .SearchIcon')
-let sCon = document.querySelector('.searchContainer')
-let sClose  = document.querySelector('.searchContainer .CloseSerch')
-sBTN.addEventListener('click',()=>{
-  sCon.classList.add('show')
-})
-sClose.addEventListener('click',()=>{
-  sCon.classList.remove('show')
-})
-
+   // SEARCH
+   let sBTN = document.querySelector('.DesktopHeader .SearchIcon')
+   let sCon = document.querySelector('.searchContainer')
+   let sClose  = document.querySelector('.searchContainer .CloseSerch')
+   let searchicon = document.querySelector('.searchContainer .sBTN')
+   sBTN.addEventListener('click',()=>{
+     sCon.classList.add('show')
+   })
+   sClose.addEventListener('click',()=>{
+     sCon.classList.remove('show')
+   })
+   let input = document.querySelector('.searchContainer input#search')
+   let Val = input.value
+   
+       console.log('value',input.value);
+       
+     input.addEventListener("keypress", function(event) {
+       // If the user presses the "Enter" key on the keyboard
+       if (event.key === "Enter") {
+         // Cancel the default action, if needed
+         if(input.value != ''){
+         Val = input.value
+      window.location.href =`/search.bc?q=${Val}`
+     console.log('clicked');
+     console.log('val',Val);
+         }
+       }
+     });
+     searchicon.addEventListener("click", function(event) {
+       Val = input.value
+       if(input.value != ''){
+           window.location.href =`/search.bc?q=${Val}`
+     console.log('clicked');
+     console.log('val',Val);
+       }
+   console.log(Val);
+   
+     
+     });
 
 let map1 = document.querySelector('.Map_1')
 let xLat = map1.getAttribute('data-x')
@@ -127,10 +141,11 @@ let tiles= new L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
 minZoom:'10'
 }).addTo(map_1);
-// var customIcon = L.icon({
-//   iconUrl: './images/location.png',
-//   iconSize: [32, 32],
-//   iconAnchor: [16, 32],
-//   popupAnchor: [0, -32]
-//   });
-  // var marker1 = L.marker([yLat,xLat],{ icon: customIcon }).addTo(map_1);
+var customIcon = L.icon({
+  iconUrl: '../../images/location.png',
+  iconSize: [32, 32],
+  iconAnchor: [16, 32],
+  popupAnchor: [0, -32]
+  });
+  var marker1 = L.marker([yLat,xLat],{ icon: customIcon }).addTo(map_1);
+

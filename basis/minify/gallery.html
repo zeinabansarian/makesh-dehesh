@@ -1,0 +1,231 @@
+<basis core="dbsource" source="basiscore" name="db" lid="1" mid="1"> 
+    <member request="navcatid" type="tree" name="nav" parentid="58666" /> 
+</basis>
+<basis core="dbsource" name="db" source="basiscore" lid="1" mid="1" usedforid="[##cms.query.id##]"> 
+<member name="galleryContent" type="view"/> 
+</basis>
+<basis core="dbsource" name="db" source="basiscore" lid="1" mid="1" usedforid="[##cms.query.id##]"> 
+    <member name="title" type="view" postsql="select * from [db.title] where TypeID=150"/> 
+    </basis>
+<basis core="dbsource" name="db" source="basiscore" lid="1" mid="1" usedforid="[##cms.query.id##]"> 
+    <member name="galleryList" type="list" size="451x253"/> 
+</basis>
+<basis core="dbsource" name="db" source="media" lid="1" sourcemid="1" usedforid="[##cms.query.id##]">
+    <member name="galleryIMG" type="list" format="4"/> 
+</basis>
+<basis core="dbsource" name="db" source="media" lid="1" sourcemid="1" usedforid="[##cms.query.id##]">
+    <member name="galleryVideo" type="list" format="3"/> 
+</basis>
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <title>[##db.title.Answer##]</title>
+    <meta name="description" content="[##db.title.Answer##]">
+    <link rel="stylesheet" href="[##cms.cms.cdn##]/new/css/swiper.css">
+    <link rel="stylesheet" href="[##cms.cms.cdn##]/new/css/outputDesk.css">
+</head>
+<body dir="rtl"> 
+    <main class="GalleryShow-v">
+        <basis core="call" file="header.inc" pageindex="[##cms.cdn.pageindex##]" />
+        <div class="galleryVideo px-[5rem] mt-[10em]" dir="rtl" >
+            <div class="Top w-[99%] mr-auto ml-auto">
+                <div class="Navigation flex justify-start items-center gap-1">
+                    <span class="nav w-auto flex justify-center items-center ">
+                        <a href="/" alt="صفحه اصلی" title="صفحه اصلی" class="font-IRANSansWeb400 text-xs leading-18.78 text-b1">
+                            صفحه نخست
+                        </a>
+                    </span>
+                    <span class="nav w-auto flex justify-center items-center text-b1">
+                    /
+                    </span>
+                    <span class="nav w-auto flex justify-center items-center">
+                        <a href="گالری" alt="گالری" title="گالری" class="font-IRANSansWeb400 text-xs leading-18.78 text-b1">
+                               دسته بندی گالری
+                        </a>
+                    </span>
+                    <span class="nav w-auto flex justify-center items-center text-b1">
+                        /
+                        </span>
+                    <span class="nav w-auto flex justify-center items-center">
+                         <span  class="font-IRANSansWeb400 text-xs leading-18.78 text-b1">
+                                    [##db.title.Answer##]
+                        </span>
+                    </span>
+                </div>
+            </div>
+            <div class="TitleP w-full flex justify-center items-center gap-[6.5em] mb-3 mt-[5em]">
+                <span>
+                    <svg width="25" height="15" viewBox="0 0 25 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24.3905 6.26662V1.81182C24.3905 1.42542 24.0769 1.11182 23.6905 1.11182H19.2357V2.51182H22.0007L21.4141 3.09842C20.9199 3.59122 20.3011 3.94122 19.6249 4.11062L19.3379 4.18202C17.8119 4.56422 16.6835 5.81722 16.4609 7.37262L16.3153 8.39462L16.1697 9.41662C16.0283 10.4064 15.3101 11.203 14.3371 11.4466L14.0515 11.518C13.1275 11.749 12.2833 12.2264 11.6113 12.8984L12.6025 13.8882C13.0953 13.394 13.7127 13.044 14.3917 12.8746L14.6759 12.8032C16.2019 12.4224 17.3303 11.1694 17.5543 9.61402L17.6999 8.59202L17.8469 7.57142C17.9883 6.58022 18.7065 5.78362 19.6781 5.54002L19.9651 5.46862C20.8863 5.23762 21.7305 4.76162 22.4039 4.08822L22.9905 3.50162V6.26662H24.3905Z" fill="#BCBDBD"/>
+                        <path d="M13.3905 6.26662V1.81182C13.3905 1.42542 13.0769 1.11182 12.6905 1.11182H8.23573V2.51182H11.0007L10.4141 3.09842C9.91993 3.59122 9.30113 3.94122 8.62493 4.11062L8.33793 4.18202C6.81193 4.56422 5.68353 5.81722 5.46093 7.37262L5.31533 8.39462L5.16973 9.41662C5.02833 10.4064 4.31013 11.203 3.33713 11.4466L3.05153 11.518C2.12753 11.749 1.28333 12.2264 0.611328 12.8984L1.60253 13.8882C2.09533 13.394 2.71273 13.044 3.39173 12.8746L3.67593 12.8032C5.20193 12.4224 6.33033 11.1694 6.55433 9.61402L6.69993 8.59202L6.84693 7.57142C6.98833 6.58022 7.70653 5.78362 8.67813 5.54002L8.96513 5.46862C9.88633 5.23762 10.7305 4.76162 11.4039 4.08822L11.9905 3.50162V6.26662H13.3905Z" fill="#BCBDBD"/>
+                        </svg>
+                        
+                </span>
+                <h1 class="font-IRANSansWeb700 font-bold text-2xl leading-37.57 text-b12">
+                    [##db.title.Answer##]
+                </h1>
+                <span>
+                    <svg width="25" height="15" viewBox="0 0 25 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24.3905 6.26662V1.81182C24.3905 1.42542 24.0769 1.11182 23.6905 1.11182H19.2357V2.51182H22.0007L21.4141 3.09842C20.9199 3.59122 20.3011 3.94122 19.6249 4.11062L19.3379 4.18202C17.8119 4.56422 16.6835 5.81722 16.4609 7.37262L16.3153 8.39462L16.1697 9.41662C16.0283 10.4064 15.3101 11.203 14.3371 11.4466L14.0515 11.518C13.1275 11.749 12.2833 12.2264 11.6113 12.8984L12.6025 13.8882C13.0953 13.394 13.7127 13.044 14.3917 12.8746L14.6759 12.8032C16.2019 12.4224 17.3303 11.1694 17.5543 9.61402L17.6999 8.59202L17.8469 7.57142C17.9883 6.58022 18.7065 5.78362 19.6781 5.54002L19.9651 5.46862C20.8863 5.23762 21.7305 4.76162 22.4039 4.08822L22.9905 3.50162V6.26662H24.3905Z" fill="#BCBDBD"/>
+                        <path d="M13.3905 6.26662V1.81182C13.3905 1.42542 13.0769 1.11182 12.6905 1.11182H8.23573V2.51182H11.0007L10.4141 3.09842C9.91993 3.59122 9.30113 3.94122 8.62493 4.11062L8.33793 4.18202C6.81193 4.56422 5.68353 5.81722 5.46093 7.37262L5.31533 8.39462L5.16973 9.41662C5.02833 10.4064 4.31013 11.203 3.33713 11.4466L3.05153 11.518C2.12753 11.749 1.28333 12.2264 0.611328 12.8984L1.60253 13.8882C2.09533 13.394 2.71273 13.044 3.39173 12.8746L3.67593 12.8032C5.20193 12.4224 6.33033 11.1694 6.55433 9.61402L6.69993 8.59202L6.84693 7.57142C6.98833 6.58022 7.70653 5.78362 8.67813 5.54002L8.96513 5.46862C9.88633 5.23762 10.7305 4.76162 11.4039 4.08822L11.9905 3.50162V6.26662H13.3905Z" fill="#BCBDBD"/>
+                        </svg>
+                        
+                </span>
+
+            </div>
+            <div class="galleryContainer mb-[204px] mt-24 flex gap-x-11">
+                <section class="h-fit sticky top-[8em] sidebar min-w-[350px]">
+                    <!-- <div class="Title w-full flex justify-start items-center border-b
+                     border-b9/[0.2] py-4  gap-x-4">
+                        <p class=" font-IRANSansWeb500 font-medium leading-25.4
+                        text-base text-b9">
+                            انتخاب فیلتر
+                        </p>
+                    </div> -->
+                    <ul>
+                        <li class="cursor-pointer border-b border-b9/[0.2] py-4 flex items-center gap-x-4" id="img">
+                            <span class="duration-700 before:duration-700 w-[10px] h-[10px]
+                             bg-b9 before:left-0 before:top-[50%] before:w-16
+                              before:bg-b9 before:h-[1px] rounded-full 
+                              before:absolute relative mr-16 before:content-['']"></span>
+                            <p class="duration-700 font-IRANSansWeb500 font-medium leading-25.4
+                            text-base text-b9">
+                               عکس
+                            </p>
+                        </li>
+                        <li class="cursor-pointer border-b border-b9/[0.2] py-4 flex items-center gap-x-4" id="video">
+                            <span class="duration-700 before:duration-700 w-[10px] h-[10px] bg-b9
+                             before:left-0 before:top-[50%] before:w-16 before:bg-b9 before:h-[1px]
+                              rounded-full before:absolute relative mr-16 before:content-['']"></span>
+                            <p class="duration-700  font-IRANSansWeb500 font-medium leading-25.4
+                            text-base text-b9">
+                                ویدیو
+                            </p>
+                        </li>
+                      
+                    </ul>
+                </section>
+               
+                 <div class="gridIMGS tab overflow-hidden [&.show]:grid grid-cols-2 gap-x-[1em] gap-y-10 hidden">
+                    <basis core="print" datamembername="db.galleryIMG">
+                        <layout>
+                            @child
+                        </layout>
+                        <face filter="ord=1000">
+                            <div class="Gallery opacity-0 translate-y-100 group flex-col  hover:translate-y-[-1px]
+                            hover:shadow-[rgba(0,_0,_0,_0.25)_0px_25px_50px_-12px]
+                            overflow-hidden
+                           w-auto flex justify-center items-center duration-[.8s] delay-[.3s] ">
+                                <div class="IMG  hover:cursor-pointer w-auto flex justify-center items-center relative ">
+                                    <img src="@largeIMG" alt="[##db.title.Answer##]" title="[##db.title.Answer##]"
+                                     class="w-auto object-cover">
+                                  
+                                </div>
+                             
+                                
+                            </div>
+                        </face>
+                    </basis>
+               
+            
+                </div>
+                <div class="gridVideos tab overflow-hidden [&.show]:grid hidden grid-cols-2 gap-x-[1.5em] gap-y-10">
+                    <basis core="print" datamembername="db.galleryVideo">
+                        <layout>
+                            @child
+                        </layout>
+                        <face filter="ord=1000">
+                            <div class="VideoBox group duration-[.8s] delay-[.3s]  hover:shadow-[rgba(0,_0,_0,_0.25)_0px_25px_50px_-12px]">
+                                <div class="Video w-full h-full flex justify-center items-center
+                                 relative hover:cursor-pointer
+                                overflow-hidden flex-col duration-[.5s]">
+                                    <video class="w-full h-full object-cover" src="@largeIMG"
+                                   ></video>
+                                    <div class="ov w-full h-full absolute flex justify-end items-end
+                                    top-0 left-0 z-3 duration-[.5s] pointer-events-none
+                                     ">
+                                        <div class="playy ml-3 mb-2">
+                                            <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M20.9997 0.0550537C26.7832 0.0550537 32.0197 2.39955 35.8102 6.19005C39.6002 9.98005 41.9447 15.2166 41.9447 21.0001C41.9447 26.7836 39.6002 32.0201 35.8102 35.8106C32.0197 39.6006 26.7832 41.9451 20.9997 41.9451C15.2162 41.9451 9.97969 39.6006 6.18919 35.8106C2.39919 32.0201 0.0546875 26.7836 0.0546875 21.0001C0.0546875 15.2166 2.39919 9.98005 6.18969 6.18955C9.97969 2.39955 15.2162 0.0550537 20.9997 0.0550537ZM30.6767 21.8671C30.8287 21.7826 30.9602 21.6566 31.0532 21.4951C31.3267 21.0196 31.1627 20.4126 30.6872 20.1391L23.4892 15.9831L16.3742 11.8751C16.2112 11.7591 16.0117 11.6911 15.7967 11.6911C15.2457 11.6911 14.7992 12.1376 14.7992 12.6886V21.0001V29.3116H14.8032C14.8032 29.4796 14.8457 29.6501 14.9352 29.8066C15.2087 30.2821 15.8157 30.4461 16.2912 30.1726L23.4892 26.0166L30.6767 21.8671Z" fill="white"/>
+                                                </svg>
+                                                
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </face>
+                    </basis>
+                  
+         
+                </div>
+            </div>
+        </div>
+           
+     <!-- POPOP -->
+
+    <div class="Gallerypopup [&.showPOPUP]:opacity-[1]  [&.showPOPUP]:pointer-events-auto fixed left-0 top-0 h-[100vh]
+    w-screen z-[999] bg-[#000000CC]
+   flex justify-center items-center opacity-0 duration-[.4s] pointer-events-none">
+
+       <div class="close absolute right-0 top-0 pr-[3em] pt-[3em] hover:cursor-pointer">
+           <div class="box">
+           <svg width="40" height="40" viewbox="0 0 40 40"><path d="M 10,10 L 30,30 M 30,10 L 10,30" stroke="white" stroke-width="4" /></svg>
+           </div>
+       </div>
+       <div class="popUp w-full flex justify-between items-center">
+
+           <span class="Gprev hover:cursor-pointer w-[75px] h-[75px] bg-b7 flex justify-center items-center">
+               <svg width="23" height="44" viewBox="0 0 26 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                   <path d="M2 2L23 23L2 44" stroke="white" stroke-width="3"/>
+                   </svg>
+                   
+           </span>
+            
+             <div class="VideoMain group">
+
+
+               <div class="Video hidden w-full justify-center items-center relative hover:cursor-pointer
+               overflow-hidden flex-col duration-[.5s]">
+               <video src="" controls class="Main w-[953px] h-[535px] object-cover mr-auto ml-auto scale-[1.2] duration-[.5s] 
+               [&.active]:scale-[1] [&.active]:opacity-[1] opacity-0" poster=""></video>
+                   <div class="ov w-full h-full absolute flex justify-end items-end
+                   top-0 left-0 z-3 duration-[.5s] pointer-events-none
+                   opacity-0 group-hover:opacity-[1] ">
+                       <div class="play ml-3 mb-2">
+                           <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                               <path fill-rule="evenodd" clip-rule="evenodd" d="M20.9997 0.0550537C26.7832 0.0550537 32.0197 2.39955 35.8102 6.19005C39.6002 9.98005 41.9447 15.2166 41.9447 21.0001C41.9447 26.7836 39.6002 32.0201 35.8102 35.8106C32.0197 39.6006 26.7832 41.9451 20.9997 41.9451C15.2162 41.9451 9.97969 39.6006 6.18919 35.8106C2.39919 32.0201 0.0546875 26.7836 0.0546875 21.0001C0.0546875 15.2166 2.39919 9.98005 6.18969 6.18955C9.97969 2.39955 15.2162 0.0550537 20.9997 0.0550537ZM30.6767 21.8671C30.8287 21.7826 30.9602 21.6566 31.0532 21.4951C31.3267 21.0196 31.1627 20.4126 30.6872 20.1391L23.4892 15.9831L16.3742 11.8751C16.2112 11.7591 16.0117 11.6911 15.7967 11.6911C15.2457 11.6911 14.7992 12.1376 14.7992 12.6886V21.0001V29.3116H14.8032C14.8032 29.4796 14.8457 29.6501 14.9352 29.8066C15.2087 30.2821 15.8157 30.4461 16.2912 30.1726L23.4892 26.0166L30.6767 21.8671Z" fill="white"/>
+                               </svg>
+                               
+                       </div>
+                   </div>
+               </div>
+
+
+               <img class="Main
+               hidden w-[953px] h-[535px] object-cover mr-auto ml-auto scale-[1.2] duration-[.5s] 
+               [&.active]:scale-[1] [&.active]:opacity-[1] opacity-0
+               " src="@largeIMG" alt="@title" title="@title"/>  
+
+           </div>
+
+            <span class="Gnext hover:cursor-pointer w-[75px] h-[75px] bg-b7 flex justify-center items-center">
+               <svg width="23" height="44" viewBox="0 0 23 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                   <path d="M22 1L1 22L22 43" stroke="white"/>
+                   </svg>
+                   
+            </span>
+
+       </div>
+     
+   </div>
+    <!-- POPOP -->
+        <basis core="call" file="footer.inc" pageindex="[##cms.cdn.pageindex##]" />
+    </main>
+ 
+
+     <basis core="call" file="script.inc" />
+     <script src="[##cms.cms.cdn##]/new/js/galleryShow.js"></script>
+</body>
+</html>

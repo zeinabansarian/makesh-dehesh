@@ -1,0 +1,434 @@
+<basis core="dbsource" name="db" source="media" lid="1" sourcemid="1" usedforid="1408927" > 
+    <member name="about-video" type="list" format="3"/> 
+</basis>
+<basis core="dbsource" name="db" source="basiscore" lid="1" mid="1" usedforid="1408370">
+    <member name="aboutus" type="view"/> 
+</basis>
+<basis core="dbsource" name="db" source="basiscore" lid="1" mid="1" usedforid="1408370">
+     <member name="aboutus1" type="view" postsql="select * from [db.aboutus1] where TypeID=250"/> 
+</basis>	
+<basis core="dbsource" name="db" source="media" lid="1" sourcemid="1" usedforid="1408370" >
+     <member name="sec2" type="list" format="4"/> 
+</basis>
+<basis core="dbsource" name="db" source="basiscore" lid="1" mid="1" usedforid="2359847">
+     <member name="history" type="view" postsql="select * from [db.history] where TypeID=250"  /> 
+</basis>	
+<basis core="dbsource" name="db" source="media" lid="1" sourcemid="1" usedforid="2359847" > 
+<member name="aboutGallery" type="list" format="4"/> 
+</basis>
+    
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>درباره ما</title>
+    <meta name="description" content="درباره ما">
+    <link rel="stylesheet" href="[##cms.cms.cdn##]/new/css/simplebar.css">
+    <link rel="stylesheet" href="[##cms.cms.cdn##]/new/css/swiper.css">
+    <link rel="stylesheet" href="[##cms.cms.cdn##]/new/css/outputDesk.css">
+
+</head>
+<body dir="rtl"> 
+    <main class="aboutUS overflow-hidden">
+        <basis core="call" file="header.inc" pageindex="[##cms.cdn.pageindex##]" />
+
+        <div class="Container relative w-full flex z-0 justify-center items-start flex-col">
+           <div class="Section-1 sec w-full flex justify-center items-end h-[85vh] mt-auto mb-[10em]">
+                <div class="VideoBox group  w-full flex justify-center items-center h-full">
+
+                    <basis core="print" datamembername="db.about-video">
+                        <layout>
+                            @child
+                        </layout>
+                        <face filter="ord=1000">
+                            <div class="Video w-full flex justify-center items-center relative hover:cursor-pointer
+                            overflow-hidden flex-col duration-[.5s]">
+                                <video class="w-full h-full object-cover" src="@largeIMG"
+                              ></video>
+                                <div class="ov w-full h-full absolute flex justify-center items-center
+                                top-0 left-0 z-3 group-[&.toggle]:opacity-0 group-[&.toggle]:left-[-100%] duration-[.5s]">
+                                    <div class="playy mt-[10em]">
+                                        <svg width="84" height="84" viewBox="0 0 84 84" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_70_1983)">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M41.9994 0.109985C53.5664 0.109985 64.0394 4.79898 71.6204 12.38C79.2004 19.96 83.8894 30.433 83.8894 42C83.8894 53.567 79.2004 64.04 71.6204 71.621C64.0394 79.201 53.5664 83.89 41.9994 83.89C30.4324 83.89 19.9594 79.201 12.3784 71.621C4.79837 64.04 0.109375 53.567 0.109375 42C0.109375 30.433 4.79837 19.96 12.3794 12.379C19.9594 4.79898 30.4324 0.109985 41.9994 0.109985ZM61.3534 43.734C61.6574 43.565 61.9204 43.313 62.1064 42.99C62.6534 42.039 62.3254 40.825 61.3744 40.278L46.9784 31.966L32.7484 23.75C32.4224 23.518 32.0234 23.382 31.5934 23.382C30.4914 23.382 29.5984 24.275 29.5984 25.377V42V58.623H29.6064C29.6064 58.959 29.6914 59.3 29.8704 59.613C30.4174 60.564 31.6314 60.892 32.5824 60.345L46.9784 52.033L61.3534 43.734Z" fill="white"/>
+                                            </g>
+                                            <defs>
+                                            <clipPath id="clip0_70_1983">
+                                            <rect width="84" height="84" fill="white"/>
+                                            </clipPath>
+                                            </defs>
+                                            </svg>
+                                            
+                                    </div>
+                                </div>
+                                <div class="OV-inner  w-full h-auto absolute flex justify-center items-center
+                                bottom-0 left-0 z-3 mb-[20px]">
+                                <div class="scrollD absolute left-0 bottom-5 right-0">
+                                    <span class="mouse">
+                                    <span class="move"></span>
+                                    </span>
+                                    </div>
+                                        
+                                </div>
+                            </div>
+                        </face>
+                    </basis>
+              
+                </div>
+           </div>
+           <div class="Section-2 w-full flex justify-center items-center mb-[10em] flex-col gap-[18em]">
+                <div class="AboutUS-c sec w-[75%] flex justify-start items-center 
+                flex-col ml-auto mr-auto relative">
+                <basis core="print" datamembername="db.sec2">
+                    <layout>
+                        @child
+                    </layout>
+                    <face filter="ord=1010">
+                        <div class="IMG w-auto flex justify-center items-center">
+                            <img src="@largeIMG" alt="makesh-dahesh" title="makesh-dahesh" class="w-auto object-contain">
+                        </div>
+                    </face>
+                </basis>
+                 
+                    <div class="Box w-full flex justify-start shadow-[0_2.8px_2.2px_rgba(0,_0,_0,_0.034),_0_6.7px_5.3px_rgba(0,_0,_0,_0.048),_0_12.5px_10px_rgba(0,_0,_0,_0.06),_0_22.3px_17.9px_rgba(0,_0,_0,_0.072),_0_41.8px_33.4px_rgba(0,_0,_0,_0.086),_0_100px_80px_rgba(0,_0,_0,_0.12)]
+                    items-center flex-col bg-[#FFFFFFCC] absolute
+                    bottom-[-17em] left-0 ">
+                        <div class="Title fadeIN w-full flex justify-center items-center pt-[50px] pb-[50px]">
+                            <basis core="print" datamembername="db.aboutus">
+                                <layout>
+                                    @child
+                                </layout>
+                                <face filter="TypeID=150">
+                                    <h1 class="text-2xl font-medium font-IRANSansWeb500 leading-23 text-b9
+                                    fade-in [&.fade-in]:opacity-0 duration-[.8s]
+                                        [&.fade-in]:translate-y-[100%]">
+                                        @Answer
+                                    </h1>  
+                                </face>
+                            </basis>
+                     
+                        </div>
+                        <div class="Text fadeIN w-[90%] flex justify-start items-start flex-col ml-auto mr-auto">
+                            <basis core="print" datamembername="db.aboutus">
+                                <layout>
+                                    @child
+                                </layout>
+                                <face filter="TypeID=129">
+                            <p class="text-sm font-IRANSansWeb300 leading-21.91 font-light text-b9
+                            fade-in [&.fade-in]:opacity-0 duration-[.8s]
+                                [&.fade-in]:translate-y-[100%] text-justify"> 
+                                @Answer
+                            </p>
+                                </face>
+                            </basis>
+                        </div>
+                    </div>
+                </div>
+                <div class="HistoryContainer sec w-full flex justify-center items-center flex-col gap-[1em]">
+                    <div class="historyTitle fadeIN w-full flex justify-center items-center gap-[6rem] mb-3">
+                        <span>
+                            <svg width="25" height="15" viewBox="0 0 25 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M24.3905 6.26662V1.81182C24.3905 1.42542 24.0769 1.11182 23.6905 1.11182H19.2357V2.51182H22.0007L21.4141 3.09842C20.9199 3.59122 20.3011 3.94122 19.6249 4.11062L19.3379 4.18202C17.8119 4.56422 16.6835 5.81722 16.4609 7.37262L16.3153 8.39462L16.1697 9.41662C16.0283 10.4064 15.3101 11.203 14.3371 11.4466L14.0515 11.518C13.1275 11.749 12.2833 12.2264 11.6113 12.8984L12.6025 13.8882C13.0953 13.394 13.7127 13.044 14.3917 12.8746L14.6759 12.8032C16.2019 12.4224 17.3303 11.1694 17.5543 9.61402L17.6999 8.59202L17.8469 7.57142C17.9883 6.58022 18.7065 5.78362 19.6781 5.54002L19.9651 5.46862C20.8863 5.23762 21.7305 4.76162 22.4039 4.08822L22.9905 3.50162V6.26662H24.3905Z" fill="#BCBDBD"/>
+                                <path d="M13.3905 6.26662V1.81182C13.3905 1.42542 13.0769 1.11182 12.6905 1.11182H8.23573V2.51182H11.0007L10.4141 3.09842C9.91993 3.59122 9.30113 3.94122 8.62493 4.11062L8.33793 4.18202C6.81193 4.56422 5.68353 5.81722 5.46093 7.37262L5.31533 8.39462L5.16973 9.41662C5.02833 10.4064 4.31013 11.203 3.33713 11.4466L3.05153 11.518C2.12753 11.749 1.28333 12.2264 0.611328 12.8984L1.60253 13.8882C2.09533 13.394 2.71273 13.044 3.39173 12.8746L3.67593 12.8032C5.20193 12.4224 6.33033 11.1694 6.55433 9.61402L6.69993 8.59202L6.84693 7.57142C6.98833 6.58022 7.70653 5.78362 8.67813 5.54002L8.96513 5.46862C9.88633 5.23762 10.7305 4.76162 11.4039 4.08822L11.9905 3.50162V6.26662H13.3905Z" fill="#BCBDBD"/>
+                                </svg>
+                                
+                        </span>
+                        <h3 class="font-IRANSansWeb700 text-2xl leading-37.97 text-b12">
+                            تاریخچه شرکت
+                        </h3>
+                        <span>
+                            <svg width="25" height="15" viewBox="0 0 25 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M24.3905 6.26662V1.81182C24.3905 1.42542 24.0769 1.11182 23.6905 1.11182H19.2357V2.51182H22.0007L21.4141 3.09842C20.9199 3.59122 20.3011 3.94122 19.6249 4.11062L19.3379 4.18202C17.8119 4.56422 16.6835 5.81722 16.4609 7.37262L16.3153 8.39462L16.1697 9.41662C16.0283 10.4064 15.3101 11.203 14.3371 11.4466L14.0515 11.518C13.1275 11.749 12.2833 12.2264 11.6113 12.8984L12.6025 13.8882C13.0953 13.394 13.7127 13.044 14.3917 12.8746L14.6759 12.8032C16.2019 12.4224 17.3303 11.1694 17.5543 9.61402L17.6999 8.59202L17.8469 7.57142C17.9883 6.58022 18.7065 5.78362 19.6781 5.54002L19.9651 5.46862C20.8863 5.23762 21.7305 4.76162 22.4039 4.08822L22.9905 3.50162V6.26662H24.3905Z" fill="#BCBDBD"/>
+                                <path d="M13.3905 6.26662V1.81182C13.3905 1.42542 13.0769 1.11182 12.6905 1.11182H8.23573V2.51182H11.0007L10.4141 3.09842C9.91993 3.59122 9.30113 3.94122 8.62493 4.11062L8.33793 4.18202C6.81193 4.56422 5.68353 5.81722 5.46093 7.37262L5.31533 8.39462L5.16973 9.41662C5.02833 10.4064 4.31013 11.203 3.33713 11.4466L3.05153 11.518C2.12753 11.749 1.28333 12.2264 0.611328 12.8984L1.60253 13.8882C2.09533 13.394 2.71273 13.044 3.39173 12.8746L3.67593 12.8032C5.20193 12.4224 6.33033 11.1694 6.55433 9.61402L6.69993 8.59202L6.84693 7.57142C6.98833 6.58022 7.70653 5.78362 8.67813 5.54002L8.96513 5.46862C9.88633 5.23762 10.7305 4.76162 11.4039 4.08822L11.9905 3.50162V6.26662H13.3905Z" fill="#BCBDBD"/>
+                                </svg>
+                                
+                        </span>
+
+                    </div>
+                    <div class="history-Tabs w-[75%] mt-[3em] mr-auto ml-auto flex justify-center 
+                    flex-col items-center gap-[.8em]">
+                    <basis core="print" datamembername="db.history">
+                        <layout>
+                            @child
+                        </layout>
+                        <face>
+                            <div class="history-Tab fade-in [&.fade-in]:opacity-0 duration-[.8s]
+                            [&.fade-in]:translate-y-[100%] w-full flex justify-center items-center  
+                            shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px]">
+                                <div class="Tab w-full flex justify-start items-start flex-col gap-[2em]">
+                                    <div class="tab-title pt-[20px] pb-[20px] w-full flex justify-between items-center
+                                    [&.active]:bg-b9 duration-[.5s] group ">
+                                        <p class="faNum text-2xl font-medium font-IRANSansWeb500 group-[&.active]:text-f duration-[.5s]
+                                        leading-23 text-b9 mr-[10px]">
+                                            @text	
+                                        </p>
+                                        <div class="Icon ml-[10px] flex justify-center items-center">
+                                            <svg width="35" class="group-[&.active]:stroke-f duration-[.5s]" 
+                                            height="19" viewBox="0 0 35 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 1L17.5 17.5L34 1" stroke="#2E3192" class="group-[&.active]:stroke-f duration-[.5s]"/>
+                                                </svg>
+                                                
+                                        </div>
+                                    </div>
+                                
+                                    <div class="DropDowns w-full flex justify-start items-start
+                                    pb-[20px] flex-col ">
+                                        <div class="Text w-[90%]  mr-auto ml-auto flex justify-start items-start flex-col">
+                                            <p class="text-sm font-IRANSansWeb300 leading-21.91 font-light text-b9 text-justify">
+                                                @Answer
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </face>
+                    </basis>
+                  
+                     
+                    </div>
+                </div>
+           </div>
+
+           <div class="Section-3 sec w-full flex justify-center items-center mb-[12em] flex-col gap-[3em]">
+            <div class="partnersTitle fadeIN w-full flex justify-center items-center gap-[4rem] mb-3">
+                <span>
+                    <svg width="25" height="15" viewBox="0 0 25 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24.3905 6.26662V1.81182C24.3905 1.42542 24.0769 1.11182 23.6905 1.11182H19.2357V2.51182H22.0007L21.4141 3.09842C20.9199 3.59122 20.3011 3.94122 19.6249 4.11062L19.3379 4.18202C17.8119 4.56422 16.6835 5.81722 16.4609 7.37262L16.3153 8.39462L16.1697 9.41662C16.0283 10.4064 15.3101 11.203 14.3371 11.4466L14.0515 11.518C13.1275 11.749 12.2833 12.2264 11.6113 12.8984L12.6025 13.8882C13.0953 13.394 13.7127 13.044 14.3917 12.8746L14.6759 12.8032C16.2019 12.4224 17.3303 11.1694 17.5543 9.61402L17.6999 8.59202L17.8469 7.57142C17.9883 6.58022 18.7065 5.78362 19.6781 5.54002L19.9651 5.46862C20.8863 5.23762 21.7305 4.76162 22.4039 4.08822L22.9905 3.50162V6.26662H24.3905Z" fill="#BCBDBD"/>
+                        <path d="M13.3905 6.26662V1.81182C13.3905 1.42542 13.0769 1.11182 12.6905 1.11182H8.23573V2.51182H11.0007L10.4141 3.09842C9.91993 3.59122 9.30113 3.94122 8.62493 4.11062L8.33793 4.18202C6.81193 4.56422 5.68353 5.81722 5.46093 7.37262L5.31533 8.39462L5.16973 9.41662C5.02833 10.4064 4.31013 11.203 3.33713 11.4466L3.05153 11.518C2.12753 11.749 1.28333 12.2264 0.611328 12.8984L1.60253 13.8882C2.09533 13.394 2.71273 13.044 3.39173 12.8746L3.67593 12.8032C5.20193 12.4224 6.33033 11.1694 6.55433 9.61402L6.69993 8.59202L6.84693 7.57142C6.98833 6.58022 7.70653 5.78362 8.67813 5.54002L8.96513 5.46862C9.88633 5.23762 10.7305 4.76162 11.4039 4.08822L11.9905 3.50162V6.26662H13.3905Z" fill="#BCBDBD"/>
+                        </svg>
+                        
+                </span>
+                <h4 class="font-IRANSansWeb700  text-2xl leading-37.97 text-b12">
+                     شرکای تجاری
+                </h4>
+                <span>
+                    <svg width="25" height="15" viewBox="0 0 25 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24.3905 6.26662V1.81182C24.3905 1.42542 24.0769 1.11182 23.6905 1.11182H19.2357V2.51182H22.0007L21.4141 3.09842C20.9199 3.59122 20.3011 3.94122 19.6249 4.11062L19.3379 4.18202C17.8119 4.56422 16.6835 5.81722 16.4609 7.37262L16.3153 8.39462L16.1697 9.41662C16.0283 10.4064 15.3101 11.203 14.3371 11.4466L14.0515 11.518C13.1275 11.749 12.2833 12.2264 11.6113 12.8984L12.6025 13.8882C13.0953 13.394 13.7127 13.044 14.3917 12.8746L14.6759 12.8032C16.2019 12.4224 17.3303 11.1694 17.5543 9.61402L17.6999 8.59202L17.8469 7.57142C17.9883 6.58022 18.7065 5.78362 19.6781 5.54002L19.9651 5.46862C20.8863 5.23762 21.7305 4.76162 22.4039 4.08822L22.9905 3.50162V6.26662H24.3905Z" fill="#BCBDBD"/>
+                        <path d="M13.3905 6.26662V1.81182C13.3905 1.42542 13.0769 1.11182 12.6905 1.11182H8.23573V2.51182H11.0007L10.4141 3.09842C9.91993 3.59122 9.30113 3.94122 8.62493 4.11062L8.33793 4.18202C6.81193 4.56422 5.68353 5.81722 5.46093 7.37262L5.31533 8.39462L5.16973 9.41662C5.02833 10.4064 4.31013 11.203 3.33713 11.4466L3.05153 11.518C2.12753 11.749 1.28333 12.2264 0.611328 12.8984L1.60253 13.8882C2.09533 13.394 2.71273 13.044 3.39173 12.8746L3.67593 12.8032C5.20193 12.4224 6.33033 11.1694 6.55433 9.61402L6.69993 8.59202L6.84693 7.57142C6.98833 6.58022 7.70653 5.78362 8.67813 5.54002L8.96513 5.46862C9.88633 5.23762 10.7305 4.76162 11.4039 4.08822L11.9905 3.50162V6.26662H13.3905Z" fill="#BCBDBD"/>
+                        </svg>
+                        
+                </span>
+
+            </div>
+            <div class="PartnersContainer w-full flex justify-center items-center ">
+              <div class="swiper-partner w-full flex justify-center items-center overflow-hidden pb-[1em]">
+                <div class="swiper-wrapper w-full flex justify-center items-center ">
+                    <basis core="print" datamembername="db.aboutGallery">
+                        <layout>
+                            @child
+                        </layout>
+                        <face filter="ord=1000"> 
+                            <div class="swiper-slide w-full flex justify-center
+                            items-center flex-col rounded-full bg-f duration-[.4s] ">
+                                <div class="Partner w-full h-full rounded-full bg-f duration-[.4s] flex 
+                                 justify-center items-center flex-col hover:shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,_rgba(0,0,0,0.3)_0px_3px_7px_-3px]">
+                                    <div class="IMG w-full h-full rounded-full bg-f duration-[.4s] flex justify-center items-center flex-col">
+                                        <img src="@largeIMG" alt="makesh-dahesh" title="makesh-dahesh"
+                                         class=" pt-[10px] pb-[10px] pr-[10px] pl-[10px] rounded-full bg-f duration-[.4s]
+                                        object-cover w-full h-full">
+                                    </div>
+                                </div>
+                            </div>
+                        </face>
+                    </basis>
+                </div>
+              </div>
+            </div>
+           </div>
+           <div class="Section-4  w-full flex justify-start items-center mb-[8em] mt-[3em] flex-col  ">
+            <div class="Detail-Container w-full flex justify-center items-center flex-col relative">
+                <div class="Boxes w-[60%] grid justify-start grid-cols-[1fr,1fr,1fr] z-3
+                items-center ml-auto mr-auto gap-[4em] absolute left-0 bottom-[50%] right-0">
+                <basis core="print" datamembername="db.aboutus1">
+                    <layout>
+                        @child
+                    </layout>
+                    <face filter="RowNumber=1">
+                        <div class="Box w-full flex h-auto justify-start items-center pt-[15px] pb-[30px]
+                        flex-col bg-[#FFFFFFCC] hover:bg-b7 duration-[.5s] group
+                         shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,_rgba(0,0,0,0.3)_0px_3px_7px_-3px]"  >
+                           <div class="Title-b w-full flex justify-start pt-[30px] pb-[30px]
+                            items-center flex-col fadeIN ">
+                               <p class="text-base font-IRANSansWeb700 fade-in [&.fade-in]:opacity-0 duration-[.8s]
+                               [&.fade-in]:translate-y-[100%] leading-25.4 group-hover:text-f
+                               font-bold  text-b9 text-justify">
+                                 @text :
+   
+                               </p>
+                           </div>
+                           <div class="Text-b fadeIN mr-auto h-[500px] overflow-y-auto pr-[1rem] relative ml-auto Title-b w-[80%]
+                            gap-[1.2em] flex justify-start items-center flex-col" id="text-1">
+                               <p class="text-sm font-IRANSansWeb300 fade-in [&.fade-in]:opacity-0 duration-[.8s]
+                               [&.fade-in]:translate-y-[100%] leading-21.91 font-light group-hover:text-f
+                                text-b9 text-justify">
+                               @largetext
+                               </p>
+                           </div>
+                       </div>
+                    </face>
+                </basis>
+                <basis core="print" datamembername="db.aboutus1">
+                    <layout>
+                        @child
+                    </layout>
+                    <face filter="RowNumber=2">
+                        <div class="Box w-full h-auto flex justify-start items-center pt-[15px] pb-[30px]
+                        flex-col bg-[#FFFFFFCC] hover:bg-b7 duration-[.5s] group
+                         shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,_rgba(0,0,0,0.3)_0px_3px_7px_-3px]"  >
+                           <div class="Title-b w-full flex justify-start pt-[30px] pb-[30px]
+                            items-center flex-col fadeIN">
+                               <p class="text-base font-IRANSansWeb700 fade-in [&.fade-in]:opacity-0 duration-[.8s]
+                               [&.fade-in]:translate-y-[100%] leading-25.4 group-hover:text-f
+                               font-bold  text-b9 text-justify">
+                                 @text :
+   
+                               </p>
+                           </div>
+                           <div class="Text-b fadeIN mr-auto h-[500px] relative overflow-y-auto pr-[1rem] ml-auto Title-b w-[80%]
+                            gap-[1.2em] flex justify-start items-center flex-col" id="text-2">
+                               <p class="text-sm font-IRANSansWeb300 fade-in [&.fade-in]:opacity-0 duration-[.8s]
+                               [&.fade-in]:translate-y-[100%] leading-21.91 font-light group-hover:text-f
+                                text-b9 text-justify">
+                               @largetext
+                               </p>
+                           </div>
+                       </div>
+                    </face>
+                </basis>
+                <basis core="print" datamembername="db.aboutus1">
+                    <layout>
+                        @child
+                    </layout>
+                    <face filter="RowNumber=3">
+                        <div class="Box w-full h-auto  flex justify-start items-center pt-[15px] pb-[30px]
+                        flex-col bg-[#FFFFFFCC] hover:bg-b7 duration-[.5s] group
+                         shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,_rgba(0,0,0,0.3)_0px_3px_7px_-3px]"  >
+                           <div class="Title-b w-full flex justify-start pt-[30px] pb-[30px]
+                            items-center flex-col fadeIN">
+                               <p class="text-base font-IRANSansWeb700 fade-in [&.fade-in]:opacity-0 duration-[.8s]
+                               [&.fade-in]:translate-y-[100%] leading-25.4 group-hover:text-f
+                               font-bold  text-b9 text-justify">
+                                 @text :
+   
+                               </p>
+                           </div>
+                           <div class="Text-b fadeIN relative h-[500px] mr-auto overflow-y-auto pr-[1rem]
+                            ml-auto Title-b w-[80%]
+                            gap-[1.2em] flex justify-start items-center flex-col" id="text-3">
+                               <p class="text-sm font-IRANSansWeb300 fade-in [&.fade-in]:opacity-0 duration-[.8s]
+                               [&.fade-in]:translate-y-[100%] leading-21.91 font-light group-hover:text-f
+                                text-b9 text-justify">
+                               @largetext
+                               </p>
+                           </div>
+                       </div>
+                    </face>
+                </basis>
+                </div>
+                <div class="Banner-IMG w-[75%] flex justify-center items-center">
+                    <basis core="print" datamembername="db.sec2">
+                        <layout>
+                            @child
+                        </layout>
+                        <face filter="ord=1020">
+                            <img src="@largeIMG" alt="makesh-dahesh" title="makesh-dahesh"
+                             class="w-full object-cove fade-in [&.fade-in]:opacity-0 duration-[.8s]
+                            [&.fade-in]:translate-y-[100%]r">
+                        </face>
+                    </basis>
+                
+                </div>
+            </div>
+        </div>
+
+        <div class="Section-5 sec w-full flex justify-center items-center mb-[8em] mt-[3em] flex-col ">
+            <div class="CertiTitle fadeIN w-full flex justify-center items-center  gap-[6rem] mb-3">
+                <span>
+                    <svg width="25" height="15" viewBox="0 0 25 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24.3905 6.26662V1.81182C24.3905 1.42542 24.0769 1.11182 23.6905 1.11182H19.2357V2.51182H22.0007L21.4141 3.09842C20.9199 3.59122 20.3011 3.94122 19.6249 4.11062L19.3379 4.18202C17.8119 4.56422 16.6835 5.81722 16.4609 7.37262L16.3153 8.39462L16.1697 9.41662C16.0283 10.4064 15.3101 11.203 14.3371 11.4466L14.0515 11.518C13.1275 11.749 12.2833 12.2264 11.6113 12.8984L12.6025 13.8882C13.0953 13.394 13.7127 13.044 14.3917 12.8746L14.6759 12.8032C16.2019 12.4224 17.3303 11.1694 17.5543 9.61402L17.6999 8.59202L17.8469 7.57142C17.9883 6.58022 18.7065 5.78362 19.6781 5.54002L19.9651 5.46862C20.8863 5.23762 21.7305 4.76162 22.4039 4.08822L22.9905 3.50162V6.26662H24.3905Z" fill="#BCBDBD"/>
+                        <path d="M13.3905 6.26662V1.81182C13.3905 1.42542 13.0769 1.11182 12.6905 1.11182H8.23573V2.51182H11.0007L10.4141 3.09842C9.91993 3.59122 9.30113 3.94122 8.62493 4.11062L8.33793 4.18202C6.81193 4.56422 5.68353 5.81722 5.46093 7.37262L5.31533 8.39462L5.16973 9.41662C5.02833 10.4064 4.31013 11.203 3.33713 11.4466L3.05153 11.518C2.12753 11.749 1.28333 12.2264 0.611328 12.8984L1.60253 13.8882C2.09533 13.394 2.71273 13.044 3.39173 12.8746L3.67593 12.8032C5.20193 12.4224 6.33033 11.1694 6.55433 9.61402L6.69993 8.59202L6.84693 7.57142C6.98833 6.58022 7.70653 5.78362 8.67813 5.54002L8.96513 5.46862C9.88633 5.23762 10.7305 4.76162 11.4039 4.08822L11.9905 3.50162V6.26662H13.3905Z" fill="#BCBDBD"/>
+                        </svg>
+                        
+                </span>
+                <h5 class="font-IRANSansWeb700 text-2xl leading-37.97 text-b12">
+                    گواهی نامه ها و استانداردها
+                </h5>
+                <span>
+                    <svg width="25" height="15" viewBox="0 0 25 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24.3905 6.26662V1.81182C24.3905 1.42542 24.0769 1.11182 23.6905 1.11182H19.2357V2.51182H22.0007L21.4141 3.09842C20.9199 3.59122 20.3011 3.94122 19.6249 4.11062L19.3379 4.18202C17.8119 4.56422 16.6835 5.81722 16.4609 7.37262L16.3153 8.39462L16.1697 9.41662C16.0283 10.4064 15.3101 11.203 14.3371 11.4466L14.0515 11.518C13.1275 11.749 12.2833 12.2264 11.6113 12.8984L12.6025 13.8882C13.0953 13.394 13.7127 13.044 14.3917 12.8746L14.6759 12.8032C16.2019 12.4224 17.3303 11.1694 17.5543 9.61402L17.6999 8.59202L17.8469 7.57142C17.9883 6.58022 18.7065 5.78362 19.6781 5.54002L19.9651 5.46862C20.8863 5.23762 21.7305 4.76162 22.4039 4.08822L22.9905 3.50162V6.26662H24.3905Z" fill="#BCBDBD"/>
+                        <path d="M13.3905 6.26662V1.81182C13.3905 1.42542 13.0769 1.11182 12.6905 1.11182H8.23573V2.51182H11.0007L10.4141 3.09842C9.91993 3.59122 9.30113 3.94122 8.62493 4.11062L8.33793 4.18202C6.81193 4.56422 5.68353 5.81722 5.46093 7.37262L5.31533 8.39462L5.16973 9.41662C5.02833 10.4064 4.31013 11.203 3.33713 11.4466L3.05153 11.518C2.12753 11.749 1.28333 12.2264 0.611328 12.8984L1.60253 13.8882C2.09533 13.394 2.71273 13.044 3.39173 12.8746L3.67593 12.8032C5.20193 12.4224 6.33033 11.1694 6.55433 9.61402L6.69993 8.59202L6.84693 7.57142C6.98833 6.58022 7.70653 5.78362 8.67813 5.54002L8.96513 5.46862C9.88633 5.23762 10.7305 4.76162 11.4039 4.08822L11.9905 3.50162V6.26662H13.3905Z" fill="#BCBDBD"/>
+                        </svg>
+                        
+                </span>
+
+            </div>
+            <div class="Certificate-Container overflow-hidden mt-[2em] w-[85%] mr-auto ml-auto
+            grid grid-cols-[5%,87%,5%] justify-start items-center">
+               <div class="swiper-button-prev w-[75px] h-[75px]  before:hidden flex justify-center items-center
+                after:hidden static bg-b7 ">
+                  <svg width="20" class="!w-[23px]" height="38"  viewBox="0 0 20 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 1L19 19L1 37" stroke="#fff"/>
+                  </svg>
+               </div>
+               <div class="swiper-certificate pt-[2.2em] pb-[1em] overflow-hidden w-full flex justify-center items-center">
+                  <div class="swiper-wrapper w-full" >
+                    <basis core="print" datamembername="db.sec2">
+                        <layout>
+                            @child
+                        </layout>
+                        <face filter="ord=10">
+                            <div class="swiper-slide w-full flex justify-center items-center">
+                                <div class="Product group  duration-[.5s] rounded-[8px] pt-[10px] pb-[30px]
+                                hover:shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,_rgba(0,0,0,0.3)_0px_3px_7px_-3px] w-full flex justify-start flex-col items-center bg-f">
+                                    <div class="IMG w-full flex justify-center items-center">
+                                     
+                                        <img src="@largeIMG" alt="@name" title="@name" >
+                                      
+                                    </div>
+                                    <div class="Title py-[1em] w-full flex justify-center items-center">
+                                  
+                                        <p class="font-IRANSansWeb500 text-sm font-medium leading-23 text-b9 text-center">
+                                          @name
+                                        </p>
+                                 
+                                    </div>
+                           
+                                </div>
+                            </div>
+                        
+                        </face>
+                    </basis>
+                    
+                   
+                  </div>
+               </div>
+               <div class="swiper-button-next w-[75px] h-[75px] mr-auto static before:hidden after:hidden 
+               bg-b7 flex justify-center items-center">
+                  <svg width="20" class="!w-[23px]" height="38" viewBox="0 0 20 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M19 1L1 19L19 37" stroke="#fff"/>
+                  </svg>     
+               </div>
+
+            </div>
+        </div>
+        </div>
+        <basis core="call" file="footer.inc" pageindex="[##cms.cdn.pageindex##]" />
+
+    </main>     
+
+<basis core="call" file="script.inc" />
+<script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
+<script src="[##cms.cms.cdn##]/new/js/aboutUss.js"></script>
+<script>
+    var t1 = document.getElementById('text-1');
+    var t2 = document.getElementById('text-2');
+    var t3 = document.getElementById('text-3');
+
+new SimpleBar(t1, { autoHide: true });
+new SimpleBar(t2, { autoHide: true });
+new SimpleBar(t3, { autoHide: true });
+
+</script>
+</body>
+</html>

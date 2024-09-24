@@ -7,12 +7,15 @@ ShareB.addEventListener('click',()=>{
 })
 
 // RELATED PROJECT SLIDER
-let swiperProject= new Swiper(".swiper-projects", {
-    slidesPerView:2.5,
-    spaceBetween: 70,
-   speed:800
-  });  
-
+if(document.querySelector('.swiper-projects')){
+    let swiperProject= new Swiper(".swiper-projects", {
+        slidesPerView:2.5,
+        spaceBetween: 70,
+       speed:800
+      }); 
+}
+ 
+if(document.querySelector('.swiper-products')){
 // RELATED PRODUCT SLIDER
 let swiperProduct= new Swiper(".swiper-products", {
     slidesPerView:3,
@@ -23,6 +26,8 @@ let swiperProduct= new Swiper(".swiper-products", {
       },
       speed:1000
   });  
+}
+
 
 // ANIMATIONS
 let textF = document.querySelectorAll('.fade-in')

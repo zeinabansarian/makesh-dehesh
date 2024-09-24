@@ -6,13 +6,14 @@
     direction: rtl;
   }
 }
-
 @font-face {
   font-family: "YekanBakh400";
-  src: url("../../_fonts/Yekan\ Bakh\ FA\ 04\ Regular.eot");
-  src: url("../../_fonts/Yekan\ Bakh\ FA\ 04\ Regular.eot?#iefix")
+  src: url("../../_fonts/YekanBakh-Regular.eot");
+  src: url("../../_fonts/YekanBakh-Regular.eot?#iefix")
       format("embedded-opentype"),
-    url("../../_fonts/Yekan\ Bakh\ FA\ 04\ Regular.woff") format("woff");
+    url("../../_fonts/YekanBakh-Regular.woff") format("woff"),
+    url("../../_fonts/YekanBakh-Regular.woff2") format("woff2"),
+    url("../../_fonts/YekanBakh-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -27,7 +28,33 @@
   font-style: normal;
   font-display: swap;
 }
-
+@font-face {
+  font-family: "IRANSansWebfanum";
+  src: url("../../_fonts/IRANSansWeb(FaNum).eot");
+  src: url("../../_fonts/IRANSansWeb(FaNum).eot?#iefix")
+      format("embedded-opentype"),
+    url("../../_fonts/IRANSansWeb(FaNum).woff") format("woff"),
+    url("../../_fonts/IRANSansWeb(FaNum).woff2") format("woff2"),
+    url("../../_fonts/IRANSansWeb(FaNum).ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "IRANSansWebfanum";
+  src: url("../../_fonts/IRANSansWeb(FaNum)_Medium.eot");
+  src: url("../../_fonts/IRANSansWeb(FaNum)_Medium.eot?#iefix")
+      format("embedded-opentype"),
+    url("../../_fonts/IRANSansWeb(FaNum)_Medium.woff") format("woff"),
+    url("../../_fonts/IRANSansWeb(FaNum)_Medium.woff2") format("woff2"),
+    url("../../_fonts/IRANSansWeb(FaNum)_Medium.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+.faNum {
+  font-family: "IRANSansWebfanum" !important;
+}
 @font-face {
   font-family: "IRANSansWeb500";
   src: url("../../_fonts/IRANSansWeb_Medium.eot");
@@ -42,12 +69,11 @@
 }
 @font-face {
   font-family: "IRANSansWeb400";
-  src: url("../../_fonts/IRANSansWebRegular.eot");
-  src: url("../../_fonts/IRANSansWebRegular.eot?#iefix")
+  src: url("../../_fonts/IRANSansFaNum-Regular.eot");
+  src: url("../../_fonts/IRANSansFaNum-Regular.eot?#iefix")
       format("embedded-opentype"),
-    url("../../_fonts/IRANSansWebRegular.woff") format("woff"),
-    url("../../_fonts/IRANSansWebRegular.woff2") format("woff2"),
-    url("../../_fonts/IRANSansWebRegular.ttf") format("truetype");
+    url("../../_fonts/IRANSansFaNum-Regular.woff") format("woff"),
+    url("../../_fonts/IRANSansFaNum-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -76,7 +102,6 @@
   font-style: normal;
   font-display: swap;
 }
-
 .newsList .newsBox:hover {
   box-shadow: 0px 0px 23px -1px rgba(0, 0, 0, 0.65);
   -webkit-box-shadow: 0px 0px 23px -1px rgba(0, 0, 0, 0.65);
@@ -451,6 +476,13 @@ a:hover {
   font-weight: 700;
   column-gap: 1rem;
 }
+.callBtn:hover p {
+  transform: scale(1.1) !important;
+  transition: 0.5s ease;
+  font-weight: 700;
+  column-gap: 1rem;
+}
+
 
 .home .section4 .swiper-slide:hover {
   box-shadow: 0px 18px 50px -25px rgba(0, 0, 0, 0.33);
@@ -1037,4 +1069,50 @@ height: 10px;
 
 .serviceShow .accordion:nth-child(1) .card-header{
 border-top: 1px solid rgba(0,0,0,.125);
+}
+
+.searchContainer input#search{
+  padding-left: 2em;
+}
+.Project .IMG-2{
+position: relative;
+}
+.Project .IMG-2::before{
+position: absolute;
+z-index: 2;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100%;
+background-color: #1e1e1e80;
+left: 0;
+top: 0;
+content: '';
+}
+.searchContainer{
+  direction: rtl;
+}
+footer{
+  direction: rtl;
+}
+footer p,
+ footer span,
+ footer a{
+    opacity: 0;
+    transform: translateY(1.5em);
+    -webkit-transform: translateY(1.5em);
+    -moz-transform: translateY(1.5em);
+    -ms-transform: translateY(1.5em);
+    -o-transform: translateY(1.5em);
+    transition: all .8s ease;
+    -webkit-transition: all .8s ease;
+    -moz-transition: all .8s ease;
+    -ms-transition: all .8s ease;
+    -o-transition: all .8s ease;
+}
+html,body{
+  scroll-padding-top: 8em;
+  scroll-margin-top: 8em;
+
 }

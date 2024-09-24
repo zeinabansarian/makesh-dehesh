@@ -1,0 +1,300 @@
+<basis core="dbsource" name="db" source="media" lid="3" sourcemid="1" usedforid="2337552">
+    <member name="landingGallery" type="list" />
+</basis>
+<basis core="dbsource" name="db" source="basiscore" lid="3" mid="20" catid="205923">
+    <member name="suggest" type="list" size="273x340"/>
+</basis>
+<basis core="dbsource" source="basiscore" name="db" lid="3" mid="20" >
+    <member request="cat" type="tree" name="productLanding" parentid="207523" />
+</basis>
+<basis core="dbsource" name="db" source="basiscore" lid="3" mid="1" usedforid="2337552">
+    <member name="landing" type="view" />
+</basis>
+<basis core="dbsource" name="db" source="basiscore" lid="3" mid="1" usedforid="2337552">
+    <member name="landing1" type="view" postsql="select * from [db.landing1] where TypeID=250" />
+</basis>
+<basis core="dbsource" name="db" source="basiscore" lid="3" mid="1" usedforid="2337552">
+    <member name="relatedproduct" type="list" blgid="221" size="273x340"/>
+</basis>
+<basis core="dbsource" source="basiscore" name="db" lid="3" mid="20">
+    <member request="cat" type="tree" name="cat-product" parentid="59616" />
+</basis>
+
+<basis core="dbsource" name="db" source="basiscore" lid="3" mid="5" usedforid="9215">
+    <member name="contactus1" type="view" postsql="select * from [db.contactus1] where TypeID=240"/>
+</basis>
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لندینگ</title>
+    <meta name="description" content="[لندینگ" />
+    <link rel="stylesheet" href="[##cms.cms.cdn3##]/css/new/styleMobile.css">
+    <link rel="stylesheet" href="[##cms.cms.cdn3##]/css/new/swiper.css">
+</head>
+<body>
+    <basis core="call" file="header-mobileAR.inc" pageindex="[##cms.cms.pageindex##]"/>
+    <main class="LandingMobile">
+        <section class="Banner">
+            <basis core="print" datamembername="db.landingGallery">
+                <face filter="ord = 71">
+                    <img src="@largeIMG" alt="zeytoon" title="zeytoon" loading="lazy"> 
+                </face>
+            </basis>
+            <div class="OV">
+                <div class="Title">
+                    <h1>
+                        اطلب منا استشارة مجانية للتخطيط المثالي لمنزلك
+                    </h1>
+                    <!-- <basis core="print" datamembername="db.landingGallery">
+                        <face filter="ord = 71">
+                          <h1>@name</h1> 
+                        </face>
+                    </basis> -->
+                </div>
+                <!-- <div class="Text">
+                    <basis core="print" datamembername="db.landingGallery">
+                        <face filter="ord = 71">
+                          <p>@description</p> 
+                        </face>
+                    </basis>
+                </div> -->
+                <div class="Contact">
+                    <div class="ContBox">
+                        <basis core="print" datamembername="db.contactus1">
+                            <layout>
+                                @child
+                            </layout>
+                            <face filter="RowNumber =1">
+                        <a href="tel:021-77494138">
+                            <div class="Cont-S">
+                                <svg width="10" height="15" viewBox="0 0 10 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.882812 1.23535L8.29458 7.41182L0.882812 13.5883" stroke="#C89F67" stroke-width="1.64706"/>
+                                    </svg>
+                                    
+                            </div>
+                        <div class="Cont-T">
+                            <span>إتصل بنا   </span>
+                        </div>
+                        <div class="Cont-IMG">
+                            <img src="/images/Rectangle 6.png" alt="zeytoon" title="zeytoon" loading="lazy">
+                        </div>
+                    </a>
+                            </face>
+                        </basis>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="Specials">
+            <div class="Specials-Container">
+                <div class="Special-Title">
+                    <h2>     عروض خاصة</h2>
+                </div>
+                <div class="Special-Slider">
+                    <div class="swiper-special">
+                        <div class="swiper-wrapper">
+                            <basis core="print" datamembername="db.suggest">
+                                <layout>
+                                    @child
+                                </layout>
+                                <face>
+                                    <div class="swiper-slide">
+                                        <div class="Special-IMG">
+                                            <a href="@link" title="@title" alt="@title">
+                                            <img src="/@00273X00340prp" alt="@title" title="@title"  loading="lazy">
+                                        </a>
+                                        </div>
+                                        <div class="Special-Title">
+                                            <a href="@link">
+                                                <span>@title</span>
+                                            </a>
+                                           
+                                        </div>
+                                        <div class="Special-Show">
+                                            <a href="@link" title="@title" alt="@link">
+                                              
+                                                <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M9.5 6.99902H6.5V9.99902H5.5V6.99902H2.5V5.99902H5.5V2.99902H6.5V5.99902H9.5V6.99902Z" fill="black"/>
+                                                    </svg>
+                                                    <span>  عرض المزيد </span>
+                                            </a>
+                                        </div>
+                                    </div> 
+                                </face>
+                            </basis>                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="ProCat">
+            <div class="CatTitle">
+                <h2> فئات المنتجات </h2>
+            </div>
+            <div class="ProSlider">
+                <div class="swiper-cat">
+                    <div class="swiper-wrapper">
+                           <basis core="print" datamembername="db.cat-product">
+                            <layout>
+                                @child
+                            </layout>
+                                    <face filter="catid not in (59616,59618)">
+                                <div class="swiper-slide">
+                                    <div class="Image-Cat">
+                                        <a href="@link" title="@title" alt="@title">
+                                            <img src="[##cms.cms.cdn3##]/images/@catid.png" alt="zeytoon" title="zeytoon" loading="lazy"/>
+                                    </a>
+                                    </div>
+                                    <div class="Title-Cat">
+                                        <a href="@link" title="@title" alt="@title">
+                                            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M4.7373 0V10" stroke="#C89F67" stroke-width="1.5"/>
+                                                <path d="M0 4.73682L10 4.73682" stroke="#C89F67" stroke-width="1.5"/>
+                                                </svg>
+                                            <h3>@title</h3>
+                                        </a>                                   
+                                    </div>
+                                </div>
+                            </face>
+                        </basis>
+                
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="TextClr">
+            <div class="Title">
+                <basis core="print" datamembername="db.landing">
+                    <layout>
+                        @child
+                    </layout>
+                    <face filter="TypeID=128">
+                      <span>@Answer</span>  
+                    </face>
+                </basis>
+            </div>
+            <div class="Text">
+                <basis core="print" datamembername="db.landing1">
+                    <layout>
+                        @child
+                    </layout>
+                    <face filter="RowNumber = 1">
+                      <p>  @largetext</p>  
+                    </face>
+                </basis>
+                <basis core="print" datamembername="db.landing1">
+                    <layout>
+                        @child
+                    </layout>
+                    <face filter="RowNumber = 1">
+                      <span>  @text</span>  
+                    </face>
+                </basis>
+                <basis core="print" datamembername="db.landing1">
+                    <layout>
+                        @child
+                    </layout>
+                    <face filter="RowNumber = 3">
+                      <p>  @largetext</p>  
+                    </face>
+                </basis>
+                 </div>
+            <a  href="/معلومات-عنا" class="SeeAll">
+                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4.7373 0V10" stroke="#C89F67" stroke-width="1.5"/>
+                    <path d="M0 4.73682L10 4.73682" stroke="#C89F67" stroke-width="1.5"/>
+                    </svg>
+                <h3> المزيد</h3>
+            </a>
+        </section>
+        <section class="Gallery-Container">
+            <div class="Gallerys">
+                <div class="Gallery-Big">
+                    <basis core="print" datamembername="db.landingGallery">
+                        <face filter="ord = 70">
+                            <img src="@largeIMG" alt="zeytoon" title="zeytoon" loading="lazy"> 
+                        </face>
+                    </basis>
+                </div>
+                <div class="Gallery-Thombs">
+                <basis core="print" datamembername="db.landingGallery">
+                     <face filter="ord = 72">
+                         <div class="Thumb">
+                         <img src="@largeIMG" alt="zeytoon" title="zeytoon" loading="lazy">
+                      </div> 
+                 </face>
+            </basis>                          
+                </div>
+            </div>
+        </section>
+        <section class="Clr">
+            <div class="Title">
+                <h5>   نحن جاهزون لتقديم مزيد من المعلومات حول منتجاتنا وتقديم استشارات من مصممينا.</h5>
+                <!-- <h5>تاریخ آفرینش های عالی زیتون یک سبک زندگی " بی نظیر و غیر قابل تکرار " را برایتان منعکس می کند ...</h5> -->
+                <basis core="print" datamembername="db.contactus1">
+                    <layout>
+                        @child
+                    </layout>
+                    <face filter="RowNumber =1">
+                        <div class="button">
+                            <button>
+                            <a href="tel:021-77494138" alt="Zeytoon" title="Zeytoon">
+                                تواصل معنا
+                            </a>
+                            </button>
+                        </div>
+                    </face>
+                </basis>
+            </div>
+            <div class="ClrPic">
+               <img src="/images/cta-mobile.jpg" alt="zeytoon" title="zeytoon" loading="lazy">
+            </div>
+        </section>
+        <section class="Related-Products">
+            <div class="Title">
+                <span>         منتجات مماثلة </span>
+            </div>
+            <div class="Related-Container">
+                <div class="swiper-related">
+                    <div class="swiper-wrapper">
+                        <basis core="print" datamembername="db.relatedProduct">
+                            <layout>
+                                @child
+                            </layout>
+                            <face>
+                                <div class="swiper-slide">
+                                    <div class="Related-IMG">
+                                        <a href="@link">
+                                        <img src="@00273X00340prp" alt="@title" title="@title" loading="lazy"></a>
+                                    </div>
+                                    <div class="Related-Title">
+                                        <a href="@link">
+                                        <span> @title</span></a>
+                                    </div>
+                                    <div class="Related-Show">
+                                        <a href="@link">
+                                            <svg width="8" height="7" viewBox="0 0 8 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.5 3.99902H4.5V6.99902H3.5V3.99902H0.5V2.99902H3.5V-0.000976562H4.5V2.99902H7.5V3.99902Z" fill="#C89F67"/>
+                                                </svg>
+                                                
+                                            <span> عرض المزيد </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </face>
+                        </basis>
+                     
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <basis core="call" file="footer-mobileAR.inc" pageindex="[##cms.cms.pageindex##]"/>
+    </main>
+    <basis core="call" file="script.inc" pageindex="[##cms.cms.pageindex##]"/>
+ 
+    <script src="[##cms.cms.cdn3##]/js/new/landingMobile.js"></script>
+</body>
+</html>

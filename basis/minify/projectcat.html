@@ -1,0 +1,213 @@
+<basis core="dbsource" source="basiscore" name="db" lid="1" mid="19" > 
+    <member request="cat" type="tree" name="projectCat" parentid="58702" /> 
+</basis>
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دسته بندی پروژه ها</title>
+    <meta name="description" content="دسته بندی پروژه ها  ">
+    <link rel="stylesheet" href="[##cms.cms.cdn##]/new/css/swiper.css">
+    <link rel="stylesheet" href="[##cms.cms.cdn##]/new/css/outputDesk.css">
+</head>
+<body dir="rtl" >
+    <main class="Cat-Project">
+        <basis core="call" file="header.inc" pageindex="[##cms.cdn.pageindex##]" />
+
+        <div class="Catp-Container mt-[8em] mb-auto  w-full flex flex-col justify-between items-center overflow-hidden">
+            <div class="Top w-[90%] mr-auto ml-auto">
+                <div class="Navigation flex justify-start items-center gap-1">
+                    <span class="nav w-auto flex justify-center items-center ">
+                        <a href="/" alt="صفحه اصلی" title="صفحه اصلی" class="font-IRANSansWeb400 text-xs leading-18.78 text-b1">
+                            صفحه نخست
+                        </a>
+                    </span>
+                    <span class="nav w-auto flex justify-center items-center text-b1">
+                    /
+                    </span>
+                    <span class="nav w-auto flex justify-center items-center">
+                        <h1  class="font-IRANSansWeb400 text-xs leading-18.78 text-b1">
+                            پروژه ها
+                        </h1>
+                    </span>
+                </div>
+            </div>
+
+            <div class="Bottom h-[80%] mt-[5em] w-full flex flex-col justify-start items-center">
+                <div class="Projects-C w-[95%]  mr-auto flex justify-center items-start ">
+                    <div class="swiper-cat-proj w-full flex justify-center items-center pt-[3em] pb-[3em] overflow-hidden">
+                        <div class="swiper-wrapper w-full max-w-x100">
+                            <basis core="print" datamembername="db.projectCat">
+                                <layout>
+                                    @child
+                                </layout>
+                                <face filter="catid not in (58702)">
+                                    <div class="swiper-slide w-full flex 
+                                    flex-col justify-start items-center">
+                                    <div class="Project group  duration-[.5s] hover:cursor-pointer 
+                                    w-[85%] flex flex-col justify-center items-center" >
+               
+                                                  <div class="IMG w-full flex justify-center items-center relative">
+                                                    <a href="@link">
+                                                      <img src="@image" alt="" class="w-full h-full object-cover">
+                                                            </a>
+                                                      <div class="OV group absolute hover:bg-[#00000073] 
+                                                      top-0 left-0 w-full h-full ease-linear duration-[.8s]
+                                                      flex justify-center items-center z-1">
+               
+                                                          <div class="Box w-full 
+                                                          gap-3 h-full flex flex-col  justify-center items-center relative">
+               
+                                                              <a href="@link" class="Inner-IMG group-hover:opacity-[1] opacity-0 relative w-full h-full
+                                                              flex justify-center items-center  
+                                                               duration-[.5s] ">
+                                                                 <div class="IMG-1 w-full h-full flex absolute z-5 scale-[1.3]
+                                                                  left-0 top-0
+                                                                 justify-center items-center">
+                                                            
+                                                                   <img src="@image"  alt="@title" title="@title" class="w-full h-full
+                                                                   ml-auto mr-auto object-cover ">
+                                                              
+                                                              
+                                                                 </div>
+                                                                 <div class="IMG-2 w-full h-full right-0 bottom-0
+                                                                  mr-auto ml-auto mt-auto mb-auto
+                                                                   flex justify-center items-center 
+                                                                   absolute z-6 left-0 top-0">
+                                                                
+                                                                   <img src="@image"  alt="@title" title="@title" class="w-full h-full
+                                                                   ml-auto mr-auto  object-cover hue-rotate-90">
+                                                                  
+                                                                  <div class="Inner-OV absolute top-0 left-0 w-full h-full
+                                                                  flex flex-col justify-center gap-y-[1.5rem] items-center z-2 
+                                                                  mr-auto ml-auto right-0
+                                                                  bottom-0 mt-auto mb-auto">
+                                                              
+                                                                  <span class="Number-proj w-auto flex justify-center 
+                                                                  items-center leading-23
+                                                                  font-IRANSansWeb500 text-[64px] text-f font-medium 
+                                                                  
+                                                                  "> @countid</span>
+                                                                  <p title="@title"
+                                                                  class="mt-4 mx-auto h-[0] group-hover:h-[44px]
+                                                                   callBtn duration-[.4s] w-[128px] bg-b4 rounded-md justify-center right-20 bottom-5 flex items-center gap-x-1">
+                                                                  <span class="w-3 h-3 bg-b8 rounded-full block"></span>
+                                                                  <p class="font-IRANSansWeb500 text-sm text-gray-500">
+                                                                    مشاهده لیست
+                                                                  </p>
+                                                                </p>
+                                                     
+               
+                                                                  </div>
+                                                                 </div>
+                                                              
+                                                                </a>
+               
+                                                        
+               
+                                                          </div>
+               
+                                                      </div>
+               
+                                                  </div>
+                                                
+               
+                                                  <div class="Title-2 w-full flex items-center group-hover:z-[10] duration-[.4s]
+                                                  group-hover:relative  justify-center overflow-hidden">
+                                                      <h2 class="font-IRANSansWeb700  group-hover:text-f text-base leading-25.4
+                                                       text-b9 mt-3.5 duration-[.5s]  font-bold
+                                                     
+                                                      ">@title  </h2>
+                                                  </div>
+                                    </div>
+                                   </div>
+                                </face>
+                            </basis>
+                       
+     
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+    </main>
+    <div class="searchContainer opacity-0 duration-[.4s] pointer-events-none flex justify-center
+    [&.show]:opacity-[1]  [&.show]:pointer-events-auto flex-col items-center fixed z-[900000] 
+    left-0 top-0 w-full h-full bg-f">
+      <span class="CloseSerch hover:cursor-pointer ml-auto flex justify-center items-center mr-[2em] mt-[2em] absolute
+      top-0 right-0">
+        <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M30.0846 10.1492L27.8521 7.91666L19.0013 16.7675L10.1505 7.91666L7.91797 10.1492L16.7688 19L7.91797 27.8508L10.1505 30.0833L19.0013 21.2325L27.8521 30.0833L30.0846 27.8508L21.2338 19L30.0846 10.1492Z" fill="#1D2F3B"/>
+          </svg>
+          
+      </span>
+      <div class="inputBox flex w-[60%] justify-center items-center relative">
+          <!-- <form role="search" id="searchform" action="/search.bc" method="get" class="radius-xl w-full"> -->
+        <input type="search" name="q" id="search" placeholder="جستجو کنید" class="w-full h-[40px] border-t-0 border-l-0
+        border-r-0 border-b border-b9 border-solid placeholder:font-IRANSansWeb500 placeholder:text-base
+        placeholder:font-medium placeholder:leading-25.4 placeholder:text-b9 focus-visible:outline-none"  >
+        <button type="button" aria-label="search" class="sBTN border-none outline-none bg-transparent">
+        <span class="SearchIcon absolute left-0 top-[8px] z-20">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13.92 13.92L17 17M16.111 8.581C16.111 12.768 12.728 16.162 8.556 16.162C4.383 16.162 1 12.768 1 8.582C1 4.393 4.383 1 8.555 1C12.728 1 16.111 4.394 16.111 8.581Z" stroke="#808080" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                </button>
+        </span>
+        <!-- </form> -->
+  
+    </div>
+    <!-- <div class="resultSearch">
+      <p>باعرض پوزش مطلبی پیدا نشد. واژه دیگری را جست و جو نمایید.</p>
+    </div> -->
+    </div>
+<script src="[##cms.cms.cdn##]/_js/gsap.js"></script>
+<script src="[##cms.cms.cdn##]/_js/jquery/jquery-3.4.0.js"></script>
+<script src="[##cms.cms.cdn##]/_js/scrollTrigger.js"></script>
+<script src="[##cms.cms.cdn##]/_js/swiper.js"></script>
+<script src="[##cms.cms.cdn##]/_js/lenisScroll.js"></script>
+<script src="[##cms.cms.cdn##]/new/js/cat-project.js"></script>
+<script>
+    // SEARCH
+let sBTN = document.querySelector('.DesktopHeader .SearchIcon')
+let sCon = document.querySelector('.searchContainer')
+let sClose  = document.querySelector('.searchContainer .CloseSerch')
+let searchicon = document.querySelector('.searchContainer .sBTN')
+sBTN.addEventListener('click',()=>{
+  sCon.classList.add('show')
+})
+sClose.addEventListener('click',()=>{
+  sCon.classList.remove('show')
+})
+let input = document.querySelector('.searchContainer input#search')
+let Val = input.value
+
+    console.log('value',input.value);
+    
+  input.addEventListener("keypress", function(event) {
+    // If the user presses the "Enter" key on the keyboard
+    if (event.key === "Enter") {
+      // Cancel the default action, if needed
+   window.location.href =`/search.bc?q=${Val}`
+  console.log('clicked');
+  console.log('val',Val);
+    }
+  });
+  searchicon.addEventListener("click", function(event) {
+    Val = input.value
+    if(input.value != ''){
+        window.location.href =`/search.bc?q=${Val}`
+  console.log('clicked');
+  console.log('val',Val);
+    }
+console.log(Val);
+
+  
+  });
+
+
+</script>
+</body>
+</html>

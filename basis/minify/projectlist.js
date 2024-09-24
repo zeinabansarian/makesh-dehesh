@@ -1,0 +1,1 @@
+gsap.registerPlugin(ScrollTrigger);let projects=document.querySelectorAll(".Project");projects.forEach((r=>{gsap.to(r,{y:0,opacity:1,scale:1,scrollTrigger:{trigger:r,start:"top 80%",end:"bottom bottom"}})}));

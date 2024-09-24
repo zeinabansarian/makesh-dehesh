@@ -8,7 +8,7 @@ projects.forEach(p=>{
         scale:1,
         scrollTrigger:{
             trigger:p,
-            start:"top 60%",
+            start:"top 80%",
             end:"bottom bottom"
         }
     })
